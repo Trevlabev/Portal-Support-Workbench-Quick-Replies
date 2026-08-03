@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Portal Support Workbench — GitHub Pages Edition</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="securityGate" class="gate-overlay" role="dialog" aria-modal="true">
+  <div class="gate-dialog">
+    <span class="eyebrow">GitHub Pages Edition</span>
+    <h1>Authorized internal use only</h1>
+    <p>This static website contains operational support guidance. GitHub Pages may make a site publicly accessible. Do not publish it without supervisor, information-security, and repository-owner authorization.</p>
+    <div class="warning-box">
+      <strong>Do not enter:</strong> passwords, Social Security numbers, full payment-card or bank-account numbers, credentials, access tokens, or unnecessary customer information.
+    </div>
+    <p>The application has no AI, API calls, analytics, or ticket-content transmission code. Ticket facts remain in the current browser tab, but the hosting platform, browser, device, extensions, and organization may have their own logging or monitoring.</p>
+    <label class="ack"><input id="ackCheck" type="checkbox"> I understand the publication and data-handling warning.</label>
+    <button id="enterApp" class="primary" disabled>Enter Workbench</button>
+  </div>
+</div>
+<header class="topbar">
+  <div>
+    <h1>Portal Support Workbench</h1>
+    <p>GitHub Pages Edition v2.1</p>
+  </div>
+  <div class="badges"><span>NO AI</span><span>NO API</span><span>NO TELEMETRY</span><span>STATIC SITE</span></div>
+</header>
+<div class="app-shell">
+  <aside class="sidebar">
+    <button class="nav active" data-tab="work">Work Ticket</button>
+    <button class="nav" data-tab="troubleshoot">Troubleshoot</button>
+    <button class="nav" data-tab="replies">Quick Replies</button>
+    <button class="nav" data-tab="source">Source Guidance</button>
+    <button class="nav" data-tab="terms">Terminology</button>
+    <button class="nav" data-tab="policies">Policy Guardrails</button>
+    <button class="nav" data-tab="about">About / Hosting</button>
+    <div class="sidebar-note"><strong>Search:</strong> Ctrl+K<br><strong>New ticket:</strong> Alt+N<br><br>Ticket facts are not saved by this app.</div>
+  </aside>
+  <main>
+    <section id="tab-work" class="tab active">
+      <div class="hero"><div><span class="eyebrow">Daily Work Console</span><h2>Work one ticket from intake to closure.</h2><p>Select the ticket type. The console displays only the relevant facts, systems, grouped checklist, source warning, and outputs.</p></div><div class="hero-seal">DETERMINISTIC<br><small>Fixed local rules</small></div></div>
+      <div class="steps"><span class="step active">1. Identify</span><span class="step">2. Investigate</span><span class="step">3. Respond</span><span class="step">4. Close / Escalate</span></div>
+      <div class="work-grid">
+        <div>
+          <div class="card"><label>Ticket type<select id="issueType"></select></label><div id="purpose" class="info"></div></div>
+          <div class="card"><div class="card-head"><div><h3>Required ticket facts</h3><p>Fields change with the selected workflow.</p></div><button id="clearTicket" class="danger">Clear ticket</button></div><div id="ticketFields" class="field-grid"></div></div>
+          <div class="card"><div class="card-head"><div><h3>Investigation checklist</h3><p>Mark each item Done or N/A. Core items affect the completion gate.</p></div><button id="markAll" class="secondary">Mark all done</button></div><h4>Systems checked</h4><div id="systems" class="chips"></div><div class="stats"><div><strong id="doneCount">0</strong><span>Done</span></div><div><strong id="naCount">0</strong><span>N/A</span></div><div><strong id="openCount">0</strong><span>Open</span></div></div><div id="checklist"></div></div>
+          <div class="card"><div class="card-head"><div><h3>Outputs</h3><p>Generate customer, Ivanti, resolution, or escalation text.</p></div><button id="refreshOutputs" class="primary">Refresh</button></div><div class="output-tabs"><button class="output-tab active" data-output="customer">Customer</button><button class="output-tab" data-output="worknote">Work Note</button><button class="output-tab" data-output="resolution">Resolution</button><button class="output-tab" data-output="escalation">Escalation</button></div><div id="outputPanels"></div></div>
+        </div>
+        <aside class="work-side">
+          <div id="completionGate" class="gate-card"><h3>Ticket incomplete</h3><ul id="missingItems"></ul></div>
+          <div class="card"><h3>Paste and extract ticket facts</h3><p class="muted">Local regular expressions only. Review every extracted value.</p><textarea id="parserText" placeholder="Paste relevant ticket text. Do not include prohibited sensitive data."></textarea><div class="row"><button id="parseButton" class="secondary">Extract fields</button><button id="applyParsed" class="primary" disabled>Apply selected</button></div><div id="parsedResults"></div></div>
+          <div class="card"><h3>Pinned and recent</h3><div id="pinnedRecent"></div></div>
+          <div class="card"><h3>Source warning</h3><div id="sourceWarning" class="warning-box"></div></div>
+        </aside>
+      </div>
+    </section>
+    <section id="tab-troubleshoot" class="tab"><div class="hero compact"><div><span class="eyebrow">Technical workflow</span><h2>Troubleshooting</h2><p>Focused replies plus a complete evidence and clean-slate checklist.</p></div></div><div class="toolbar"><input id="troubleSearch" placeholder="Search troubleshooting"><select id="troubleCategory"></select><span id="troubleCount" class="count"></span></div><div class="two-col"><div id="troubleCards"></div><div class="card sticky"><h3>Complete troubleshooting checklist</h3><div id="masterTroubleChecklist"></div><button id="copyTroubleChecked" class="primary full">Copy checked as work note</button></div></div></section>
+    <section id="tab-replies" class="tab"><div class="hero compact"><div><span class="eyebrow">Source-based templates</span><h2>Quick Replies</h2><p>Search, pin, and copy. Verify dated or legacy wording before use.</p></div></div><div class="toolbar"><input id="replySearch" placeholder="Search replies"><select id="replyCategory"></select><select id="replyAudience"></select><span id="replyCount" class="count"></span></div><div id="replyCards" class="cards"></div></section>
+    <section id="tab-source" class="tab"><div class="hero compact"><div><span class="eyebrow">Sanitized source library</span><h2>Source Guidance</h2><p>Searchable registration and Verbiage text. Raw documents and screenshots are intentionally excluded from this hosted build.</p></div></div><div class="warning-box"><strong>Publication hygiene:</strong> staff-specific email addresses and shared-password language are redacted. This does not make the remaining operational content appropriate for public release.</div><div class="toolbar"><input id="sourceSearch" placeholder="Search source guidance"><span id="sourceCount" class="count"></span></div><div id="sourceCards"></div></section>
+    <section id="tab-terms" class="tab"><div class="hero compact"><div><span class="eyebrow">Reference</span><h2>Terminology</h2></div></div><input id="termSearch" class="wide-search" placeholder="Search terms"><div id="termCards" class="cards"></div></section>
+    <section id="tab-policies" class="tab"><div class="hero compact"><div><span class="eyebrow">Security and procedure</span><h2>Policy Guardrails</h2></div></div><div id="policyCards" class="policy-grid"></div></section>
+    <section id="tab-about" class="tab"><div class="hero compact"><div><span class="eyebrow">Deployment</span><h2>About this GitHub Pages build</h2><p>This is a static HTML/CSS/JavaScript edition. It uses relative paths and includes an automated GitHub Pages deployment workflow.</p></div></div><div class="card prose"><h3>Security boundary</h3><p>A client-side warning or password prompt cannot secure a static site. Use an authorized repository and hosting configuration. For genuinely private GitHub Pages access, organizational GitHub Enterprise controls may be required.</p><h3>Excluded from this build</h3><ul><li>Raw DOCX and PDF source files</li><li>Embedded internal-system screenshots</li><li>Staff-specific email addresses</li><li>Shared temporary-password text</li></ul><h3>Included</h3><ul><li>Nine comprehensive ticket workflows</li><li>Done / N/A / Open checklist tracking</li><li>Completion gates</li><li>Customer, work-note, resolution, and escalation outputs</li><li>Local ticket-text parser</li><li>Quick Replies, troubleshooting, source search, and terminology</li></ul></div></section>
+  </main>
+</div>
+<div id="commandOverlay" class="command-overlay hidden"><div class="command"><input id="commandInput" placeholder="Search all guidance"><div id="commandResults"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

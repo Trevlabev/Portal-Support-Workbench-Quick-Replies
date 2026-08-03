@@ -1,0 +1,69 @@
+{
+  "product": "Portal Support Workbench GitHub Pages Edition",
+  "version": "2.1",
+  "ai": "none",
+  "external_api_calls": "none",
+  "sanitized_hosted_build": true,
+  "files": [
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "sha256": "5af0750ba6e89c5f74057df6c60e8e24255586dd26d5cdab1308388164cecb00",
+      "bytes": 705
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "404.html",
+      "sha256": "14490a04034ee2648eca5734acd516a2eeb7fd9ff2cebed9e6646d3c6c481935",
+      "bytes": 9146
+    },
+    {
+      "path": "README.md",
+      "sha256": "22e358941a29f13343de097ff449f0d834f146953d4c79ce6418c90e03f47e71",
+      "bytes": 2392
+    },
+    {
+      "path": "SECURITY_AND_PUBLICATION_WARNING.md",
+      "sha256": "3b0e1e5be6425487715f22dda0a5806677a5ffc023a26012d05d01d42a1dad22",
+      "bytes": 1232
+    },
+    {
+      "path": "START_LOCAL_PREVIEW.cmd",
+      "sha256": "ff4ec15acbfe6ece801b8196d90e0f79553df7732b52c7a0bd779ef995faaaff",
+      "bytes": 312
+    },
+    {
+      "path": "Start_Local_Preview.ps1",
+      "sha256": "8b8f5f39006448f9d3b67d765517fd04585018afd10ee992338a7519f3be4323",
+      "bytes": 1130
+    },
+    {
+      "path": "app.js",
+      "sha256": "ae306229a40a2e45d854238dd615fbb7bbb4d0eef459025eabcc6def125763e9",
+      "bytes": 21167
+    },
+    {
+      "path": "data.js",
+      "sha256": "6da4cf06da047a24d03d15f22d629ebad4ab1d1a6df0b7d7d9a11a0a7b5eec26",
+      "bytes": 211007
+    },
+    {
+      "path": "index.html",
+      "sha256": "14490a04034ee2648eca5734acd516a2eeb7fd9ff2cebed9e6646d3c6c481935",
+      "bytes": 9146
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+      "bytes": 26
+    },
+    {
+      "path": "styles.css",
+      "sha256": "3f47dfc38c9385e2071cd501540d6b5de735ac5fe0da34fe8c969edbe4636a39",
+      "bytes": 10685
+    }
+  ]
+}
