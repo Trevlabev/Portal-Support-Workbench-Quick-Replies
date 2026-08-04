@@ -1,52 +1,38 @@
-# Portal Support Workbench — GitHub Pages Edition v2.1
+# Portal Support Workbench — GitHub Pages Edition v2.2 Full Efficiency
 
-This folder is ready to place at the root of a GitHub repository and deploy as a static GitHub Pages site.
+This folder is ready to deploy from the root of a GitHub repository as a static GitHub Pages site.
 
-## Important publication warning
+## Restored efficiency features
 
-This application contains operational support guidance. **Do not publish it in a public repository or public Pages site without organizational authorization.** A client-side warning, `robots.txt`, or `noindex` tag is not access control.
+- Work Mode / Training Mode separation
+- Five-part deterministic Response Builder
+- Quick Replies two-column selection kit with reordering and combined copy
+- Troubleshooting selection kit plus complete checked-work-note checklist
+- Checklist text search, All/Open/Core/Done/N/A filters, completed-group hiding, and Next Incomplete navigation
+- One-click Copy Investigation and Copy Ticket Bundle
+- Registration Training checklist
+- Process Maps and System Reference
+- Local ticket-text extraction
+- Pins, recent templates, keyboard shortcuts, and Ctrl+K global search
 
-The hosted build intentionally excludes:
-
-- the raw DOCX and PDF source files;
-- embedded screenshots from internal systems;
-- staff-specific `@flclerks.com` email addresses; and
-- shared temporary-password language.
-
-The remaining content may still be internal or sensitive.
-
-## Deploy with the included GitHub Actions workflow
+## Deployment
 
 1. Create an empty GitHub repository.
-2. Upload or push every file in this folder, including `.github`, to the repository's `main` branch.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **GitHub Actions** as the source.
-5. Open the **Actions** tab and allow the `Deploy Portal Support Workbench to GitHub Pages` workflow to finish.
-6. Return to **Settings → Pages** and use the displayed site address.
+2. Upload every file and folder in this package, including `.github`.
+3. Commit to the `main` branch.
+4. Open **Settings → Pages**.
+5. Select **GitHub Actions** as the deployment source.
+6. Allow the included Pages workflow to complete.
 
-## Alternative: deploy from the branch
+## Security warning
 
-You may remove `.github/workflows/deploy-pages.yml` and configure Pages to deploy from the root of the `main` branch. The required `index.html` entry file is already at the repository root.
+Do not publish this operational guidance without organizational authorization. Static GitHub Pages content is downloadable by anyone who can access the site. The client-side acknowledgment and `robots.txt` are not access controls.
+
+This hosted build excludes raw source DOCX/PDF files, embedded internal-system screenshots, staff-specific email addresses, and shared temporary-password wording.
 
 ## Data behavior
 
-- No OpenAI, ChatGPT, Ollama, or AI model.
-- No application API calls.
-- No analytics or telemetry code.
-- No ticket-content submission code.
-- Ticket fields remain in browser memory for the current tab.
-- Local storage is used only for pins and recent template identifiers.
-
-Do not enter passwords, Social Security numbers, full payment-card numbers, full bank-account numbers, credentials, access tokens, or unnecessary customer information.
-
-## Files
-
-- `index.html` — website entry point
-- `styles.css` — interface styling
-- `data.js` — sanitized workflow and source data
-- `app.js` — deterministic application logic
-- `.github/workflows/deploy-pages.yml` — automatic Pages deployment
-- `.nojekyll` — serves the static files without Jekyll processing
-- `404.html` — fallback page
-- `robots.txt` — asks crawlers not to index the site; this is not security
-- `SECURITY_AND_PUBLICATION_WARNING.md` — publication limitations
+- No AI, OpenAI API, Ollama, analytics, telemetry, or application network calls
+- Ticket facts remain in the current browser tab
+- Pins, recent templates, mode, and display preferences may use browser local storage
+- Do not enter passwords, Social Security numbers, full payment-card or bank-account numbers, credentials, access tokens, or unnecessary customer information
