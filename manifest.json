@@ -1,6 +1,6 @@
 {
   "product": "Portal Support Workbench - GitHub Pages Edition",
-  "version": "2.7",
+  "version": "2.8",
   "edition": "Current Ticket + Connected Role Tools",
   "external_navigation": [
     "Official Florida Bar Find a Lawyer directory",
@@ -77,11 +77,14 @@
     }
   ],
   "changes": [
+    "Replaced popup-script Florida Bar navigation with standard links and a native exact-profile form",
+    "Added visible/copyable exact-profile fallback link",
     "Current Ticket scratchpad redesign",
     "Work/Training toggle moved above sidebar navigation",
     "Local ticket-detail extraction",
     "Essential versus optional field split",
     "Checklist/System Findings switch",
     "Unsaved-work protection"
-  ]
+  ],
+  "name": "Portal Support Workbench v2.8 \u2014 Current Ticket + Florida Bar Search Fix"
 }

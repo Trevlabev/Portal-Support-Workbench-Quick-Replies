@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v2.7</title>
+<title>Portal Support Workbench v2.8</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true">
   <div class="dialog">
     <span class="eyebrow">Role-specific · Team-note governed · Static</span>
-    <h1>Portal Support Workbench v2.7</h1>
+    <h1>Portal Support Workbench v2.8</h1>
     <p>This hosted build contains sanitized operational guidance for authorized Portal Support work. A static site is downloadable by anyone who can access it.</p>
     <div class="warning"><strong>Never enter:</strong> passwords, Social Security numbers, full card or bank-account numbers, credentials, access tokens, or unnecessary customer information.</div>
     <label class="checkline"><input id="ack" type="checkbox"> I understand the publication and data-handling warning.</label>
@@ -20,7 +20,7 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v2.7 · Current Ticket + Connected Role Tools</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v2.8 · Current Ticket + Reliable Florida Bar Search</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
   <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
@@ -149,7 +149,7 @@
 <section id="page-bar" class="page">
   <div class="pagehead"><div><span class="eyebrow">Official public directory</span><h2>Florida Bar Search</h2><p>Open the official Florida Bar directory, record only the job-relevant verification result, and apply it to the current ticket.</p></div></div>
   <div class="bar-layout">
-    <div class="panel"><h3>Open the official search</h3><label>Florida Bar number<input id="barSearchNumber" inputmode="numeric" placeholder="Bar number"></label><div class="button-grid"><button id="openExactBarProfile" class="primary">Open exact Bar profile</button><button id="openBarDirectory" class="secondary">Open Find a Lawyer directory</button><button id="openHouseCounselDirectory" class="secondary">Open Authorized House Counsel directory</button></div><div class="info">The app does not scrape or store Florida Bar records. Searches open the official Florida Bar website in a new tab.</div></div>
+    <div class="panel"><h3>Open official Florida Bar records</h3><p class="panel-help">Enter an exact Bar number, or open one of the official directories. These controls use normal links and a native form instead of browser pop-up scripting.</p><form id="barProfileForm" action="https://www.floridabar.org/directories/find-mbr/profile/" method="get" target="_blank"><label>Florida Bar number<input id="barSearchNumber" name="num" inputmode="numeric" pattern="[0-9]+" autocomplete="off" placeholder="Bar number"></label><div class="button-grid"><button id="openExactBarProfile" type="submit" class="primary">Open exact Bar profile</button><a id="openBarDirectory" class="button-link secondary" href="https://www.floridabar.org/directories/find-mbr/" target="_blank" rel="noopener noreferrer">Open Find a Lawyer directory</a><a id="openHouseCounselDirectory" class="button-link secondary" href="https://www.floridabar.org/directories/find-afah/" target="_blank" rel="noopener noreferrer">Open Authorized House Counsel directory</a></div></form><div class="bar-fallback"><strong>Direct exact-profile link</strong><a id="barExactLink" href="https://www.floridabar.org/directories/find-mbr/" target="_blank" rel="noopener noreferrer" aria-disabled="true">Enter a Bar number above</a><button id="copyBarExactLink" type="button" class="secondary" disabled>Copy exact-profile link</button></div><div class="info">No Florida Bar records are scraped or stored. The search opens the official Florida Bar website, and you record only the verification information needed for the support ticket.</div></div>
     <div class="panel"><h3>Record verification</h3><div class="field-grid"><label>Displayed member name<input id="barMemberName"></label><label>Displayed Bar number<input id="barVerifiedNumber"></label><label>Member status<input id="barMemberStatus" placeholder="Example: Member in Good Standing"></label><label>Eligible to practice?<select id="barEligible"><option value="">Select</option><option>Yes</option><option>No</option><option>Not determined</option></select></label><label>Public email compared?<select id="barEmailCompare"><option value="">Select</option><option>Matches Portal/customer email</option><option>Does not match</option><option>No public email shown</option><option>Not compared</option></select></label><label class="full">Verification note<textarea id="barVerificationNote" placeholder="Record only what is relevant to the support task."></textarea></label></div><div class="stack-actions"><button id="buildBarNote" class="secondary">Build verification note</button><button id="applyBarToTicket" class="primary">Apply to current ticket</button><button id="copyBarNote" class="secondary">Copy note</button></div></div>
   </div>
 </section>
