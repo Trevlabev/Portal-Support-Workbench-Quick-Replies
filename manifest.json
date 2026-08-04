@@ -1,6 +1,6 @@
 {
-  "product": "Portal Support Workbench - GitHub Pages Full Efficiency Edition",
-  "version": "2.2",
+  "product": "Portal Support Workbench - GitHub Pages Polished Full Efficiency Edition",
+  "version": "2.3",
   "ai_usage": "NONE",
   "network_usage": "NONE",
   "features": [
@@ -18,6 +18,14 @@
     "pins and recent",
     "regex ticket parser"
   ],
+  "changes": [
+    "Polished header, sidebar, hero, cards, filters, buttons, and responsive behavior",
+    "Readable sans-serif source content instead of dense monospace card text",
+    "Compact categorized completion gate with Show all control",
+    "Refined selected reply and troubleshooting kit workspaces",
+    "Duplicate standard greeting and closing prevention",
+    "All v2.2 full-efficiency workflows retained"
+  ],
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
@@ -31,13 +39,13 @@
     },
     {
       "path": "404.html",
-      "bytes": 16829,
-      "sha256": "4188cb616df8add6f5901dd3a2d187d2718e90344f6ded24f9f3d8949121ee51"
+      "bytes": 16830,
+      "sha256": "9259fd95ae31eaeb3e6faff569f1982ce975c9460e635f32a1c2a78ac84d49e5"
     },
     {
       "path": "README.md",
-      "bytes": 1878,
-      "sha256": "845264cb89cb32f206dbfceaa0e8b424061cd7b01c5f2e7262cbb1327258f849"
+      "bytes": 2272,
+      "sha256": "70854a90468c063b335cb8b7578aff9315e42f799961d3c7f8979573343e867c"
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
@@ -56,8 +64,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 52589,
-      "sha256": "0a3599868e1d0bbcc6c73207d6d11eb3efc53a86d760df9bff14b244a2ef4d2b"
+      "bytes": 55052,
+      "sha256": "9c9487f16ecb6f7d2aa17e8ac21a1d627c24fab40942726562c6a23869f3b1a7"
     },
     {
       "path": "data.js",
@@ -66,8 +74,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 16829,
-      "sha256": "4188cb616df8add6f5901dd3a2d187d2718e90344f6ded24f9f3d8949121ee51"
+      "bytes": 16830,
+      "sha256": "9259fd95ae31eaeb3e6faff569f1982ce975c9460e635f32a1c2a78ac84d49e5"
     },
     {
       "path": "robots.txt",
@@ -76,8 +84,8 @@
     },
     {
       "path": "styles.css",
-      "bytes": 16371,
-      "sha256": "8491fcfafbb571ef60588f8035483fc87f200060dd957f1044d750c4057a5ecb"
+      "bytes": 27911,
+      "sha256": "34f88ef59c084c77ac45e796cb3cdc5279246a173c9f6a3b41b6271cec118a46"
     }
   ]
 }

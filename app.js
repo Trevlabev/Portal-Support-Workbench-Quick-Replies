@@ -26,6 +26,7 @@
     troubleKit: [],
     composerExtra: "",
     registrationDone: new Set(),
+    gateExpanded: false,
     searchIndex: []
   };
 
@@ -272,9 +273,45 @@
   }
 
   function updateGate() {
-    const missing = missingItems(); const gate = $("#completionGate"); const list = $("#missingItems"); list.innerHTML = ""; gate.classList.toggle("ready", !missing.length);
+    const workflow = D.workflows[state.issue];
+    const factMissing = workflow.required.filter(id => !fieldValue(id)).map(fieldLabel);
+    const systemMissing = state.systems.size ? [] : ["Check at least one relevant system"];
+    const coreMissing = flatWorkflow(workflow)
+      .filter(item => item.required && !state.done.has(item.index) && !state.na.has(item.index))
+      .map(item => item.text);
+    const missing = [...factMissing, ...systemMissing, ...coreMissing];
+    const gate = $("#completionGate");
+    const list = $("#missingItems");
+    list.innerHTML = "";
+    gate.classList.toggle("ready", !missing.length);
+    gate.classList.toggle("expanded", state.gateExpanded);
     $("h3", gate).textContent = missing.length ? `${missing.length} item${missing.length === 1 ? "" : "s"} still needed` : "Minimum documentation is complete";
-    (missing.length ? missing : ["Review the output and current procedure before copying or closing."]).forEach(text => { const li = document.createElement("li"); li.textContent = text; list.append(li); });
+
+    let summary = $(".gate-summary", gate);
+    if (!summary) {
+      summary = document.createElement("div");
+      summary.className = "gate-summary";
+      $("h3", gate).insertAdjacentElement("afterend", summary);
+    }
+    summary.innerHTML = missing.length
+      ? `<span><strong>${factMissing.length}</strong> facts</span><span><strong>${systemMissing.length}</strong> system</span><span><strong>${coreMissing.length}</strong> core steps</span>`
+      : '<span class="gate-complete-note">All required facts and core steps are addressed.</span>';
+
+    const displayItems = missing.length
+      ? (state.gateExpanded ? missing : missing.slice(0, 6))
+      : ["Review the output and current procedure before copying or closing."];
+    displayItems.forEach(text => { const li = document.createElement("li"); li.textContent = text; list.append(li); });
+
+    let toggle = $(".gate-more", gate);
+    if (!toggle) {
+      toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "gate-more secondary";
+      toggle.addEventListener("click", () => { state.gateExpanded = !state.gateExpanded; updateGate(); });
+      gate.append(toggle);
+    }
+    toggle.hidden = missing.length <= 6;
+    toggle.textContent = state.gateExpanded ? "Show less" : `Show all ${missing.length}`;
     updateWorkflowSteps();
   }
 
@@ -315,6 +352,7 @@
   }
 
   function renderWork() {
+    state.gateExpanded = false;
     const select = $("#issueType"); if (!select.options.length) Object.entries(D.workflows).forEach(([key, workflow]) => select.add(new Option(workflow.label, key)));
     select.value = state.issue; const workflow = D.workflows[state.issue]; $("#purpose").textContent = workflow.purpose; $("#sourceWarning").textContent = workflow.warning || workflow.completion || "Verify dated or incomplete source language against the current procedure.";
     renderFields(); renderSystems(); renderChecklist(); buildOutputs();
@@ -357,7 +395,7 @@
   function populateSelect(select, values, allLabel) { const current = select.value; select.innerHTML = ""; select.add(new Option(allLabel, "")); values.forEach(value => select.add(new Option(value, value))); if ([...select.options].some(option => option.value === current)) select.value = current; }
 
   function cardElement(item, type) {
-    const card = document.createElement("article"); card.className = "item-card";
+    const card = document.createElement("article"); card.className = `item-card ${type === "reply" ? "reply-card" : "trouble-card"}`;
     const verify = item.verify ? '<span class="warning-tag">VERIFY</span>' : ""; const warning = item.warning ? `<div class="warning-box">${item.warning}</div>` : "";
     card.innerHTML = `<div class="item-head"><div><h3>${item.title}${verify}</h3><div class="meta">${[item.category, item.audience].filter(Boolean).join(" · ")}</div></div><button class="pin ${isPinned(type, item.id) ? "active" : ""}">${isPinned(type, item.id) ? "Pinned" : "Pin"}</button></div>${warning}<div class="source-text">${item.text}</div><div class="item-actions"><button class="add-kit">Add to ${type === "reply" ? "reply" : "troubleshooting"} kit</button><button class="copy-card">Copy now</button></div>`;
     $(".pin", card).addEventListener("click", () => togglePin(type, item.id, item.title));
@@ -385,14 +423,27 @@
     });
   }
 
+  const STANDARD_GREETING = "Hello, and thank you for contacting the E-Filing Portal website MyFLCourtAccess.com Help Desk.";
+  const STANDARD_CLOSING = "Please do not reply to this email. If the issue remains unresolved or you have another e-filing question, submit a new Help Desk request through MyFLCourtAccess.com.";
+  function kitContainsGreeting() {
+    return state.replyKit.some(item => /standard greeting|portal scope/i.test(item.title) || item.text.trim().startsWith(STANDARD_GREETING));
+  }
+  function kitContainsClosing() {
+    return state.replyKit.some(item => /do not reply|new help request/i.test(item.title) || item.text.includes("Please do not reply to this email"));
+  }
   function replyKitText() {
     const parts = [];
-    if ($("#kitIncludeGreeting").checked) parts.push("Hello, and thank you for contacting the E-Filing Portal website MyFLCourtAccess.com Help Desk.");
+    if ($("#kitIncludeGreeting").checked && !kitContainsGreeting()) parts.push(STANDARD_GREETING);
     state.replyKit.forEach(item => parts.push(item.text.trim()));
-    if ($("#kitIncludeClosing").checked) parts.push("Please do not reply to this email. If the issue remains unresolved or you have another e-filing question, submit a new Help Desk request through MyFLCourtAccess.com.");
+    if ($("#kitIncludeClosing").checked && !kitContainsClosing()) parts.push(STANDARD_CLOSING);
     return parts.filter(Boolean).join("\n\n");
   }
-  function renderReplyKit() { renderKit("#replyKit", state.replyKit, renderReplyKit); $("#replyKitPreview").value = replyKitText(); }
+  function renderReplyKit() {
+    renderKit("#replyKit", state.replyKit, renderReplyKit);
+    $("#replyKitPreview").value = replyKitText();
+    $("#kitIncludeGreeting").closest("label").classList.toggle("option-satisfied", kitContainsGreeting());
+    $("#kitIncludeClosing").closest("label").classList.toggle("option-satisfied", kitContainsClosing());
+  }
   function renderTroubleKit() { renderKit("#troubleKit", state.troubleKit, renderTroubleKit); }
 
   function renderReplies() {

@@ -1,4 +1,4 @@
-# Portal Support Workbench — GitHub Pages Edition v2.2 Full Efficiency
+# Portal Support Workbench — GitHub Pages Edition v2.3 Full Efficiency
 
 This folder is ready to deploy from the root of a GitHub repository as a static GitHub Pages site.
 
@@ -36,3 +36,12 @@ This hosted build excludes raw source DOCX/PDF files, embedded internal-system s
 - Ticket facts remain in the current browser tab
 - Pins, recent templates, mode, and display preferences may use browser local storage
 - Do not enter passwords, Social Security numbers, full payment-card or bank-account numbers, credentials, access tokens, or unnecessary customer information
+
+
+## Version 2.3 visual polish
+
+- Refined header, sidebar, cards, filters, buttons, and selected-kit workspace
+- Improved typography and reading comfort for Quick Replies and troubleshooting content
+- Reduced visual density without removing workflow features
+- Added clearer focus, hover, and active states
+- Prevented duplicate standard greetings and no-reply closings in assembled reply kits
