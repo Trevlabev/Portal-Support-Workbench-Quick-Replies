@@ -1,18 +1,23 @@
 {
   "product": "Portal Support Workbench - GitHub Pages Edition",
-  "version": "2.5",
-  "edition": "Complete Work Ticket and Intuitive Quick Replies",
+  "version": "2.6",
+  "edition": "Simplified Work Ticket + Customizable Drafting",
+  "external_navigation": [
+    "Official Florida Bar Find a Lawyer directory",
+    "Official Florida Bar exact profile by user-entered Bar number",
+    "Official Authorized House Counsel directory"
+  ],
+  "background_network_requests": "NONE",
   "ai_usage": "NONE",
-  "network_usage": "NONE",
-  "corrections": [
-    "Restored missing workflow selector",
-    "Persistent full-ticket checklist",
-    "Sequential stage gating",
-    "Task-oriented Quick Replies",
-    "Separate customer and internal note drafts",
-    "Explicit communication review gate",
-    "Curated workflow reply recommendations",
-    "Non-current checklist stages collapsed by default"
+  "features": [
+    "simplified four-section work ticket",
+    "persistent full checklist",
+    "editable outputs",
+    "custom response block editor",
+    "restored troubleshooting workspace",
+    "quick reply editable drafts",
+    "Florida Bar verification tool",
+    "Job Instructions rename"
   ],
   "files": [
     {
@@ -27,13 +32,13 @@
     },
     {
       "path": "404.html",
-      "bytes": 12281,
-      "sha256": "96293225011c9cd6d93b6a28acadf1e4c3ccd0199e06725e3412ccec58ab76ef"
+      "bytes": 18818,
+      "sha256": "dc6926304b2b70e6ac9952a23b985310c28c3cb7e68d4132baf407a3099e529b"
     },
     {
       "path": "README.md",
-      "bytes": 3064,
-      "sha256": "420d79767e4f159e3f8e6cbdfb14f7e568dd67af224f49fab6267094742bc885"
+      "bytes": 1653,
+      "sha256": "a27bff3960172b8359051f34c0756f3a48368e348bc56c3490e9154a01d16e83"
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
@@ -47,18 +52,18 @@
     },
     {
       "path": "app.js",
-      "bytes": 53503,
-      "sha256": "feba9ffe91e71a08475384df5fd21d4089e7d6b0748372c6de966e90df745ad1"
+      "bytes": 42605,
+      "sha256": "238bb840d46dd11bce4997ddebb3427ef5ba16069344565c3fa2ad8485ec8354"
     },
     {
       "path": "data.js",
       "bytes": 221272,
-      "sha256": "235475ca15516eaaae70f82d158f8b066bac717edae981a8cf21017abb79d880"
+      "sha256": "63152c4a6b17f552d9027fc24898df3fd67e3dd902be6faa52187380b5c15a70"
     },
     {
       "path": "index.html",
-      "bytes": 12281,
-      "sha256": "96293225011c9cd6d93b6a28acadf1e4c3ccd0199e06725e3412ccec58ab76ef"
+      "bytes": 18818,
+      "sha256": "dc6926304b2b70e6ac9952a23b985310c28c3cb7e68d4132baf407a3099e529b"
     },
     {
       "path": "robots.txt",
@@ -67,8 +72,8 @@
     },
     {
       "path": "styles.css",
-      "bytes": 23947,
-      "sha256": "629cd36b374e5c21ca3553849c40c8349bd9352c06b569776350eabe569bc299"
+      "bytes": 15826,
+      "sha256": "58dfcd9687057fb71b2501ac8216ec383c4023ee6a0472f52562932866b928b7"
     }
   ]
 }
