@@ -1,13 +1,19 @@
 {
-  "product": "Portal Support Workbench \u2014 Guided GitHub Pages Edition",
-  "version": "2.4",
+  "product": "Portal Support Workbench - GitHub Pages Edition",
+  "version": "2.5",
+  "edition": "Complete Work Ticket and Intuitive Quick Replies",
   "ai_usage": "NONE",
   "network_usage": "NONE",
-  "workflow_count": 9,
-  "manager_procedure_count": 132,
-  "quick_reply_count": 42,
-  "troubleshooting_card_count": 27,
-  "known_issue_count": 7,
+  "corrections": [
+    "Restored missing workflow selector",
+    "Persistent full-ticket checklist",
+    "Sequential stage gating",
+    "Task-oriented Quick Replies",
+    "Separate customer and internal note drafts",
+    "Explicit communication review gate",
+    "Curated workflow reply recommendations",
+    "Non-current checklist stages collapsed by default"
+  ],
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
@@ -21,13 +27,13 @@
     },
     {
       "path": "404.html",
-      "bytes": 10263,
-      "sha256": "d8324cd6c5b2d37c379ebfa03c240e7e5a71095f811915543a314a7825ac9c7f"
+      "bytes": 12281,
+      "sha256": "96293225011c9cd6d93b6a28acadf1e4c3ccd0199e06725e3412ccec58ab76ef"
     },
     {
       "path": "README.md",
-      "bytes": 1753,
-      "sha256": "43400a70f24123f463b56d71b7212f2e779d77a755a792707906c8c7f09f3b4d"
+      "bytes": 3064,
+      "sha256": "420d79767e4f159e3f8e6cbdfb14f7e568dd67af224f49fab6267094742bc885"
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
@@ -41,8 +47,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 38706,
-      "sha256": "8601a0497c46b4b0a0489f4149dfa4ef44704d153e2e7901fc6dc4279ce24e2f"
+      "bytes": 53503,
+      "sha256": "feba9ffe91e71a08475384df5fd21d4089e7d6b0748372c6de966e90df745ad1"
     },
     {
       "path": "data.js",
@@ -51,8 +57,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 10386,
-      "sha256": "05519dd72fdc48a73b5d6aeded96c39b6e32a885f091bb4e1569b2678b402e30"
+      "bytes": 12281,
+      "sha256": "96293225011c9cd6d93b6a28acadf1e4c3ccd0199e06725e3412ccec58ab76ef"
     },
     {
       "path": "robots.txt",
@@ -61,16 +67,8 @@
     },
     {
       "path": "styles.css",
-      "bytes": 16399,
-      "sha256": "c0899ca28eb846514aa396536c5fafb3fddece0195c58de7ba2ab093adb42381"
+      "bytes": 23947,
+      "sha256": "629cd36b374e5c21ca3553849c40c8349bd9352c06b569776350eabe569bc299"
     }
-  ],
-  "validation": {
-    "javascript_syntax": "PASS",
-    "browser_runtime": "PASS",
-    "unique_html_ids": "PASS",
-    "no_ai_api_telemetry": "PASS",
-    "sensitive_pattern_scan": "PASS",
-    "zip_integrity": "PASS"
-  }
+  ]
 }
