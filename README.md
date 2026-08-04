@@ -1,42 +1,35 @@
-# Portal Support Workbench v3.1 — Unified Quick Responses
+# Portal Support Workbench v3.6 — Comprehensive Training
 
-This GitHub Pages package removes the artificial split between curated templates and manager-source wording.
+Version 3.6 adds a complete source-grounded training program while preserving the audited Daily Work tools from v3.5.
 
-## Quick Responses
+## New training program
 
-All reusable response language is now presented in one library.
+- **Training Home** with a four-phase learning path and session-only progress
+- **12 learning modules** covering role boundaries, Ivanti, communication, registration, Florida Bar verification, account access, filing status, My Cases/eService, upload/PDF troubleshooting, payments, corrections, and Analyst escalation
+- **15 synthetic practice tickets** with 45 graded decision points, explanations, coaching points, and model work-note structures
+- **36-question knowledge check** with module filtering and detailed explanations
+- Expanded **System Reference** and **Terminology**
+- Search integration for modules and practice scenarios
 
-- **Customer Email** contains all non-sensitive manager-provided customer responses.
-- **Ivanti Note** contains all manager-provided internal ticket notes.
-- There is no “additional manager source wording” checkbox.
-- There is no warning claiming that source wording was separated from Procedures & Reference.
-- Search and intent filters work across the complete response catalog.
-- Workflow suggestions, global search, and the Response Builder use the same unified catalog.
+## Printable materials
 
-Response-specific labels are retained only when they are operationally meaningful, such as:
+- `TRAINING_GUIDE.md` — full learning guide and module questions
+- `PRACTICE_WORKBOOK.md` — printable scenario workbook without answers
+- `TRAINER_GUIDE.md` — answer key, coaching points, and model work notes
+- `TRAINING_SOURCE_MAP.md` — source provenance, boundaries, and exclusions
 
-- Review before use
-- Verify ticket facts
-- Incident-specific
-- County-specific
-- Response fragment
-- Ivanti note
+## Source discipline
 
-These labels do not place responses in a separate library or require an extra toggle.
+The training is based on the manager-provided registration instructions, manager verbiage collection, Quick Troubleshooting, Quick replies library, Current Ticket workflows, and the v3.5 content audit.
 
-## Procedures & Reference
+It does not silently convert conflicting, dated, uncertain, county-specific, legal, or review-pending material into verified rules. Current manager direction remains required for approval criteria, Cause Codes, county behavior, technical limits, firewall allowlists, and financial/refund paths.
 
-This page now contains only actual job procedures, troubleshooting instructions, and reference material. It no longer displays a banner explaining that wording was “moved” elsewhere.
+## Existing features preserved
 
-## Existing Features Preserved
-
-- Current Ticket scratchpad
-- Complete workflow checklists and system findings
-- Troubleshooting workspace
-- Fully editable Response Builder
-- Florida Bar profile workflow and local copied-text preview
-- Known Issues
-- Registration and scenario training
-- Work / Training navigation placement
-- No AI, OpenAI API, Ollama, analytics, or telemetry
-- No persistence of ticket facts
+- Quick Messages above Troubleshooting
+- Current Ticket at the bottom of Daily Work navigation
+- Work/Training switch above the sidebar list
+- Customizable Response Builder
+- Florida Bar exact-profile workflow and local copied-text parser
+- Content Audit and active classification workspaces
+- No AI, no AI service calls, no API keys, no telemetry, and no persistent ticket storage

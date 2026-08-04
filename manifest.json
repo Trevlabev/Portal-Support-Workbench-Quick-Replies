@@ -1,89 +1,107 @@
 {
-  "product": "Portal Support Workbench - GitHub Pages Edition",
-  "version": "3.1",
-  "edition": "Unified Quick Responses",
-  "name": "Portal Support Workbench v3.1 — Unified Quick Responses",
-  "external_navigation": [
-    "Official Florida Bar exact profile by user-entered Bar number",
-    "Official Florida Bar Find a Lawyer directory",
-    "Official Authorized House Counsel directory"
-  ],
-  "background_network_requests": "NONE",
-  "ai_usage": "NONE",
-  "features": [
-    "Current Ticket scratchpad",
-    "complete workflow checklists",
-    "system findings",
-    "custom response block editor",
-    "troubleshooting workspace",
-    "unified customer and Ivanti quick-response library",
-    "Florida Bar copied-profile parser and local preview",
-    "Procedures & Reference for non-response instructions",
-    "Work/Training sidebar switch"
-  ],
-  "changes": [
-    "Merged all non-sensitive manager-provided response wording into one Quick Responses catalog",
-    "Removed the additional-source-wording toggle and separation warning",
-    "Made all non-sensitive response statuses visible by default with concise operational badges",
-    "Updated Response Builder templates, workflow suggestions, and global search to use the unified catalog",
-    "Removed the moved-wording notice from Procedures & Reference",
-    "Preserved customer-email and Ivanti-note modes as audience filters only"
-  ],
+  "name": "Portal Support Workbench",
+  "version": "3.6",
+  "build": "COMPREHENSIVE_TRAINING",
   "files": [
     {
-      "path": ".github/workflows/deploy-pages.yml",
-      "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9",
-      "bytes": 598
-    },
-    {
-      "path": ".nojekyll",
+      "file": ".nojekyll",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
     },
     {
-      "path": "404.html",
-      "sha256": "c5c783948a6128a4b67769a1cf5788519dda538475c94d70fdc297320c0e6e49",
-      "bytes": 24056
+      "file": "404.html",
+      "sha256": "e8ad2740b4a9010c7c3d4303038ab316c96aefd0720daf8f3ee8a9eb87691a36",
+      "bytes": 32074
     },
     {
-      "path": "README.md",
-      "sha256": "faae88ea3db8d207fd0e58529c2e2805702038641c1aeab184658e8c7c875b9b",
-      "bytes": 1657
+      "file": "CONTENT_AUDIT.csv",
+      "sha256": "6261e730298a085150b0c0f013e9296d2b17a982513362033e718a9a2d6b6120",
+      "bytes": 28029
     },
     {
-      "path": "SECURITY_AND_PUBLICATION_WARNING.md",
+      "file": "CONTENT_AUDIT.md",
+      "sha256": "7cb532d0870004626fe053f574e7379c880a27915fe5fdacf42af502695f72d3",
+      "bytes": 28945
+    },
+    {
+      "file": "PRACTICE_WORKBOOK.html",
+      "sha256": "60f8c1b9b3faf7c717d708dfcf4f883e4c086830bf216800bf08be9cfab39209",
+      "bytes": 29096
+    },
+    {
+      "file": "PRACTICE_WORKBOOK.md",
+      "sha256": "b9d4208eb5c8c435a51ab5cb82de40049159efc566fb7c289df01cc41976cb3e",
+      "bytes": 18860
+    },
+    {
+      "file": "README.md",
+      "sha256": "8626f1168a0fed2f200ed515a6fe79507412a2a81538339c29a36402168ac405",
+      "bytes": 2094
+    },
+    {
+      "file": "SECURITY_AND_PUBLICATION_WARNING.md",
       "sha256": "514a707eb3a9c5b9e132c71e8da15ee77eed6ad0e28633a81f66e3edc456e21b",
       "bytes": 722
     },
     {
-      "path": "START_LOCAL_PREVIEW.cmd",
+      "file": "START_LOCAL_PREVIEW.cmd",
       "sha256": "c57f5a94c0869b612bde0be76d3f13036fb5b5d587bc8bf8aca9c7a447364f77",
       "bytes": 150
     },
     {
-      "path": "app.js",
-      "sha256": "185d1e5bbe85d26de9355ee55d0b4daef04c53aeea4f3c5b14b8809a79221134",
-      "bytes": 56582
+      "file": "TRAINER_GUIDE.html",
+      "sha256": "7722c9c50b308ee4bd5ed1d50ca74780b089b6e2794a8f4d5baa1b3f6ae35cd3",
+      "bytes": 32586
     },
     {
-      "path": "data.js",
-      "sha256": "03c2699f0114233b325c51b0011162fa9868b7c0a7b78f7f596bb019c4a0fd2e",
-      "bytes": 221272
+      "file": "TRAINER_GUIDE.md",
+      "sha256": "da699537bf5ace3257a52b452f59e1d0c3261dcae255248910e1f886abbeb8a2",
+      "bytes": 25394
     },
     {
-      "path": "index.html",
-      "sha256": "c5c783948a6128a4b67769a1cf5788519dda538475c94d70fdc297320c0e6e49",
-      "bytes": 24056
+      "file": "TRAINING_GUIDE.html",
+      "sha256": "6a79e3b67eb1a0f9b226f4d9a1605396a7996dc654a179111fe6908c6a82ae8b",
+      "bytes": 67929
     },
     {
-      "path": "robots.txt",
+      "file": "TRAINING_GUIDE.md",
+      "sha256": "d16efe6dc55bc2f44431fb328c6d014c80a7353999bd0867c28c599a856f9be1",
+      "bytes": 54530
+    },
+    {
+      "file": "TRAINING_SOURCE_MAP.html",
+      "sha256": "3fa9050f287655add29df1a0cd29f3129ad214cb051a7d1cfe4bc7506b65ed2a",
+      "bytes": 8309
+    },
+    {
+      "file": "TRAINING_SOURCE_MAP.md",
+      "sha256": "5f9dd4aa09f2bcebf4127749135446eb9fa60d6bc7343359e15ce4ef2fa9d6e4",
+      "bytes": 5132
+    },
+    {
+      "file": "app.js",
+      "sha256": "787e9534de95778f70cde817e5f258487b35841f9a891cdfd87bf5a8814cc4a8",
+      "bytes": 74994
+    },
+    {
+      "file": "data.js",
+      "sha256": "22cdaf6f44e8b3a4f9743b9a718e6bea34c0b704e94b769771999cebfcf7f610",
+      "bytes": 335220
+    },
+    {
+      "file": "index.html",
+      "sha256": "e8ad2740b4a9010c7c3d4303038ab316c96aefd0720daf8f3ee8a9eb87691a36",
+      "bytes": 32074
+    },
+    {
+      "file": "robots.txt",
       "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
       "bytes": 26
     },
     {
-      "path": "styles.css",
-      "sha256": "d18f0304f812de9d706a423e5c616a5ce5d900199adf8ed24509c31b241bf354",
-      "bytes": 27390
+      "file": "styles.css",
+      "sha256": "269857a17927a84234ebc7bce757c5d5c41909f0539fd871e081d74e1db53663",
+      "bytes": 37798
     }
   ]
 }
