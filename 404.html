@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v3.0</title>
+<title>Portal Support Workbench v3.1</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true">
   <div class="dialog">
     <span class="eyebrow">Role-specific · Team-note governed · Static</span>
-    <h1>Portal Support Workbench v3.0</h1>
+    <h1>Portal Support Workbench v3.1</h1>
     <p>This hosted build contains sanitized operational guidance for authorized Portal Support work. A static site is downloadable by anyone who can access it.</p>
     <div class="warning"><strong>Never enter:</strong> passwords, Social Security numbers, full card or bank-account numbers, credentials, access tokens, or unnecessary customer information.</div>
     <label class="checkline"><input id="ack" type="checkbox"> I understand the publication and data-handling warning.</label>
@@ -20,7 +20,7 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v3.0 · Profile Preview + Clearer Navigation</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v3.1 · Unified Quick Responses</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
   <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
@@ -33,7 +33,7 @@
   <nav id="workNav">
     <button data-page="troubleshoot">Troubleshooting</button>
     <button data-page="composer">Response Builder</button>
-    <button data-page="replies">Quick Replies</button>
+    <button data-page="replies">Quick Responses</button>
     <button data-page="bar">Florida Bar Search</button>
     <button data-page="known">Known Issues</button>
     <div class="nav-divider" aria-hidden="true"></div>
@@ -138,10 +138,10 @@
 </section>
 
 <section id="page-replies" class="page">
-  <div class="pagehead"><div><span class="eyebrow">Simple template library</span><h2>Quick Replies</h2><p>Choose Customer Email or Ivanti Note, find the wording you need, and add it to an editable draft.</p></div></div>
+  <div class="pagehead"><div><span class="eyebrow">Simple template library</span><h2>Quick Responses</h2><p>Choose Customer Email or Ivanti Note, find the wording you need, and add it to an editable draft.</p></div></div>
   <div class="reply-mode"><button class="active" data-reply-mode="Customer">Customer Email</button><button data-reply-mode="Internal">Ivanti Note</button></div>
   <div id="replyModeHelp" class="info"></div>
-  <div class="toolbar simple"><input id="replySearch" placeholder="Search templates"><div id="replyIntentChips" class="intent-chips"></div><label class="checkline"><input id="showReviewReplies" type="checkbox"> Include review-needed or incident-specific items</label><label class="checkline"><input id="showSourceWording" type="checkbox"> Include additional manager source wording</label><span id="replyCount" class="count"></span></div>
+  <div class="toolbar simple"><input id="replySearch" placeholder="Search all quick responses"><div id="replyIntentChips" class="intent-chips"></div><span id="replyCount" class="count"></span></div>
   <div class="split reply-split"><div><div id="suggestedReplies" class="suggestion-strip"></div><div id="replyCards" class="cards"></div></div><aside class="panel sticky"><div class="panelhead"><div><h3 id="replyDraftTitle">Customer email draft</h3><p>Add templates or start from the current ticket response.</p></div><button id="clearReplyDraft" class="danger">Clear</button></div><button id="startReplyFromTicket" class="secondary full">Start with current ticket response</button><div id="replyKit"></div><textarea id="replyDraft" class="huge" placeholder="Your editable draft appears here."></textarea><div class="stack-actions"><button id="rebuildReplyDraft" class="secondary">Rebuild from selected templates</button><button id="sendReplyToTicket" class="secondary">Use in current ticket</button><button id="copyReplyDraft" class="primary">Copy draft</button></div></aside></div>
 </section>
 
@@ -177,7 +177,7 @@
 </section>
 
 <section id="page-known" class="page"><div class="pagehead"><div><span class="eyebrow">Possible matches require verification</span><h2>Known Issues</h2><p>Search symptoms, review evidence requirements, and associate only after analyst verification.</p></div></div><input id="knownSearch" class="searchwide" placeholder="Search symptom or function"><div id="knownGrid" class="cardgrid"></div></section>
-<section id="page-instructions" class="page"><div class="pagehead"><div><span class="eyebrow">Primary operational source</span><h2>Procedures &amp; Reference</h2><p>Search role procedures, troubleshooting instructions, and reference notes. Customer-facing and internal wording has been moved out of this page and into Quick Replies.</p></div></div><div id="instructionMoveNotice" class="info compact-info"></div><div class="toolbar"><input id="instructionSearch" placeholder="Search procedures and reference notes"><select id="instructionCategory"></select><select id="instructionStatus"></select><span id="instructionCount" class="count"></span></div><div id="instructionCards" class="procedure-list"></div></section>
+<section id="page-instructions" class="page"><div class="pagehead"><div><span class="eyebrow">Primary operational source</span><h2>Procedures &amp; Reference</h2><p>Search actual job procedures, troubleshooting instructions, and reference notes. Reusable customer and Ivanti wording is available under Quick Responses.</p></div></div><div class="toolbar"><input id="instructionSearch" placeholder="Search procedures and reference notes"><select id="instructionCategory"></select><select id="instructionStatus"></select><span id="instructionCount" class="count"></span></div><div id="instructionCards" class="procedure-list"></div></section>
 <section id="page-registration" class="page"><div class="pagehead"><div><span class="eyebrow">Role training</span><h2>Registration Training</h2></div></div><div id="registrationTraining" class="panel"></div></section>
 <section id="page-scenarios" class="page"><div class="pagehead"><div><span class="eyebrow">Role-specific practice</span><h2>Scenario Training</h2></div></div><div id="scenarioGrid" class="cardgrid"></div></section>
 <section id="page-systems" class="page"><div class="pagehead"><h2>System Reference</h2></div><div id="systemGrid" class="system-grid"></div></section>
@@ -186,7 +186,7 @@
 <section id="page-about" class="page"><div class="pagehead"><h2>Hosting & Security</h2></div><div class="panel prose"><p>This static GitHub Pages edition contains no AI, OpenAI API, Ollama, analytics, or telemetry. Ticket facts are not persisted by the application.</p><p>The Florida Bar tool performs only user-initiated navigation to official Florida Bar pages.</p></div></section>
 </main>
 </div>
-<div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, replies, procedures, known issues, and terms"><div id="globalResults"></div></div></div>
+<div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, quick responses, procedures, known issues, and terms"><div id="globalResults"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js"></script><script src="app.js"></script>
 </body></html>

@@ -1,4 +1,4 @@
-# Security and Publication Warning — v3.0
+# Security and Publication Warning — v3.1
 
 This is a static GitHub Pages package. Anyone who can access the site can download its source files.
 

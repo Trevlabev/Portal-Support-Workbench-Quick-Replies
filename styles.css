@@ -73,7 +73,7 @@
 /* v2.9 exact Florida Bar profile URL */
 .bar-url-preview{display:grid;gap:6px;margin:14px 0}.bar-url-preview span{font-size:12px;font-weight:700;color:var(--muted)}.bar-url-preview input{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.disabled-link{pointer-events:none;opacity:.55;cursor:not-allowed}
 
-/* v3.0 navigation and Florida Bar profile preview */
+/* v3.1 unified quick responses, navigation, and Florida Bar profile preview */
 .sidebar-workspace{margin:0 0 10px;padding:0 2px 10px;border-bottom:1px solid var(--line)}
 .sidebar-workspace .navlabel{display:block;margin:0 0 8px 8px}
 .sidebar-workspace .mode{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:3px;border:1px solid #d4e1e6;border-radius:12px;background:#e5eef1}
@@ -115,8 +115,6 @@
 .bar-edit-details{margin:10px 0;padding:11px;border:1px solid var(--line);border-radius:11px;background:#f8fafb}
 .bar-review-confirm{margin:12px 0;padding:12px;border:1px solid #d3e2e7;border-radius:10px;background:#f4f8f9;font-weight:750}
 .bar-note{min-height:150px}
-.source-wording-card{border-color:#dccf9f;background:#fffdf5}
-.source-wording-card .item-meta{color:#79631a}
 
 @media(max-width:1200px){
   .bar-preview-layout{grid-template-columns:1fr}
@@ -134,3 +132,10 @@
   .compact-button-grid{grid-template-columns:1fr}
   .bar-profile-card h3{font-size:21px}
 }
+
+
+/* Unified quick-response status badges */
+.reply-status{display:inline-flex;align-items:center;margin-left:6px;padding:2px 7px;border-radius:999px;background:#e9f1f3;color:#365663;font-size:8.5px;font-weight:850;letter-spacing:.02em;text-transform:uppercase}
+.reply-status.review-pending,.reply-status.incident-specific,.reply-status.county-specific,.reply-status.fragment{background:#fff3d8;color:#75510c}
+.reply-status.evidence-gated{background:#e8f0fb;color:#244f7c}
+.reply-status.internal-note{background:#edeaf7;color:#514276}

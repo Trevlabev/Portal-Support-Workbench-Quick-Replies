@@ -1,8 +1,8 @@
 {
   "product": "Portal Support Workbench - GitHub Pages Edition",
-  "version": "3.0",
-  "edition": "Profile Preview + Clearer Navigation",
-  "name": "Portal Support Workbench v3.0 \u2014 Profile Preview + Clearer Navigation",
+  "version": "3.1",
+  "edition": "Unified Quick Responses",
+  "name": "Portal Support Workbench v3.1 — Unified Quick Responses",
   "external_navigation": [
     "Official Florida Bar exact profile by user-entered Bar number",
     "Official Florida Bar Find a Lawyer directory",
@@ -16,21 +16,18 @@
     "system findings",
     "custom response block editor",
     "troubleshooting workspace",
-    "curated Quick Replies",
-    "additional manager source wording",
+    "unified customer and Ivanti quick-response library",
     "Florida Bar copied-profile parser and local preview",
-    "Procedures & Reference separation",
+    "Procedures & Reference for non-response instructions",
     "Work/Training sidebar switch"
   ],
   "changes": [
-    "Removed redundant Florida Bar URL text field",
-    "Replaced manual Record Verification panel with a local official-profile preview",
-    "Added clipboard/manual import and deterministic profile-text parsing",
-    "Added analyst review gate before applying Florida Bar verification",
-    "Moved Current Ticket to the bottom of Daily Work navigation",
-    "Moved Work/Training toggle into the primary sidebar slot",
-    "Renamed Job Instructions to Procedures & Reference",
-    "Moved 34 reply/note-oriented source entries from procedures into optional Quick Reply source wording"
+    "Merged all non-sensitive manager-provided response wording into one Quick Responses catalog",
+    "Removed the additional-source-wording toggle and separation warning",
+    "Made all non-sensitive response statuses visible by default with concise operational badges",
+    "Updated Response Builder templates, workflow suggestions, and global search to use the unified catalog",
+    "Removed the moved-wording notice from Procedures & Reference",
+    "Preserved customer-email and Ivanti-note modes as audience filters only"
   ],
   "files": [
     {
@@ -45,17 +42,17 @@
     },
     {
       "path": "404.html",
-      "sha256": "394948ea9aa42dae066fdd71fe4db3413de5e45885e41acc91ffcaece32f5eac",
-      "bytes": 24374
+      "sha256": "c5c783948a6128a4b67769a1cf5788519dda538475c94d70fdc297320c0e6e49",
+      "bytes": 24056
     },
     {
       "path": "README.md",
-      "sha256": "6c93d04030fca3e15ecd19e5f021faa8736b687c241ac961a6773b3825da9619",
-      "bytes": 2389
+      "sha256": "faae88ea3db8d207fd0e58529c2e2805702038641c1aeab184658e8c7c875b9b",
+      "bytes": 1657
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
-      "sha256": "1238ad1aff8542869b3d49cc80a9ea8f50fcb40c442d9b517bf4caa3a4c95147",
+      "sha256": "514a707eb3a9c5b9e132c71e8da15ee77eed6ad0e28633a81f66e3edc456e21b",
       "bytes": 722
     },
     {
@@ -65,18 +62,18 @@
     },
     {
       "path": "app.js",
-      "sha256": "61f6173b067c99f9c0a6dec3b2ac26fec3d22a967110ae42196a8fe11731dc7a",
-      "bytes": 56951
+      "sha256": "185d1e5bbe85d26de9355ee55d0b4daef04c53aeea4f3c5b14b8809a79221134",
+      "bytes": 56582
     },
     {
       "path": "data.js",
-      "sha256": "8c2cbf7639d7e39c94f525ee3591b5c2baa9e7fabfe35fd6020c5bd5eb141576",
+      "sha256": "03c2699f0114233b325c51b0011162fa9868b7c0a7b78f7f596bb019c4a0fd2e",
       "bytes": 221272
     },
     {
       "path": "index.html",
-      "sha256": "394948ea9aa42dae066fdd71fe4db3413de5e45885e41acc91ffcaece32f5eac",
-      "bytes": 24374
+      "sha256": "c5c783948a6128a4b67769a1cf5788519dda538475c94d70fdc297320c0e6e49",
+      "bytes": 24056
     },
     {
       "path": "robots.txt",
@@ -85,8 +82,8 @@
     },
     {
       "path": "styles.css",
-      "sha256": "17f04859d5f00941f53ba6d3c75a1fc3a5bf96cac6db6563a78c9b315ce50dfa",
-      "bytes": 26938
+      "sha256": "d18f0304f812de9d706a423e5c616a5ce5d900199adf8ed24509c31b241bf354",
+      "bytes": 27390
     }
   ]
 }
