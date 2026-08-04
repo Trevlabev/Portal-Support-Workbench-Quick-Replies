@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v4.1</title>
-<link rel="stylesheet" href="styles-v4.1.css">
+<title>Portal Support Workbench v4.2</title>
+<link rel="stylesheet" href="styles-v4.2.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true" aria-labelledby="noAiTitle">
@@ -18,7 +18,7 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v4.1 · Workflow consolidation</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v4.2 · Split workspace layout</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
   <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
@@ -120,7 +120,7 @@
   <div class="pagehead"><div><span class="eyebrow">Restored daily workspace</span><h2>Troubleshooting</h2><p>Find the applicable team-note guidance, assemble a troubleshooting plan, and add completed items to the active ticket.</p></div><button id="troubleUseTicket" class="secondary">Use current ticket issue</button></div>
   <div id="suggestedTrouble" class="suggestion-strip"></div>
   <div class="toolbar"><input id="troubleSearch" placeholder="Search symptom or step"><select id="troubleCategory"></select><label class="checkline"><input id="verifyOnly" type="checkbox"> Verify-first only</label><span id="troubleCount" class="count"></span></div>
-  <div class="split"><div id="troubleCards" class="cards"></div><aside class="sticky"><div class="panel"><div class="panelhead"><div><h3>Troubleshooting plan</h3><p>Add, reorder, edit, and copy the steps you need.</p></div><button id="clearTroublePlan" class="danger">Clear</button></div><div id="troubleKit"></div><textarea id="troublePlanText" class="large" placeholder="Selected troubleshooting guidance will appear here. You can edit it freely."></textarea><div class="stack-actions"><button id="rebuildTroublePlan" class="secondary">Rebuild from selected cards</button><button id="addTroubleToTicket" class="secondary">Add plan to current work note</button><button id="copyTroubleKit" class="primary">Copy plan</button></div></div><div class="panel"><h3>Complete troubleshooting checklist</h3><div id="troubleMaster"></div><button id="addCheckedTrouble" class="secondary full">Add checked items to current ticket</button><button id="copyTroubleChecked" class="primary full">Copy checked as work note</button></div></aside></div>
+  <div class="split workspace-split trouble-workspace-layout"><div id="troubleCards" class="cards workspace-gallery" aria-label="Troubleshooting message gallery"></div><aside class="workspace-detail trouble-plan-pane" aria-label="Troubleshooting plan workspace"><div class="panel"><div class="panelhead"><div><h3>Troubleshooting plan</h3><p>Add, reorder, edit, and copy the steps you need.</p></div><button id="clearTroublePlan" class="danger">Clear</button></div><div id="troubleKit"></div><textarea id="troublePlanText" class="large" placeholder="Selected troubleshooting guidance will appear here. You can edit it freely."></textarea><div class="stack-actions"><button id="rebuildTroublePlan" class="secondary">Rebuild from selected cards</button><button id="addTroubleToTicket" class="secondary">Add plan to current work note</button><button id="copyTroubleKit" class="primary">Copy plan</button></div></div><div class="panel"><h3>Complete troubleshooting checklist</h3><div id="troubleMaster"></div><button id="addCheckedTrouble" class="secondary full">Add checked items to current ticket</button><button id="copyTroubleChecked" class="primary full">Copy checked as work note</button></div></aside></div>
 </section>
 
 <section id="page-replies" class="page">
@@ -128,9 +128,9 @@
   <div class="reply-mode"><button class="active" data-reply-mode="Customer">Customer Email</button><button data-reply-mode="Internal">Ivanti Note</button></div>
   <div id="replyModeHelp" class="info"></div>
   <div class="toolbar simple"><input id="replySearch" placeholder="Search all messages"><div id="replyIntentChips" class="intent-chips"></div><label class="checkline compact"><input id="replyFavoritesOnly" type="checkbox"> Favorites only</label><span id="replyCount" class="count"></span></div>
-  <div class="message-layout">
-    <div><div id="suggestedReplies" class="suggestion-strip"></div><div id="replyCards" class="cards"></div></div>
-    <aside class="panel sticky message-workspace">
+  <div class="message-layout workspace-split">
+    <div class="workspace-gallery message-gallery" aria-label="Message gallery"><div id="suggestedReplies" class="suggestion-strip"></div><div id="replyCards" class="cards"></div></div>
+    <aside class="panel message-workspace workspace-detail" aria-label="Message drafting workspace">
       <div class="message-workspace-tabs" role="tablist" aria-label="Message drafting method"><button class="active" data-message-workspace="quick" role="tab">Quick draft</button><button data-message-workspace="builder" role="tab">Block builder</button></div>
       <div id="messageQuickPanel" class="message-workspace-panel">
         <div class="panelhead"><div><h3 id="replyDraftTitle">Customer email draft</h3><p>Add messages, reorder them, and edit the completed draft.</p></div><button id="clearReplyDraft" class="danger">Clear</button></div>
@@ -236,8 +236,8 @@
 <section id="page-about" class="page"><div class="pagehead"><h2>Hosting & Security</h2></div><div class="panel prose"><p>This static GitHub Pages edition contains no AI, OpenAI API, Ollama, analytics, or telemetry. Ticket facts are not persisted by the application.</p><p>The Florida Bar tool performs only user-initiated navigation to official Florida Bar pages.</p></div></section>
 </main>
 </div>
-<aside id="currentTicketDrawer" class="ticket-drawer" hidden aria-label="Current ticket summary"><button id="drawerToggle" class="ticket-drawer-toggle" aria-expanded="true"><span>Current Ticket</span><strong id="drawerIncident">New ticket</strong></button><div id="drawerBody" class="ticket-drawer-body"><div id="drawerSnapshot" class="drawer-snapshot"></div><div class="drawer-actions"><button id="drawerOpenTicket" class="secondary">Open ticket</button><button id="drawerAddNote" class="secondary">Add note</button><button id="drawerCopySummary" class="primary">Copy summary</button></div><div id="drawerNoteForm" class="drawer-note-form" hidden><textarea id="drawerNoteText" placeholder="Add a short internal note to the current ticket."></textarea><div class="drawer-actions"><button id="drawerSaveNote" class="primary">Add to work note</button><button id="drawerCancelNote" class="secondary">Cancel</button></div></div></div></aside>
+<aside id="currentTicketDrawer" class="ticket-drawer" hidden aria-label="Current ticket summary"><button id="drawerToggle" class="ticket-drawer-toggle" aria-expanded="true" aria-label="Minimize current ticket summary"><span class="drawer-label">Current Ticket</span><strong id="drawerIncident">New ticket</strong></button><div id="drawerBody" class="ticket-drawer-body"><div id="drawerSnapshot" class="drawer-snapshot"></div><div class="drawer-actions"><button id="drawerOpenTicket" class="secondary">Open ticket</button><button id="drawerAddNote" class="secondary">Add note</button><button id="drawerCopySummary" class="primary">Copy summary</button></div><div id="drawerNoteForm" class="drawer-note-form" hidden><textarea id="drawerNoteText" placeholder="Add a short internal note to the current ticket."></textarea><div class="drawer-actions"><button id="drawerSaveNote" class="primary">Add to work note</button><button id="drawerCancelNote" class="secondary">Cancel</button></div></div></div></aside>
 <div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, quick messages, job procedures, references, county notes, known issues, and terms"><div id="globalResults"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="data-v4.1.js"></script><script src="app-v4.1.js"></script>
+<script src="data-v4.2.js"></script><script src="app-v4.2.js"></script>
 </body></html>

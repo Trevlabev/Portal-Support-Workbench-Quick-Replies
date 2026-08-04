@@ -1,7 +1,7 @@
 {
   "name": "Portal Support Workbench",
-  "version": "4.1",
-  "build": "WORKFLOW_CONSOLIDATION",
+  "version": "4.2",
+  "build": "SPLIT_SCROLL_LAYOUT",
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
@@ -15,8 +15,8 @@
     },
     {
       "path": "404.html",
-      "sha256": "adc825f305e9a9e225290883aedb9670133f477726128cc29bfb096466fdd258",
-      "bytes": 34759
+      "sha256": "f43bbe921fae003552de4da23896b5f2635780c8950993dfaf384b4abef70e9c",
+      "bytes": 35138
     },
     {
       "path": "CONTENT_AUDIT.csv",
@@ -60,8 +60,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "607eda6cb01654cfe662d40327860c152c4d920ed644899e822dc06fdcb21423",
-      "bytes": 2473
+      "sha256": "0f5cb887d1f5fb521770b4df12b187a0b9ad2616060df3cad905e53b34de0bec",
+      "bytes": 2973
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
@@ -109,19 +109,24 @@
       "bytes": 517
     },
     {
-      "path": "app-v4.1.js",
-      "sha256": "5f8ecb5966401182161ba7fc08254c797ce804d5e995f80e01e152ccb0c8185c",
-      "bytes": 94083
+      "path": "V4.2_SPLIT_WORKSPACE_LAYOUT.md",
+      "sha256": "e721b624bf1882c74a5b9cf8df6b8419e2aee130a9d004470c368602d31f143a",
+      "bytes": 581
     },
     {
-      "path": "data-v4.1.js",
+      "path": "app-v4.2.js",
+      "sha256": "3ba38211877a4a5d0acbbaa7bb3d84b3262899909fce89fe72eef49d83c6b9e9",
+      "bytes": 94704
+    },
+    {
+      "path": "data-v4.2.js",
       "sha256": "3b895e610bf94b35d53f8a30d4438ee2c7f4b9ba672d362b34ab133d927eb702",
       "bytes": 480561
     },
     {
       "path": "index.html",
-      "sha256": "adc825f305e9a9e225290883aedb9670133f477726128cc29bfb096466fdd258",
-      "bytes": 34759
+      "sha256": "f43bbe921fae003552de4da23896b5f2635780c8950993dfaf384b4abef70e9c",
+      "bytes": 35138
     },
     {
       "path": "robots.txt",
@@ -129,9 +134,9 @@
       "bytes": 26
     },
     {
-      "path": "styles-v4.1.css",
-      "sha256": "44861ebe0d960f711bf2b0ad524bd4dacd7b2445666625a0a9a1fe418f5b5b34",
-      "bytes": 49653
+      "path": "styles-v4.2.css",
+      "sha256": "f9ed869c9a274ffa75f2f738d94938e05efdecb51858676f5ba0231c0fd286eb",
+      "bytes": 52490
     }
   ]
 }
