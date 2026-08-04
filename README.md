@@ -1,35 +1,21 @@
-# Portal Support Workbench v3.6 — Comprehensive Training
+# Portal Support Workbench v3.7 — Polished Messages
 
-Version 3.6 adds a complete source-grounded training program while preserving the audited Daily Work tools from v3.5.
+Version 3.7 completes a full copy-edit of every active Quick Message and Troubleshooting message displayed in the Workbench while preserving the v3.6 training program and all Daily Work tools.
 
-## New training program
+## Message audit
 
-- **Training Home** with a four-phase learning path and session-only progress
-- **12 learning modules** covering role boundaries, Ivanti, communication, registration, Florida Bar verification, account access, filing status, My Cases/eService, upload/PDF troubleshooting, payments, corrections, and Analyst escalation
-- **15 synthetic practice tickets** with 45 graded decision points, explanations, coaching points, and model work-note structures
-- **36-question knowledge check** with module filtering and detailed explanations
-- Expanded **System Reference** and **Terminology**
-- Search integration for modules and practice scenarios
+- 42 curated Quick Messages rewritten
+- 51 active manager-source Quick Messages given polished display copies
+- 25 curated Troubleshooting cards rewritten
+- 15 active manager-source Troubleshooting cards given polished display copies
+- Original manager wording preserved in Content Audit for source traceability
 
-## Printable materials
+## Editing standard
 
-- `TRAINING_GUIDE.md` — full learning guide and module questions
-- `PRACTICE_WORKBOOK.md` — printable scenario workbook without answers
-- `TRAINER_GUIDE.md` — answer key, coaching points, and model work notes
-- `TRAINING_SOURCE_MAP.md` — source provenance, boundaries, and exclusions
+The active wording now uses consistent Portal terminology, complete sentences, concise action steps, clear customer/Clerk boundaries, and neutral professional tone. Personal names, sentence fragments, slang, duplicated wording, unsafe credential language, unverified promises, and internal contact details were removed from active message text.
 
-## Source discipline
+Dynamic, incident-specific, county-specific, financial, technical-limit, and policy-sensitive messages retain review-before-use wording and placeholders where a current fact must be confirmed.
 
-The training is based on the manager-provided registration instructions, manager verbiage collection, Quick Troubleshooting, Quick replies library, Current Ticket workflows, and the v3.5 content audit.
+## Privacy and operation
 
-It does not silently convert conflicting, dated, uncertain, county-specific, legal, or review-pending material into verified rules. Current manager direction remains required for approval criteria, Cause Codes, county behavior, technical limits, firewall allowlists, and financial/refund paths.
-
-## Existing features preserved
-
-- Quick Messages above Troubleshooting
-- Current Ticket at the bottom of Daily Work navigation
-- Work/Training switch above the sidebar list
-- Customizable Response Builder
-- Florida Bar exact-profile workflow and local copied-text parser
-- Content Audit and active classification workspaces
-- No AI, no AI service calls, no API keys, no telemetry, and no persistent ticket storage
+The Workbench remains static and rule based. It does not use AI, call an AI API, or store Current Ticket information.

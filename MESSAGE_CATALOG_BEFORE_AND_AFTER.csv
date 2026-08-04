@@ -1,0 +1,1368 @@
+﻿collection,id,audience,status,original_title,polished_title,original_text,polished_text
+Curated Quick Message,qr-2-3,Customer,customer-approved,Standard greeting and Portal scope,Standard greeting and Portal Support scope,"Hello, and thank you for contacting the E-Filing Portal website MyFLCourtAccess.com Help Desk.
+As we are not the Clerk of the Courts, we can only answer questions related to navigating the e-filing website MyFLCourtAccess.com to upload documentation.","Hello, and thank you for contacting the Florida Courts E-Filing Portal Help Desk.
+
+Portal Support can assist with technical and navigational questions about MyFLCourtAccess.com, including submitting documents through the Portal. Questions about court forms, filing procedure, docket access, or action by the court must be directed to the applicable Clerk of Court."
+Curated Quick Message,qr-5-6,Customer,review-pending,Do not reply / submit a new request,Submit a new Help Desk request,"Please do not reply to this email.If you have any additional inquiries as it pertains to e-filing or if the issue is unresolved, you can send in a request to the help desk by going to the website:
+https://www.myflcourtaccess.com/Common/UIPages/Contactus.aspx","Please do not reply to this email. If the issue remains unresolved or you need additional E-Filing Portal assistance, submit a new Help Desk request at:
+https://www.myflcourtaccess.com/Common/UIPages/Contactus.aspx"
+Curated Quick Message,qr-8-8,Internal,internal-note,Clerk referral logged,Clerk referral documented,"Referring to contact the Clerk &/or visit the clerk website for: access to documents, information on forms &/or procedural guidance.","Referred the filer to the applicable Clerk of Court or Clerk website for document access, court forms, or procedural guidance."
+Curated Quick Message,qr-9-9,Internal,internal-note,New-case filing guidance sent,New-case filing guidance sent,Emailed guidance on how to- navigate the website to file documentation for a new case.,Sent the customer the approved instructions for navigating the Portal to submit documents for a new case.
+Curated Quick Message,qr-11-11,Internal,internal-note,Existing-case filing guidance sent,Existing-case filing guidance sent,Emailed guidance on how to- file documentation to an existing case.,Sent the customer the approved instructions for navigating the Portal to submit documents to an existing case.
+Curated Quick Message,qr-12-12,Internal,internal-note,Registration and existing-case guidance sent,Registration and existing-case guidance sent,Emailed guidance on registration & how to- file documentation to an existing case.,Sent the customer the approved registration instructions and guidance for submitting documents to an existing case.
+Curated Quick Message,qr-13-13,Internal,internal-note,Oversized-document instructions sent,Oversized-document guidance sent,Emailed instructions for resizing oversized documents.,Sent the customer the approved instructions for resizing an oversized document before upload.
+Curated Quick Message,qr-15-16,Customer,review-pending,Do not use DIY module,Use the standard filing method instead of DIY,"Please do not use the DIY module for your filing. There may be an issue with it at this time.
+Please use the guidance for the standard method outlined below.","Please do not use the DIY module for this filing while the reported issue is under review. Use the standard filing method described in the instructions below.
+
+Confirm that this direction is still current before sending."
+Curated Quick Message,qr-18-18,Internal,internal-note,Username and password-reset instructions sent,Username and password-reset guidance sent,Emailed the account username with password reset instructions.,"Sent the verified username and the current manager-approved password-reset instructions. No password was requested, copied, or recorded."
+Curated Quick Message,qr-19-21,Customer,sensitive,Account activated / temporary-password email,Account activated,"I have activated your account.
+An email was sent to your email address with a [Sensitive temporary-password wording removed. Follow the current manager-approved secure procedure.]
+
+The system will force you to change your password when you log in.","Your Portal account has been activated. An account-status message has been sent to the email address on file. Follow the secure instructions in that message.
+
+The Portal will require you to create a new password when you next sign in."
+Curated Quick Message,qr-23-23,Internal,internal-note,Court Maps registration guidance sent,CourtMAP registration guidance sent,Emailed guidance on registration & how to- file documentation to an existing case as it pertains to the process to obtain Court Maps registration.,Sent the customer the approved registration and existing-case filing guidance used for the CourtMAP registration process.
+Curated Quick Message,qr-25-26,Customer,customer-approved,Cannot forward filing to Clerk or Judge,Portal Support cannot file or forward documents,"This is your notice that I cannot process the information from your email to your case, forward to the Clerk of the Courts, nor to the Judge.
+Your options are to file in person, by mail, or use the instructions below to file to your case.","Portal Support cannot file documents on your behalf or forward email attachments to the Clerk of Court or the judge.
+
+You may submit the documents through the Portal using the instructions below. For other permitted filing methods, such as filing in person or by mail, contact the applicable Clerk of Court."
+Curated Quick Message,qr-28-28,Internal,internal-note,Filer self-resolved,Filer self-resolved,The filer has self-resolved and will contact the portal again if assistance is needed.,The filer reported that the issue was resolved and will contact Portal Support again if additional assistance is needed.
+Curated Quick Message,qr-30-30,Internal,internal-note,Domestic Relations / Family classification,Domestic Relations / Family classification,Domestic Relations/Family (DR),Classified the request as Domestic Relations/Family (DR).
+Curated Quick Message,qr-32-32,Internal,internal-note,Voicemail left,Voicemail left,Left a voicemail message with call back information.,Left a voicemail with callback information.
+Curated Quick Message,qr-34-34,Internal,internal-note,Spoke with filer,Spoke with filer,spoke with filer to determine the information they needed.,Spoke with the filer to clarify the request and determine the assistance needed.
+Curated Quick Message,qr-36-39,Customer,customer-approved,Portal cannot provide official docket access,Official docket access is controlled by the Clerk,"The e-filing portal website is not the county clerk or an entity that can give access to the docket, nor its filings
+due to the legal limitations we are to work within.
+Please use the county clerk's website to pull up the docket.
+If you are not able to access the document(s), you may need to contact the clerk to ask what their procedure is to request access.","The E-Filing Portal is not the county Clerk of Court and cannot provide access to the official docket or docketed documents.
+
+Please use the applicable Clerk of Court website to search the case. If the documents are not available there, contact the Clerk to ask about its document-access procedure."
+Curated Quick Message,qr-41-43,Customer,evidence-gated,My Submissions and Clerk docket processing,My Submissions status and Clerk docket processing,"If you open your portal account, scroll to the upper right, and click on My Submissions, it will give you the status of your filings.
+This means the clerk has accepted your filings and will upload the images to the docket once it travels through their system.
+The e-filing portal does not auto upload directly to the docket. The uploading is a function completed by the Clerk of the Courts office.","Sign in to your Portal account and select My Submissions in the upper-right area to review the current Portal status of your filing.
+
+A status of Accepted indicates that the Clerk accepted the submission through the Portal. Posting the documents to the official docket is a separate Clerk-controlled process and may occur later."
+Curated Quick Message,qr-45-47,Customer,customer-approved,Request filing number from service email,Request the Portal filing number from the service email,"Please advise of the filing number that was on the service of court documents email that you received.
+I need to make sure this is not a clerk or judge pulling information from their internal database, instead of the portal.
+If there is no filing number at the upper left of the document in the email you received, it is not a portal issue, and you will need to work with the Clerk of the JA to get it sorted.","Please provide the nine-digit filing number shown near the upper-left area of the service email or attached document.
+
+The filing number helps us determine whether the message originated from the E-Filing Portal. If no Portal filing number appears, the message may have originated from a Clerk or judicial system, and you may need to contact the applicable Clerk or Judicial Assistant."
+Curated Quick Message,qr-49-55,Customer,customer-approved,Docket-access investigation questions,Information needed for a docket-access issue,"To assist you with this issue. I need the following information:
+County the case is being filed in:
+Is this a new case or existing?
+If existing, what is the case number?
+Doc# from the docket you are trying to access with description of document:
+Your attorney's bar#:
+Verify the website address you are using to try and access the docket from:","To investigate the issue, please provide:
+
+• County where the case is or will be filed
+• Whether this is a new or existing case
+• Case number, if one exists
+• Docket document number and document description
+• Attorney's Florida Bar number, when applicable
+• Website address being used to access the docket
+• Exact error message or result"
+Curated Quick Message,qr-57-63,Internal,internal-note,Spanish-speaker intake information,Spanish-language assistance intake,"For Cat's team doing the Spanish speaker needed.
+Please contact and gather information.
+Full name:
+email:
+County case is filed in or will be filing in:
+Case number if one exists (or citation# if traffic):
+Type of assistance needed:","Spanish-language assistance requested. Please contact the customer and collect:
+
+• Full name
+• Email address
+• County where the case is or will be filed
+• Case number, or citation number for a traffic matter
+• Type of assistance needed
+• Preferred callback number"
+Curated Quick Message,qr-65-65,Internal,internal-note,Troubleshooting sent,Troubleshooting guidance sent,Emailed troubleshooting / alternative steps for the encountered issue.,Sent the customer the applicable troubleshooting and alternate-step guidance for the reported issue.
+Curated Quick Message,qr-67-67,Internal,internal-note,eService removal instructions sent,eService removal guidance sent,Emailed eService removal instructions when hand keyed in by another party,Sent the approved eService removal instructions for an address that had been entered manually by another party.
+Curated Quick Message,qr-69-69,Internal,internal-note,Adyen payment information sent,Adyen payment information sent,Emailed the Adyen drop in payment processor information,Sent the customer the approved information about the Adyen payment interface.
+Curated Quick Message,qr-71-71,Customer,evidence-gated,Issue escalated to Analyst team,Issue escalated to the Analyst team,"Your reported issue has been turned over to the analyst team. As soon as I have a resolution for you, I will contact you.","Your reported issue has been escalated to our Analyst team for further review. I will update you when additional information or a resolution becomes available.
+
+No resolution time has been confirmed."
+Curated Quick Message,qr-73-73,Internal,internal-note,Portal Service Desk team pinged,Portal Service Desk update requested,Pinged portal service desk team asking for a response to post,Requested an update from the Portal Service Desk team for posting to the ticket.
+Curated Quick Message,qr-75-75,Internal,internal-note,Correction Queue instructions sent,Correction Queue guidance sent,Emailed corrections queue tips and instructions,Sent the customer the approved Correction Queue tips and instructions.
+Curated Quick Message,qr-77-77,Customer,evidence-gated,Waiting for fee to be added,Waiting for the required fee to be added,"As soon as team can add the fee in, I will notify you so you can correct and resubmit the filing.","The filing is awaiting the required fee configuration. I will notify you when the fee is available so you can correct and resubmit the filing.
+
+Use only after confirming the filing and fee status."
+Curated Quick Message,qr-79-79,Customer,fragment,Do you still need assistance?,Follow up on unresolved assistance,"Do you still need assistance? If so,","Do you still need assistance with this issue? If so, please provide the current status and any new error message or screenshot."
+Curated Quick Message,qr-81-81,Customer,review-pending,DIY alternative: file a court document,Standard filing alternative to the DIY module,"Instead of using the DIY, you can also have your response formatted as a court document (see google or other search engine, and use the file to existing case instructions)","Instead of using the DIY module, you may prepare the response as a court-formatted PDF and submit it using the File to Existing Case instructions.
+
+Portal Support cannot determine which form or document content is appropriate. Contact the applicable Clerk of Court for procedural guidance before filing."
+Curated Quick Message,qr-83-89,Customer,customer-approved,Filing-instruction intake questions,Information needed to provide filing instructions,"The following questions will help me to determine which instructions you may need to use to file.
+Are you trying to use the DIY with Interview module on the website?
+Are you filing a new case or to an existing?
+What county:
+If new- What type of case are you filing for:
+Case# if existing:
+What is the name of the document you want to file?","To determine which Portal instructions apply, please provide:
+
+• Are you using the DIY/Interview module?
+• Are you filing a new case or submitting to an existing case?
+• County where the case is or will be filed
+• Case type, if this is a new case
+• Case number, if this is an existing case
+• Name of the document you want to submit
+• Exact point where you need assistance"
+Curated Quick Message,qr-91-94,Customer,customer-approved,"Case, county, and Bar-number request","Request case, county, and Bar information","Please send back the following information for me to be able to assist you:
+Case number:
+County filed in:
+Your attorney's bar#:","Please provide the following information so I can investigate:
+
+• Case number
+• County where the case is filed
+• Attorney's Florida Bar number, when applicable"
+Curated Quick Message,qr-97-98,Customer,incident-specific,First-come response-time notice,Current response-time notice,"We respond to tickets/request/issues (created by email/voicemail) on a first come, first serve basis, and in the order it was received.
+At this time, our response is 24 hours out.","Help Desk requests are handled in the order received. Our current estimated response time is [insert current approved estimate].
+
+Confirm the current estimate before sending this message."
+Curated Quick Message,qr-100-106,Customer,review-pending,Confidential case / summons fee limitation,Confidential-case party and fee limitation,"You will need to contact the clerk’s office for assistance with this issue.
+Currently, the Portal will not allow you to select a party you are filing behalf of on confidential cases as no parties display.
+This is a requirement when there is a filing fee and unfortunately, no way around it.
+This has been brought to our attention, and we are working on ways to correct this issue.
+The county will need to allow you to file your Summons under a different doc type that does not charge a fee and then accept payment for the
+summons fee outside of the Portal.
+Please let me know if you have any further questions.","The Portal may not display case parties for a confidential case. When the filing requires both a party selection and a fee, the Portal may not support completion of that submission.
+
+Please contact the applicable Clerk of Court to confirm the permitted document type and payment method. Do not select an alternate document type unless the Clerk specifically directs you to do so."
+Curated Quick Message,qr-108-111,Customer,incident-specific,Resolved FCCC network-issue notice,Resolved FCCC network incident notice,"Yesterday, the Florida Court Clerks & Comptrollers (FCCC) were experiencing network issues affecting several of our key systems,
+including CCIS, ePortal, eCLERC, MyFloridaCounty, and Civitek Jury applications.
+Our IT Operations team has resolved the issue and all systems are operating.
+We did post this on the website yesterday:","On [date], Florida Court Clerks & Comptrollers experienced a network incident that affected [verified systems]. IT Operations has reported that the incident is resolved and the affected systems are operating normally.
+
+Confirm the current incident status and affected systems before sending."
+Curated Quick Message,qr-113-115,Customer,incident-specific,Technical-issue assistance delay,Temporary assistance-delay notice,"Hello,
+I apologize, but due to the technical issues the portal experienced yesterday, we do not have anyone available to walk you through the filing or to contact you to assist with your issue for at least 3-4 business days.
+Thank you for your patience.","We apologize for the delay caused by the recent Portal incident. Our current estimated time for guided assistance is [insert current approved timeframe].
+
+Thank you for your patience. Confirm the timeframe before sending."
+Curated Quick Message,qr-117-117,Customer,customer-approved,Generic instructions / dropdown limitation,General instructions and filing-choice boundary,"Please use the generic instructions below to file. We cannot give you exact information on what drop downs to use, because legally, we are limited to the amount of information we can provide.","I can provide general instructions for navigating the Portal, but Portal Support cannot select the exact form, division, case type, subtype, or filing dropdowns for you.
+
+Please confirm those filing choices with the applicable Clerk of Court, then use the Portal instructions below to submit the documents."
+Curated Quick Message,qr-119-121,Customer,sensitive,Pending-to-active temporary password,Pending account changed to Active,"An email was sent user with a notification of account status change from ""Pending"" to ""Active"".
+On your next log in, the system will force you to change the password.
+The [Sensitive temporary-password wording removed. Follow the current manager-approved secure procedure.]","An account-status message was sent to the customer confirming that the Portal account changed from Pending to Active.
+
+The customer should follow the current manager-approved secure activation procedure. The Portal will require a password change at the next sign-in."
+Curated Quick Message,qr-123-125,Customer,county-specific,Hillsborough HOVER and docket images,Hillsborough docket access and HOVER,"Hillsborough may have you access the docket through their system called HOVER from their website.
+I have seen a lot of dockets through the e-filing portal where the images for filings do not appear on the docket.
+This is a Clerk action, not a portal action. If you are able to get to the docket and are not able open the image icons next to the description, please see the below restrictions.","Hillsborough County may provide docket access through its HOVER system. Confirm the current county process before sending this message.
+
+If docket images do not open through the Portal or HOVER, contact the Hillsborough Clerk of Court for document access. Docket images and access restrictions are controlled by the Clerk, not Portal Support."
+Curated Quick Message,qr-127-132,Customer,review-pending,Bilingual translator call introduction,Bilingual Spanish-assistance call introduction,"Hello,
+My name is Deborah. I am calling from the Florida Courts e-filing website.
+Will you need a translator for this conversation? If yes, I will turn your call over to a Spanish speaker, who will call you back for information.
+Hola,
+Mi nombre es Débora. Llamo desde el sitio web de presentación electrónica de los Tribunales de Florida.
+¿Necesitarás un traductor para esta conversación? En caso afirmativo, le pasaré la llamada a un hablante de español, quien le devolverá la llamada para solicitar información.","Hello, my name is [analyst name], and I am calling from the Florida Courts E-Filing Portal Help Desk. Do you need assistance in Spanish for this call? If so, a Spanish-speaking member of our team will contact you to collect the information needed.
+
+Hola, mi nombre es [nombre del analista] y llamo del servicio de asistencia del Portal de Presentación Electrónica de los Tribunales de Florida. ¿Necesita asistencia en español para esta llamada? De ser así, un integrante de nuestro equipo que habla español se comunicará con usted para recopilar la información necesaria."
+Curated Quick Message,qr-134-135,Internal,internal-note,Spanish-speaker task note,Spanish-language follow-up assigned,"task for Cat's team
+need information to be gathered by Spanish speaking personnel",Assigned the request for Spanish-language follow-up and information gathering.
+Curated Quick Message,qr-138-141,Customer,review-pending,Auto-checked eService filer,Filer automatically selected for eService,"Emailed the explanation of the new eService protocol in place for auto checking filer for service.
+The e-filing portal has made a new change that now affects the eService list.
+The protocol now is that the portal will automatically check you, the filer from the service list for filings being submitted via the eportal website MyFLCourtAccess.com
+This is now a mandatory requirement with no option to opt out.","The Portal automatically selects the filer for eService when a filing is submitted through MyFLCourtAccess.com. Under the current process, this selection is mandatory and cannot be cleared.
+
+Confirm that this behavior is still current before sending."
+Manager-source Quick Message,procedure-1,Customer,review-pending,Registration for E-Filing Portal Website Access,Portal registration instructions — English and Spanish,"Please do not register from a phone or tablet- it may affect functionality.
+Please type the website address: myflcourtaccess.com
+Create an Account:
+To begin the account creation process, click on either E-Filing Portal in the menu bar or Log in now!
+That will take you to the welcome page to the Portal.
+Select your filer role from the drop down and click on the Register button.
+If you are not an attorney and will be representing yourself: Self-Represented Litigant
+**Note: If you are an out of state attorney without a Florida Bar number, please visit: FloridaBar.org on Pro Hac Vice rules and regulations.
+Fill out all of the information required.
+Be careful to look at the instructions for choosing a username/password:
+Your password must be between 6-16 characters.
+Do NOT use hyphens, underscores, nor &^%*() +.
+Make sure to scroll down and click on the register button.
+Once you have registered, scroll up to the upper right corner and Click on the Sign Out hyperlink.
+If you skip this step, you may have an issue logging back in.
+Then sign back in using your information.
+You may receive an email to verify you have completed the process. Check your junk/spam if not in your inbox.
+Registro para acceder al sitio web del portalhill de presentación electrónica
+Por favor escriba la dirección del sitio web: myflcourtaccess.com
+Crear una cuenta:
+Para comenzar el proceso de creación de cuenta, haga clic en Portal de presentación electrónica en la barra de menú o ¡Inicie sesión ahora!
+Eso lo llevará a la página de bienvenida del Portal.
+1. Seleccione su rol de declarante en el menú desplegable y haga clic en el botón Registrarse.
+2. Si no es abogado y se representará a sí mismo: Litigante autorepresentado
+**Nota: Si es un abogado de otro estado y no tiene un número de Colegio de Abogados de Florida, visite: FloridaBar.org en Pro Hac Vice.
+Complete toda la información requerida.
+Tenga cuidado de leer las instrucciones para elegir un nombre de usuario/contraseña:
+Su contraseña debe tener entre 6 y 16 caracteres.
+Sin guiones ni guiones bajos, sin &^%*()
+Asegúrese de desplazarse hacia abajo y hacer clic en el botón de registro.
+Una vez que se haya registrado, desplácese hasta la esquina superior derecha y haga clic en el hipervínculo Cerrar sesión.
+Revisa tu correo electrónico para completar el proceso.
+Complete your registration You will receive a follow-up email that contains a link to activate your account. This email will be sent to the email address that you have registered with The Florida Bar. You must be able to access that account and know the answer to your security question to activate your account. You will receive the account activation email you have registered with The Florida Bar.
+Please activate your account within 72 hours or it will be deleted from the portal, and you will have to repeat the step to register.","Before registering, use a desktop or laptop and type https://www.myflcourtaccess.com directly into the browser address bar.
+
+English
+1. Select E-Filing Portal or Log in now.
+2. Select the correct filer role, then choose Register.
+3. A person filing without an attorney should select the applicable self-represented role. An out-of-state attorney should review the current Pro Hac Vice requirements with The Florida Bar before registering.
+4. Complete every required field and follow the current username and password rules displayed on the registration page.
+5. Submit the registration, select Sign Out, and then sign in again.
+6. Check the registered email address, including Junk or Spam, for any required verification or activation message. Complete activation within the timeframe stated in that message.
+7. For attorney registrations, confirm that the email address matches the current Florida Bar record when required by the manager procedure.
+
+Español
+1. Seleccione E-Filing Portal o Log in now.
+2. Seleccione el rol correcto y luego elija Register.
+3. Una persona que presenta documentos sin abogado debe seleccionar el rol correspondiente de litigante autorepresentado. Un abogado de otro estado debe revisar primero los requisitos vigentes de Pro Hac Vice con The Florida Bar.
+4. Complete todos los campos obligatorios y siga las reglas actuales de nombre de usuario y contraseña que aparecen en la página.
+5. Envíe el registro, seleccione Sign Out y vuelva a iniciar sesión.
+6. Revise la dirección de correo registrada, incluso las carpetas de correo no deseado, para cualquier mensaje de verificación o activación. Complete la activación dentro del plazo indicado en el mensaje.
+
+Review the current registration rules before sending; the source contains changeable account requirements."
+Manager-source Quick Message,procedure-2,Customer,manager-provided,Funky Username – (Probably corrupted from their browser?),Username appears corrupted,"It looks like your username needs to be reset. Right now, it reads: ******
+I can change it back to what it was before if you remember it. Keep in mind that you cannot exceeuse special characters.
+Otherwise, I show the account is active.","The username displayed on the account appears to be malformed. Please confirm the username you previously used.
+
+After the account holder is verified, Portal Support can follow the current manager-approved procedure to restore or correct the username. The account currently appears active."
+Manager-source Quick Message,procedure-3,Customer,manager-provided,Roles that cannot initiate a filing in the Portal,Filer role cannot initiate a new case,"Based on your filer role as a ""Process Server"", you cannot initiate cases.
+You can create a self-representative litigant account in order to file this type of case.","The current filer role, Process Server, cannot initiate a new case through the Portal.
+
+If you are filing on your own behalf, a separate Self-Represented Litigant account may be required. Confirm the appropriate filer-role and account requirements before registering."
+Manager-source Quick Message,procedure-5,Customer,manager-provided,Profile Changes,Update Portal profile information,"To update the information on your e-filing portal account profile: (including email address)
+1. Log into your account on the website MyFLCourtAccess.com
+2. Go to the MY ACCOUNT dropdown
+3. Click on MY PROFILE
+4. Click on the USER DETAILS tab
+5. Make any changes needed
+6. Scroll to the bottom and click on UPDATE
+7. Please make sure to scroll to the top of the webpage and click SIGN OUT.
+If you don’t follow those steps, it may not keep your changes.
+Please be advised that making changes to your profile does NOT update the emails on the e-service list for any cases filed previously, nor does it update any information to the Clerk of the Courts.
+It is your responsibility to contact that county and or go to your account on all their websites you have an account with to update your information.
+If you want to update or remove your email from cases, you can use the eService Maintenance instructions attached to update, and the removal instructions attached for removal.
+If you are listed on the service list with one of these icons (in black), you will not be able to remove yourself from the list and will need to email: support@myflcourtaccess.com with the following information: if multiple cases, please enter the information in an excel spreadsheet and attach to the email request:","To update information in the Portal profile:
+
+1. Sign in at MyFLCourtAccess.com.
+2. Open My Account.
+3. Select My Profile.
+4. Open the User Details tab.
+5. Make the required changes.
+6. Select Update at the bottom of the page.
+7. Select Sign Out at the top of the page, then sign in again to confirm the change.
+
+Updating the Portal profile does not update the official court record or previously created eService lists. Contact the applicable Clerk of Court about changes to the case record. Use the current eService Maintenance or removal procedure for service-list changes.
+
+If an icon prevents removal from an eService list, submit a Help Desk request with the case number and county. For multiple cases, provide the information in the approved spreadsheet format."
+Manager-source Quick Message,procedure-6,Customer,manager-provided,"I filed, what are my next steps?",What happens after a filing is submitted,"The E-filing Portal help desk, support@myflcourtaccess.com only provides Navigational / Technical Support for the website MyFLCourtAccess.com for the submission (uploading) of documentation that you have ready to file to create a case, or to an existing case.
+We do not provide Clerk of Courts procedural information, nor are we able to advise or provide you with the form(s) needed to be filed or where to find them.
+We cannot advise on what the steps are or case status.
+I would suggest going to the Clerk of the Courts website to read everything you can on the rules and procedures for your case type.","Portal Support provides technical and navigational assistance for MyFLCourtAccess.com, including submitting prepared documents for a new or existing case.
+
+Portal Support cannot provide court procedure, select forms, explain the legal next step, or give the official case status. For those questions, contact the applicable Clerk of Court or review the Clerk's current website instructions."
+Manager-source Quick Message,procedure-8,Customer,manager-provided,Documents not showing on the docket,Documents have not appeared on the docket,"Unfortunately, we are not the party responsible for uploading filed information to the docket.
+This is an action completed by the Clerk of the Courts system.
+The e-filing portal sends the documents you upload to the clerk.
+The clerk then processed through their case management system, then dockets the forms you submitted to the docket.
+Please contact the Clerk of the Courts office in the county the case is filed in to ask
+if something is wrong with the docket or prohibiting documents from showing on the case.","The E-Filing Portal transmits submitted documents to the applicable Clerk of Court. The Clerk then processes the filing through its case-management system and controls when documents appear on the official docket.
+
+If the Portal shows that the filing was accepted but the documents are not on the docket, contact the Clerk in the county where the case is filed and ask about the docket status."
+Manager-source Quick Message,procedure-10,Customer,manager-provided,Can I file my case on the website?,Can this matter be filed through the Portal?,"Thank you for contacting the MyFLCourtAccess.com website Help Desk.
+Support for the website MyFLCourtAccess.com is limited to only providing navigational & technical guidance for the purpose of filing documentation that you have ready to file to create a case, or file to an existing case.
+For any questions outside of navigating the website to file documentation, please contact your Clerk of the Courts office.
+Please be advised that the E-Filing portal website MyFLCourtAccess.com is not the Clerk of the Court or the District Court of Appeals.
+Instructions are not exact, and we are unable to tell you exactly which drop downs or forms are needed to file, as we are limited by legal restrictions and cannot offer legal advice.
+1. What type of case are you filing?
+a. Circuit Civil
+b. County Civil (Small Claims under $8,000) (types less than $50,000) (Eviction)
+c. Domestic Relation/Family
+d. Probate
+e. Juvenile Dependency
+f. Adoption
+g. Domestic Violence / Stalking / Cyber Bullying
+2. What County are you filing in?
+Some counties will have different requirements, procedures, and forms.
+3. What forms are needed?
+Please visit the Clerk of the Court’s website for the county you are filing your case in for information on procedures, forms that are required to be filed, and to determine the Division, Case Type, and Sub Type you will need to file under.
+Most cases in Circuit or County Civil courts will require a “Complaint” or “Statement of Claim” form.
+Most cases in Family/Domestic Relations, a Petition is to be the first document you upload, followed by others that may be required.
+Probate: varies. Check with the Clerk's website to determine what is needed.
+Once you have the forms needed to file, you can use the below for guidance.
+El servicio de asistencia del portal de presentación electrónica, support@myflcourtaccess.com, solo ofrece asistencia técnica y de navegación para el sitio web MyFLCourtAccess.com
+para el envío (carga) de la documentación que esté listo para presentar para crear un caso o para un caso existente.
+No proporcionamos información sobre el procedimiento del caso, ni podemos asesorarlo, ni proporcionamos los formularios necesarios para presentar ni dónde encontrarlos.
+Las instrucciones no son exactas debido a que la ley nos limita a lo que podemos aconsejar.
+No podemos indicarle exactamente qué menús desplegables o formularios necesita para presentar, ya que no podemos ofrecerle asesoramiento legal.
+1. ¿Qué tipo de caso está presentando?
+a. Civil de Circuito
+b. Civil de Condado (Reclamaciones Menores de menos de $8,000) (tipos menores de $50,000) (Desalojo)
+c. Relaciones Domésticas/Familiares
+d. Sucesiones
+e. Dependencia Juvenil
+f. Adopción
+g. Violencia Doméstica
+2. ¿En qué condado está presentando su caso?
+Algunos condados tienen diferentes requisitos, procedimientos y formularios.
+3. ¿Qué formularios se necesitan?
+Visite el sitio web de la Secretaría del Tribunal correspondiente al condado donde presente su caso para obtener información sobre los procedimientos, los formularios necesarios y determinar la División, el Tipo de Caso y el Subtipo bajo el que deberá presentarlo.
+La mayoría de los casos en los tribunales civiles de circuito o de condado requieren un formulario de ""Demanda"" o ""Declaración de Demanda"".
+En la mayoría de los casos de Relaciones Familiares/Domésticas, el primer documento que debe presentar es una Petición, seguida de otros que puedan requerirse.
+Sucesiones: varía. Consulte el sitio web de la Secretaría para determinar qué se necesita.
+Tenga en cuenta que el portal de presentación electrónica MyFLCourtAccess.com no representa a la Secretaría del Tribunal ni al Tribunal de Apelaciones del Distrito.","Thank you for contacting the MyFLCourtAccess.com Help Desk.
+
+Portal Support can provide technical and navigational guidance for submitting documents that are ready to file. We cannot determine the correct division, case type, subtype, form, fee, or legal filing choice.
+
+Before beginning, please confirm the following with the applicable Clerk of Court:
+• Whether the matter may be filed electronically
+• County and division
+• Case type and subtype
+• Required forms and filing fees
+• Any county-specific procedure
+
+After those items are confirmed, Portal Support can provide the appropriate instructions for filing a new case or submitting to an existing case.
+
+Español
+El servicio de asistencia de MyFLCourtAccess.com puede proporcionar orientación técnica y de navegación para presentar documentos que ya estén listos. No podemos determinar la división, el tipo o subtipo de caso, el formulario, la tarifa ni la decisión legal correcta.
+
+Antes de comenzar, confirme esos requisitos con la Secretaría del Tribunal correspondiente. Después de confirmarlos, podemos proporcionar las instrucciones del Portal para un caso nuevo o existente."
+Manager-source Quick Message,procedure-11,Customer,manager-provided,Pro Hac Vice- Register & Filing,Pro Hac Vice registration and Portal access,"The best place to start is the FloridaBar.org website to see what the PHV procedure is for obtaining a PHV FL Bar number.
+To register and file as a PHV on the MyFLCourtAccess.com website, you must have been issued a Florida Bar number.
+Once you have the bar # you can then register on our website 48-72 hours after the bar number being issued. If you try to register before that, your registration may be rejected because it is not yet in the system to file to cases
+The County Clerk may require you to pay a $100 PHV fee.
+New Attorney to case/ PHV / NOT showing up in My Cases
+An attorney will not be able to access or view any case dockets on the Florida Courts E-Filing portal that they are not the Attorney of Record for AND if they have not filed electronically to the case through the website.
+Cases are not automatically added to your My Cases, nor are you automatically added to the service list. You must file to the case.
+Once you submit the filing and the Clerk has moved the filing from Pending to Filed, it will then show up under your ""My Cases"".
+If you are a Pro Hac Vice attorney, being admitted to the case does not automatically allow you to access the case docket through the e-filing portal.
+If you are not going to be the attorney of record, and you are not filing to the case, please contact the Florida attorney you are working with and ask for them to add you to the service list on the next filing.
+When filings are done after that point, and the filer checks your box (it is up to the filer to decide whether to check you for service because it is not done automatically to everyone on the service list) you will get an email with a copy of what has been filed to that case.
+Warning, if you leave the email untouched, or it ends up in your spam for more than 14 days, you can no longer access the documents from the email. We usually tell eService recipients to open and download the filings immediately so that doesn't happen.","Begin with The Florida Bar to confirm the current Pro Hac Vice requirements and obtain the required Florida Bar number.
+
+After the number is issued:
+1. Allow the current synchronization period before registering with MyFLCourtAccess.com. The manager source states 48–72 hours; confirm the current timeframe.
+2. Register using the issued Bar number.
+3. Confirm any county-required Pro Hac Vice fee directly with the applicable Clerk.
+4. A case generally appears in My Cases after the attorney files through the Portal and the Clerk accepts the filing.
+5. Admission to a case does not by itself guarantee Portal docket access. If the attorney will not be filing, ask the Florida attorney of record about adding the Pro Hac Vice attorney to the eService list.
+6. Download eServed documents promptly. The source states that service links are available for 14 days; confirm the current retention period."
+Manager-source Quick Message,procedure-12,Customer,review-pending,Changes to Attorney Portal account when moved to another firm (when emails do not match FL Bar website),Attorney moved to a different firm or email address,"An e-portal account never belongs to the law firm. It always belongs to the attorney no matter where they go unless it was a government email address like a SAO or PD.
+On the Florida Bar website, it has you listed as:
+If that is not correct, please update it. I cannot send you the email that will have your account username and password reset information until that has been done.
+Please email me at [internal staff email redacted] with that information.
+I will close this ticket and look for your email.
+In your email, state the following:
+My Information on the FloridaBar.org website has been updated (it may take 24-48 hours for that to happen)
+List your bar#
+New email address:
+I will then send you an email with all the information needed to get in and update your profile.
+Self-Represented Litigant & Non-Attorney- Case Status & Access
+MyFLCourtAccess.com cannot give access to self-represented filers to view their case docket or filings made to your case through this website.
+You cannot get case updates via this website.
+**You may only file to your case through this website**
+We do not ""link"" your case docket to your portal account.
+Only documents you filed through this website are viewable through your Email Log under your My Account tab, 14 days after the clerk has accepted the filing(s).
+Documents that others have filed into your case, the links are only accessible for 14 days if you were selected to be included in the eService email that was sent out, which has a link you can click on to view and download the documents.
+If you were not selected (check your junk/spam) then you will need to access from the Clerk of the Courts website.
+If it is beyond the 14 days, to access case information and/or case status, you will need to visit the Clerk of the Courts website in the county your case is filed in.
+If you are unable to access information from their website, you may have to make a formal request on their website from the case.
+If you want to file documentation to your existing case, you can use the File to Existing instructions below.","A Portal attorney account belongs to the attorney, not the law firm, unless the current manager procedure identifies a government-account exception.
+
+When the attorney's email no longer matches the Florida Bar record:
+1. Update the attorney's public Florida Bar information.
+2. Allow time for the updated Bar record to synchronize. The source states 24–48 hours; confirm the current timeframe.
+3. Submit a new Help Desk request stating that the Florida Bar record was updated and include the Bar number and new email address.
+4. After verification, Portal Support can provide the current secure account-access procedure.
+
+Do not include passwords or temporary credentials in the ticket or hosted Workbench."
+Manager-source Quick Message,procedure-14,Customer,manager-provided,Please contact the Clerk of the Court,"Refer court, docket, form, and hearing questions to the Clerk","Thank you for contacting the E-Filing Portal website MyFLCourtAccess.com.
+Unfortunately, I am unable to assist you.
+The E-filing Portal help desk, support@myflcourtaccess.com only provides Navigational and Technical Support for the website MyFLCourtAccess.com
+for the submission (uploading) of documentation that you have ready to file to create a case, or to an existing case.
+We do not provide case procedural information, nor are we able to advise you on which forms need to be filed or where to find the form(s).
+Please be advised that the E-Filing portal website MyFLCourtAccess.com is not the Clerk of the Court or the District Court of Appeals.
+We are unable to:
+1. Verify your court date.
+2. Review / pull / give access to documents / status of case, issuance of summonses / provide copies / explain case procedure.
+3. Provide legal counsel.
+4. Confirm your Application for Indigence approval.
+5. Unlock documents from the docket.
+6. Assist with Zoom, telephonically connect, or reschedule your Zoom meeting.
+7. Provide where to find information on what forms you need to file.
+We do not offer or have access to forms to send to you.
+If you are not sure of the form(s) you need or how to complete your forms correctly, it is recommended that you seek legal counsel to assist you.
+For help with your request / issue / questions, please contact or visit the website for the:
+Clerk of the Courts in the county your case will be or has been filed in or visit their website.
+If you are filing in or with the District Court of Appeals
+The District Court of Appeals for the jurisdiction filing/filed in or visit their website.
+*Please note that Florida law (F.S. 28.215) prevents our staff from providing legal advice. .
+I am not an attorney and cannot provide legal advice. Nothing contained in this correspondence is intended to be, nor should it be, considered as such.","Portal Support provides technical and navigational assistance for MyFLCourtAccess.com. We cannot:
+
+• Verify a court date or hearing
+• Provide the official case status
+• Retrieve, unlock, change, or provide copies of docketed documents
+• Confirm summons issuance or indigence decisions
+• Select court forms or explain filing procedure
+• Provide legal advice
+• Connect, reschedule, or provide access to a Zoom or telephone hearing
+
+Please contact the Clerk of Court for the county where the case is or will be filed. For an appellate matter, contact the applicable District Court of Appeal. Portal Support can assist after you have the documents and filing selections needed to submit through the Portal."
+Manager-source Quick Message,procedure-15,Customer,manager-provided,Data Collecting when something wrong happens on the website,Collect information for a website-performance issue,"Thank you for reaching out. We have noticed a few offices experiencing slowness with the site. We are being asked to collect the following data to help pinpoint where the issue may be.
+Dates experiencing slowdowns:
+Filer Role: (Attorney, Law Enforcement...)
+Browser being used and version: (Microsoft Edge, Google, Firefox)
+Who is your internet provider?
+Description of issue:
+Last time your browser was updated?
+Name: / Organization Name:","To help investigate the reported website slowness or performance issue, please provide:
+
+• Date and approximate time of each occurrence
+• Filer role
+• Browser name and version
+• Device and operating system
+• Internet provider or organization network
+• Exact page, action, and error or symptom
+• Date the browser was last updated
+• Name and organization
+• Whether other users are affected
+• Screenshot, when available"
+Manager-source Quick Message,procedure-16,Customer,manager-provided,Change Docket Information/ Rescind or Remove from,Correct or remove an incorrect docketed filing,"If your filing was incorrect and/or docketed to the case with incorrect information and should be removed or changed, please contact the Clerk of the Court as to what their procedure is.
+Contact the Clerk to check if they have not accepted or filed your submission.
+If the filing has not been “Filed” to the docket:
+Have the filing moved to the correction queue for you to correct it then re-file to the case.
+Have the filing rejected all together.
+If the Clerk has accepted the filing and the documents have been added to the docket:
+Call the clerk to inquire on what their procedure is to have it corrected or removed from the docket.
+Once the clerk has updated the docket, you can do 1 of 2 things so that the information gets corrected in your My Cases on the portal:
+Re-file to the case through the portal using the E-filing map option, not from
+the My Cases. This will show the case parties correctly after submitting.
+OR
+Send an email to Support@myflcourtaccess.com with the case#, county, and ask to mirror the information listed on the docket header for name:
+(After the clerk has made the changes to the docket)
+Unfortunately, we only handle the navigational & technical side of the E-Filing Portal, and we do not have the ability to review, change or send copies from submitted filings. The Clerk's office handles and reviews all filings and should be able to help you with your request.","The correct path depends on whether the Clerk has accepted the filing.
+
+If the filing has not been accepted or docketed:
+• Contact the Clerk and ask whether it can be returned to Correction Queue or rejected so it can be corrected.
+
+If the filing has been accepted and added to the official docket:
+• Contact the Clerk to ask about its correction or removal procedure. Portal Support cannot change the official docket.
+
+After the Clerk updates the case information:
+• Use the E-Filing Map to submit to the corrected case rather than opening the old entry from My Cases; or
+• Submit a Help Desk request with the case number and county if the current manager procedure calls for Portal data to be mirrored from the corrected docket header.
+
+Document the RAC and docket findings before providing the path."
+Manager-source Quick Message,procedure-17,Customer,manager-provided,How to correct when filed Under the Wrong Attorney,Filing submitted under the wrong attorney,"We are unable to remove the case from under the incorrect attorney’s My Cases.
+You will need to refile to the case under the correct attorney.
+Log in under the wrong attorney's account and remove them from the eService list. (see attached instructions)
+Double check that the correct attorney is listed on the docket as the attorney of record.
+Otherwise, you will need to contact the Clerk of the Court to inquire as to what the procedure is for changing the AOR.","Portal Support cannot remove the case from the incorrect attorney's My Cases list or change the official attorney of record.
+
+1. Confirm the correct attorney is listed on the official docket.
+2. Submit the required filing under the correct attorney's Portal account.
+3. Use the approved eService maintenance instructions to remove the incorrect attorney when permitted.
+4. If the docket lists the wrong attorney of record, contact the Clerk for its correction procedure."
+Manager-source Quick Message,procedure-18,Customer,manager-provided,Filed under the wrong county,Filing submitted to the wrong county,"Pease refile to the case under the correct county.
+We are unable to remove the filing from the docket that was done in the incorrect county.
+You will also need to remove yourself from the eService list as well from the incorrect case.
+If the filing was docketed to the case:
+Please contact the Clerk of the Court's for the incorrect county to inquire as to what their procedure is for removing your filing from the wrong docket.","A filing submitted to the wrong county cannot be removed from the official docket by Portal Support.
+
+1. Confirm the filing and docket status.
+2. Submit the document to the correct county using the correct case information.
+3. Use the approved eService maintenance procedure for the incorrect case when applicable.
+4. If the filing was accepted or docketed in the wrong county, contact that county's Clerk of Court for its removal or correction procedure."
+Manager-source Quick Message,procedure-21,Customer,review-pending,Unknown Charges:,Information needed to research an unknown charge,"I will need more information to assist.
+What type of payment was used (Credit, debit, ACH?)
+What is the last 4 of the payment account/card number?
+Date of Charge:
+Amount of charge:
+Any other numbers/verbiage from your statement?","To research the charge, please provide:
+
+• Payment type: credit, debit, or ACH
+• Last four digits only of the card or account
+• Date of charge
+• Exact amount
+• Statement descriptor, reference number, or other visible wording
+• Filing number, if known
+• Name on the Portal account
+
+Do not send a full card number, bank-account number, security code, password, or other payment credential."
+Manager-source Quick Message,procedure-22,Customer,manager-provided,My Cases- Case does not populate:,Find a case that does not appear in My Cases,"If you click on My Cases, and in the Case Style box, insert the last name of a case party and click search, the case will populate for you to access or file to. If it does not, try the other case party or business name.
+Also, look at the search options:
+Court: leave blank if you are searching by last name.
+Then remove last name and search by county.
+Include: (set this to all or active)
+Cases per page: change to 1000.
+**Suggested filer use the alternate look up method to pull case forward from the My Cases search function or will need to file to the case for access if not done previously","In My Cases, try the following searches one at a time:
+
+1. Search Case Style using the last name of one case party. If no result appears, try another party or the business name.
+2. Leave Court blank when searching by party name.
+3. Clear the party name, then search by county.
+4. Set Include to All or Active, as appropriate.
+5. Increase Cases per page to the largest approved value.
+
+If the case still does not appear, use the alternate case lookup or E-Filing Map. A case may not appear in My Cases until the filer has submitted to it through the Portal and the Clerk has accepted the filing."
+Manager-source Quick Message,procedure-24,Customer,manager-provided,Proposed documents in “Transmitted” status,Proposed document remains in Transmitted status,"The filing is still in the transmitted status.
+On filings ""transmitted"" to the Judge:
+Please call the JA with the filing number (9-digits) to see if they call pull it from the Judicial Circuit Interface queue.
+Here is how proposed orders are supposed to move through the system:
+Filing is submitted.
+Then transmitted to the Judicial Circuit Interface.
+The judge's office goes in and pulls the filing from the judicial circuit interface.
+The judge signs off or denies the proposed order.
+The Judge's office sends the denied or signed filing to the Clerk. (at the Judge's discretion what the exact procedure is, it may or may not go through the clerk)
+The Clerk files to the docket if approved and signed.
+Or the judge’s office files directly to the docket.
+If the Judge's office cannot find the filing, they may require you to refile.
+Also, The Clerk does not always file the signed copy, nor does the judge always send the signed or rejections through the e-portal system. This means you will need to check the docket to make sure signed orders are not being missed. The Clerk of the Court’s have their own procedures in which they send out the signed orders if the Judge’s office does not process. You may want to call and check with the Clerk and or the JA on what their procedure is.","A proposed document in Transmitted status has been sent to the judicial interface but has not completed the judge/Clerk process.
+
+Contact the Judicial Assistant with the nine-digit filing number and ask whether the filing is available in the Judicial Circuit Interface queue. The judge's office and Clerk control what happens after transmission, including approval, denial, docketing, or a request to refile.
+
+Check the official docket and follow the current instructions from the Judicial Assistant or Clerk. Do not refile solely because the Portal still shows Transmitted unless the appropriate office directs you to do so."
+Manager-source Quick Message,procedure-25,Customer,manager-provided,Cannot make changes to the docket,Portal Support cannot change the official docket,"Unfortunately, we only handle the navigational & technical side of the E-Filing Portal, and we do not have the ability to review your case, make changes to or send copies from submitted filings.
+The Clerk' of Court’s office handles the uploading of your filings to the docket once they have run it through their case management system.","Portal Support handles the technical and navigational functions of the E-Filing Portal. We cannot review the merits of a case, change the official docket, unlock docketed documents, or provide copies of filed documents.
+
+The applicable Clerk of Court controls docket processing and document access after accepting the filing."
+Manager-source Quick Message,procedure-29,Customer,manager-provided,Lawyer is Attorney Of Record- but not listed on docket (Cannot access documents),Attorney of record is not listed on the docket,"Looking at the docket, the Clerk's office has not added you/your/the attorney as the AOR.
+Please contact the County Clerk's office, give them the case and filing number. Advise that they do not have you listed as the Attorney of Record even after your Notice of Appearance was filed, thus making you unable to access the documents through your portal account and that you have already spoken to the e-filing portal support service desk and was directed to contact them because only the Clerk's office can update the docket.
+Once that is done, you should have access to the case through your portal account. Keep in mind there are some cases you will not be able to access even as the Attorney of Record.
+Example: Closed, Sealed, Confidential, Formal Probate or Locked files.","The official docket does not currently show the attorney as Attorney of Record.
+
+Contact the applicable Clerk of Court and provide the case number and filing number. Explain that the Notice of Appearance was submitted but the docket has not been updated, which is preventing Portal document access.
+
+After the Clerk updates the docket, Portal access may become available. Access can still be restricted for closed, sealed, confidential, formal probate, or otherwise locked matters."
+Manager-source Quick Message,procedure-31,Customer,manager-provided,How a filing is processed through the portal to the clerk:,How a filing moves from the Portal to the docket,"We do not manage nor upload your documents to the docket the clerk has created.
+Think of the portal as the electronic mail delivery. Once the Clerk takes the accepts the filing, the portal is then hands off.
+The Clerk moves the filings through their case management system and uploads the images to the docket..","The Portal acts as the electronic delivery system. It transmits the filing to the applicable Clerk of Court.
+
+After the Clerk accepts the submission, the Clerk processes it through the court's case-management system and controls when the documents appear on the official docket. Portal Support does not upload documents to the docket."
+Manager-source Quick Message,procedure-32,Customer,manager-provided,Confidential case access or filing information,Confidential-case access and filing limitations,"If a case is confidential or involves a minor, you may not be able to access the case docket from the MyFLCourtAccess.com website and will need to contact the clerk of the courts to obtain docket access.
+Since we are not the Clerk, we are unable to grant access or send copies.
+Note: All confidential, sealed, domestic violence, and most formal probate dockets are also NOT accessible from our website.
+When filing to these types of cases, case party names will not be displayed in the portal, are not searchable in your My Cases, and parties to file on behalf of are not always listed.
+The portal will not allow for filing to confidential cases where parties are not listed and the filing has a related fee.
+If there is a fee, the filing will need to be done in person, by mail or courier.","Confidential, sealed, minor-related, domestic-violence, formal-probate, or otherwise restricted cases may not be searchable or viewable through MyFLCourtAccess.com.
+
+Portal Support cannot grant docket access or provide copies. Contact the applicable Clerk of Court for access instructions and any approved alternate filing method.
+
+For some confidential matters, case parties are not displayed in the Portal. If the filing requires both a party selection and a fee, the Portal may not support completion. Confirm the current procedure with the Clerk before proceeding."
+Manager-source Quick Message,procedure-34,Customer,manager-provided,Docket access,Reasons a docket document may not open,"Thank you for contacting the E-Filing Portal website MyFLCourtAccess.com.
+The e-filing portal cannot provide copies of filings from the docket or eServiced documents.
+Reasons why you may be unable to access dockets &/or filings via this website.
+(See one or more of the listings highlighted below)
+The file is too large; this website will time out before the document can be opened. (Larger than 15-20 pages)
+There is a lock or stop sign symbol for the document:
+The file has been locked due to confidential or sensitive information.
+The Portal does not have the ability to lock or unlock files nor have access to them.
+If the case has /is a: disposition date, closed, sealed or confidential.
+(Even if you are the attorney of record- you will still be unable to access via your e-filing account)
+The Clerk does NOT have you listed on the docket as the Attorney of Record.
+You are not logged into the AOR account to be able to access the documents.
+If this case is a Formal Admin Probate case. You cannot access those through your e-filing portal account.
+You have NOT filed to this case through the e-filing portal as the Attorney of Record through your portal account.
+Please visit the Clerk of the Court’s website in the county where the case is filed in and try to obtain it from their website’s case search.
+If you’re unable to access the docket and their filings, you will likely have to use the Clerk’s request form (if they have one) from their website or sign up for an account to use their website. Please contact the Clerk of the Court in the county the case is filed in to inquire if the document is available and can it be sent to you in an alternative method or format.
+Please note, the E-Filing Portal MyFLCourtAccess.com website is not the Clerk of the Court or The District Court of Appeals.
+**Referred to the Clerk for an alternative method of accessing filings not able to be accessed or viewed through E-Filing portal account and/or the Clerk website.","Portal Support cannot provide copies of docketed filings or eServed documents. Common reasons a document may not open through the Portal include:
+
+• The file is too large and times out
+• A lock or stop-sign icon indicates a restricted document
+• The case is closed, sealed, confidential, or otherwise restricted
+• The Clerk does not list the user as Attorney of Record
+• The user is signed in under a different attorney account
+• The attorney has not filed to the case through the Portal
+• The matter is a case type that the Portal does not expose for document access
+
+Search the case on the applicable Clerk website. If the document is still unavailable, contact the Clerk to request access or an alternate copy. Portal Support cannot unlock or release the document."
+Manager-source Quick Message,procedure-37,Internal,internal-note,Functionability:,Session reset guidance provided,"Please make sure when leaving the website, you use the Sign Out hyperlink in the upper right of the page to ""reset"" for when you sign back in.
+If you have the site open too long without using it, the site will time out and you will need to ""sign out"" and log back in for function ability to remain consistent.","Advised the filer to select Sign Out, close the browser, and sign in again after an idle timeout or inconsistent Portal behavior. Documented the result of the new session."
+Manager-source Quick Message,procedure-38,Customer,manager-provided,Response to issues we are aware of and working on correcting:,Known issue under investigation,"Thank you for contacting the E-Filing Portal at MyFLCourtAccess.com to let us know of the issue you are experiencing.
+We are aware of the issue and are currently working to get this resolved as quickly as we can.
+Unfortunately, we do not have a specific time frame for completion.
+Your ticket, with the information you provided, has been sent to the department who are using your examples for testing.
+** the E-Filing Portal is aware of the issue and is currently in the process of being corrected
+You should make sure to go through each area to make sure none of your information has been removed.","Thank you for reporting the issue. We are aware of the problem and are actively investigating it.
+
+Your ticket and the evidence you provided have been sent to the appropriate team for testing. We do not currently have a confirmed resolution time.
+
+Before submitting or resubmitting, review each page and field to confirm that no information has changed or disappeared. We will provide an update when verified information becomes available."
+Manager-source Quick Message,procedure-41,Customer,manager-provided,DIY Filings Questions,Information needed for a DIY filing question,"Thank you for contacting the MyFLCourtAccess.com website Help Desk.
+The following questions will help me to determine which instructions you may need to use to file.
+Are you trying to use the DIY module with Interview module on the website?
+Are you filing a new case or to an existing?
+If new- What type of case are you filing for:
+If this is an existing case, please supply the following information:
+Case#:
+What is the name if the document you want to file?
+What is the county that you’re filing in?","To determine the correct Portal guidance, please provide:
+
+• Are you using the DIY/Interview module?
+• Are you filing a new case or submitting to an existing case?
+• County where the case is or will be filed
+• Case type, if this is a new case
+• Case number, if this is an existing case
+• Name of the document you want to submit
+• Exact point where the issue occurs"
+Manager-source Quick Message,procedure-43,Customer,manager-provided,Things you need to know before filing a new case:,Information to confirm before filing a new case,"Division filing in
+Case type:
+Sub type:
+What forms are you going to need to file?
+Please review / research the information on the clerk of the courts website in the county you are filing in.","Before starting a new-case filing, confirm the following with the applicable Clerk of Court:
+
+• County and division
+• Case type and subtype
+• Required forms
+• Filing fees
+• Any county-specific instructions
+
+Portal Support can provide navigation assistance after those filing choices are confirmed."
+Manager-source Quick Message,procedure-46,Customer,manager-provided,Closing a Retired Attorney’s E-portal Account,Request to close a retired attorney Portal account,"To close the attorney portal account, you must:
+Remove yourself from eservice on all cases. (see attached) Please make sure to check on cases that you are not able to remove yourself from.
+If a Clerk's or Judge's office added you, please provide us a list with those case numbers and counties they were filed in that you are unable to remove yourself from.
+Provide information on the day retirement is to begin.
+You must no longer be listed on the Florida Bar as ""Eligible to Practice Law in Florida"".
+Then you can contact us to request closure of an attorney account.","Before requesting closure of a retired attorney's Portal account:
+
+1. Remove the attorney from eService lists where permitted.
+2. Provide a list of any cases and counties where removal is blocked because the Clerk or judge's office added the attorney.
+3. Provide the effective retirement date.
+4. Confirm that the Florida Bar record no longer shows the attorney as eligible to practice, when required by the current procedure.
+5. Submit the account-closure request through the approved channel.
+
+Confirm current retirement and account-closure requirements before sending."
+Manager-source Quick Message,procedure-52,Customer,manager-provided,Icons/Symbols- Red Stop Sign- Locked Files,Locked-document or red stop-sign icon,"We have no jurisdiction over the docket and what filings are locked.
+We do not have the ability to lock or unlock documents.
+The documents with the reds top sign that has the white line through it and those that have the locked icons cannot be viewed through the MyFLCourtAccess.com website. To view them, you will need to visit the County’s Clerk of Court website to request access to those files.
+If you have already requested a View on Demand or a Request for Access and still do not have access, please reach out to the Clerk directly.","A red stop-sign or lock icon indicates that the document is not available through MyFLCourtAccess.com.
+
+Portal Support cannot lock, unlock, or release docketed documents. Search the case on the applicable Clerk website or contact the Clerk to request access. If a View on Request or View on Demand request has already been submitted, follow up directly with the Clerk that processes the request."
+Manager-source Quick Message,procedure-55,Customer,manager-provided,Watermarked Copies,Watermarked docket copy,"If you are the Attorney of Record and you filed through the website. MyFLCourtAccess.com eportal, you should be able to access the filing from the docket.
+If the Clerk does not have you listed on the docket header as the Attorney of Record with a bar number, you will not be able to access through the portal and it is suggested that you to go to the Clerk's website to see if you can access or request an unwatermarked copy via their website.
+The e-filing portal does not watermark documents, nor have the ability to remove them.
+This is a clerk action, not a portal action.
+The portal does NOT upload your documents to the docket.
+The e-filing portal functions as the electronic messenger that sends your files to the clerk. The clerk then takes your files, runs it through their software, locks, marks and uploads the file to the docket.
+Please contact the clerk for a clean copy as we cannot assist with this issue.","The E-Filing Portal does not add or remove watermarks from docketed documents. After a filing is transmitted, the applicable Clerk controls document processing, docket images, restrictions, and copies.
+
+If an unwatermarked copy is required, search the Clerk's website or contact the Clerk to request an authorized copy. Portal Support cannot provide or alter the docketed document."
+Manager-source Quick Message,procedure-60,Customer,manager-provided,Looking up the EPTL# in the Organization account (For the Admin of the account),Find a filing using the EPTL or Financial ID,"Please contact the organization administrator on the firm account to get that information since they have access to it.
+I have the administrator as:
+The EPTL# is the same as the financial ID. All you need to do is log in, go to My submissions, enter the EPTL# into the financial ID box, change the submission date to a week before the charge was made and hit search.
+It will list all the information for the filing.","The organization administrator can view the information associated with the organization account.
+
+To search for a filing:
+1. Sign in to the Portal.
+2. Open My Submissions.
+3. Enter the EPTL number in the Financial ID field.
+4. Set the submission-date range to include the charge date.
+5. Select Search.
+
+The results should display the filing information associated with that Financial ID. Confirm the current retention period before searching older activity."
+Manager-source Quick Message,procedure-62,Customer,manager-provided,Self Rep/Attorney needs to update address/email/phone information,"Update address, email, or telephone information","I am not sure exactly where you need to update your address.
+Is it with the Clerk of the Court?
+Do you have an e-portal account for the website MyFLCourtAccess.com? Is that what you need to update?
+If so, you can log in, go to your profile under the My Account dropdown, change the information and scroll to the bottom and click update.
+However, this will NOT update your information on your case or with the Clerk's office.
+Do you have a log in with the Clerk of the Court website? If so, go onto their website and update your information as well.
+Contact the Clerk of the Courts office to see if you need to file to your case the designated email/address form to update your information.
+If that is what is needed, you can file it with the below instructions:
+(Paste How to- File to Existing case here)","First determine where the information must be changed.
+
+Portal profile
+1. Sign in to MyFLCourtAccess.com.
+2. Open My Account > My Profile.
+3. Update the information and select Update.
+4. Sign out and sign back in to confirm the change.
+
+Updating the Portal profile does not update the official case record, Clerk account, or existing eService lists. Contact the applicable Clerk to ask whether a notice or designated-email/address form must be filed in the case. Portal Support can provide File to Existing Case instructions after the required document is identified."
+Manager-source Quick Message,procedure-63,Customer,manager-provided,When the Case number / Division or County changes:,"Case number, division, or county changed","If there has been a change in the County or division of a case, there are a few things you will need to do:
+Division / Transferred Changes:
+Do NOT pull the case from your My Cases to file to it. The portal will not auto update your case number/information.
+Access the NEW case# via the E-filing map. When you submit a filing to the Clerk this way, once the filing is accepted it will populate with the correct division/ case# for you to file to the case correctly in the future.
+You may need to add yourself back to the E-service list during the filing if you want to receive eService
+**You will need to refile to the NEW case# to get access to the docket through the portal again.
+County Changes:
+Double check your case number with the new county the case is being transferred to. The case number will be different.
+Do NOT pull the case from your My Cases to file to it. The portal will not auto update your case number/information.
+Access the NEW case# via the E-filing map. Once you submit a new filing to the Clerk via the portal, and the filing is accepted, the case will populate with the correct County for you to file to it correctly in the future.
+I would suggest filing a Notice of Appearance or designation of email/address form to the new case.
+Ask the Clerk where to find the form(s) as we do not offer them on the website.
+You may need to add yourself to the E-service list to the transferred case during the filing.
+**You will need to refile to the NEW case# to get access to the docket through the portal again.","When a case is transferred or receives a new case number, do not open the old entry from My Cases and assume it will update automatically.
+
+Division or case-number change
+1. Confirm the new case number with the Clerk.
+2. Use the E-Filing Map to locate the new case.
+3. Submit the required filing to the new case.
+4. After the Clerk accepts it, the corrected case information should populate for future filings.
+5. Add the filer to the eService list when permitted and needed.
+
+County transfer
+1. Confirm the new county and new case number with the receiving Clerk.
+2. Use the E-Filing Map to locate the new case in the receiving county.
+3. Submit the required filing and follow the Clerk's instructions for any Notice of Appearance or designated-email/address form.
+4. Confirm eService membership for the transferred case.
+
+Portal Support cannot select the required legal form; obtain it from the Clerk."
+Manager-source Quick Message,procedure-64,Customer,review-pending,Requests for Refunds- from the Portal,Information needed for a possible Portal refund,"I will need more information to send over to banking to initiate a refund.
+What is the date of the charge listed on your statement?
+How much was the charge?
+What is the filing number the overpayment derived from?
+Is this a credit, debit or ACH account?
+What are the last 4 numbers of the account?","To determine whether the charge can be referred for payment review, please provide:
+
+• Charge date
+• Exact amount
+• Filing number associated with the payment
+• Payment type: credit, debit, or ACH
+• Last four digits only of the card or account
+• Statement descriptor or reference number
+
+Do not send full payment credentials. A refund must not be promised until the transaction, ownership, and current refund procedure are verified."
+Manager-source Quick Message,procedure-65,Customer,review-pending,Requests for Refunds- from The Clerk of the Courts,Refund request for a Clerk-collected payment,"You will need to contact the Clerk of the Courts on the County you filed in and speak to the division your case is filed in. ie: Domestic Relations/Family, Probate, County or Circuit Civil….etc.
+Since they accepted the filing and pulled the funds, they would need to refund you.
+If they tell you to call the e-filing portal, we cannot issue refunds. Ask them to request it from the portal if necessary. (There is a formal way most counties must use when contacting us to request refunds) We cannot issue just by your request alone.
+Please be advised, the E-Filing portal website; MyFLCourtAccess.com website is not the Clerk of the Court, Judge’s office, or the District Court of Appeals.","If the Clerk accepted the filing and collected the payment, contact the applicable Clerk division to request a refund review.
+
+Portal Support generally cannot initiate a Clerk-controlled refund solely from a filer's request. The Clerk may need to submit a formal request through the current county-to-Portal process. If the Clerk refers the customer back to Portal Support, document the Clerk contact and obtain the current manager-approved payment escalation path before promising any refund."
+Manager-source Quick Message,procedure-73,Customer,manager-provided,How to add an attorney to an organization account,Add an attorney to an organization account,"Please check with the firms portal administrator, who is someone in the firm or organization first.
+They have the ability to add you.",Contact the Portal administrator for the firm or organization. The organization administrator can add the verified attorney to the existing organization account.
+Manager-source Quick Message,procedure-74,Customer,manager-provided,Changing Organizations,Move a user to a different organization,"If a user’s account already exists and their account is associated to a specific organization, that user can send in a request to be removed from the organization.
+When the user goes to a firm or agency that has an organization already established, after they have been removed from the previous organization the Administrator for the current organization can add them from their E-Filing portal account.","A Portal user must first be removed from the previous organization under the current manager-approved procedure.
+
+After removal, the administrator for the new firm or agency can add the existing user account to the new organization. Do not create a duplicate user account unless the current procedure specifically requires it."
+Manager-source Quick Message,procedure-76,Customer,manager-provided,Delivery / copy of filings,Receive filing and eService email copies,"We do not ""customize"" accounts for any reason.
+In reference to multiple filings, and a central depository for your team to access ""receipts"" from those filings, I suggest having your attorneys add an email address (specifically for your accounting needs) to their user profile (on each attorney portal account) as the alt 1 or alt 2 email address.
+If they utilize all 3 (you cannot add any more) they will need to add you (and check the box next to the name) onto the service list when they file & submit to a case.
+In addition to this, if the email addresses the eservice notices comes from has not been added to your allowed/permitted list in your email program, you could miss them and they may in up in Junk/Spam or stuck in one of your filtering software programs.
+We recommend that you contact your IT group and ask them to whitelist the following email addresses/IP addresses:
+And that everyone set up with an email program add them to their allowed senders listing.
+e-service (eservice@myflcourtaccess.com): [IP redacted], [IP redacted], [IP redacted], [IP redacted], [IP redacted]
+no_reply (noreply@myflcourtaccess.com): [IP redacted] and [IP redacted]
+If you miss an email, an alternative method to finding an eservice email withing the past 90 days is to use the Email Log.
+You can access the Email Log from your Portal account
+(under My Account>Email Log use dropdown Eservice) to determine if those filings you've not received service on, were delivered to the email addresses listed on the Primary account.
+If the Primary account received the email, but the others listed on the account as the alt 1 & 2 email did not, it is an issue with their email program and the allowance settings on it.","Portal accounts cannot be customized beyond the supported profile fields.
+
+For additional receipt or service delivery:
+1. Attorneys may add approved alternate email addresses to their Portal profile, up to the current account limit.
+2. For case-specific service, the filer must select the intended recipients on the eService list when submitting.
+3. Check Junk, Spam, Quarantine, and email-security filtering.
+4. Ask the organization's IT team to allow the current Portal sender addresses, including eservice@myflcourtaccess.com and noreply@myflcourtaccess.com.
+5. Use My Account > Email Log to confirm whether the Portal generated the message. The source states that recent messages may be available for 90 days; confirm the current retention period.
+
+If the Email Log shows delivery to the primary address but an alternate address did not receive the message, the issue may be within the recipient's email system or filtering."
+Manager-source Quick Message,procedure-77,Customer,manager-provided,Adding additional Parties to an already filed case,Additional case party is not available,"If while in the Portal and you do not see the Add Party (see below)
+You can do 1 of 2 things:
+Call the clerk of the courts to see if they will allow additional parties to be added via the eportal.
+Choose any party listed to file on Behalf of and file without adding the party/parties and the clerk should add them to the list & case.","If the Portal does not display Add Party, contact the applicable Clerk of Court to confirm whether another party may be added through the Portal and which current procedure applies.
+
+Do not select an unrelated party solely to bypass the required Filed On Behalf Of selection unless the current manager-approved procedure and the Clerk specifically authorize that action."
+Manager-source Quick Message,procedure-85,Customer,review-pending,Form/Filing is accepted but the fee was not paid (Summons & other Fees),Accepted filing did not collect the required fee,"When the clerk has accepted the filing without the fee.
+You have 2 options to make the payment:
+Call the Clerk and ask how they want you to provide payment.
+(Phone or US Mail)
+Or refile the form and pay the fee. (you will lose the date/time stamp)","If the Clerk accepted the filing without collecting the required fee, contact the Clerk and ask how payment must be submitted.
+
+The Clerk may direct payment by another method or may instruct the filer to submit again. A new submission may receive a new filing date and time. Do not refile or promise a refund without the Clerk's direction and current manager-approved payment guidance."
+Manager-source Quick Message,procedure-87,Customer,manager-provided,On the Case Parties/Roles set up:,Case-party and role-entry guidance,"Do NOT use ANY punctuation when entering information
+If you input a business/organization name, you can only input up to 50 characters.
+This includes empty spaces.
+For the role of Plaintiff/Petitioner:
+Always check the boxes to the right Primary Party & Filed on Behalf of
+For the role of Defendant/Respondent: Only check the box Primary Party
+You do not check any boxes for Attorney (if one is listed & filing)
+If applicable:
+For the role of Decedent: Only check mark the box Primary Party
+YOU MUST CLICK “SAVE” AT THE BOTTOM RIGHT OF THE SCREEN
+2nd: If this is an existing case, you will need to follow the instructions on the case party’s area.
+You will need to click on the party to highlight them, once highlighted, scroll down and click on the NEXT button.","Follow the current manager-approved case-party rules:
+
+• Avoid punctuation and special characters in party information.
+• Keep a business or organization name within the current character limit. The source states 50 characters, including spaces.
+• Plaintiff/Petitioner: select Primary Party and Filed on Behalf Of.
+• Defendant/Respondent: select Primary Party.
+• Attorney: do not select party checkboxes unless the current workflow requires otherwise.
+• Decedent, when applicable: select Primary Party.
+• Select Save before continuing.
+
+For an existing case, select the applicable party, confirm it is highlighted, and then select Next. Confirm these role rules before sending because case-party behavior may change."
+Manager-source Quick Message,procedure-96,Customer,manager-provided,"Zoom information, request or to appear telephonically","Zoom, telephone appearance, or hearing request","Thank you for contacting the E-Filing Portal website MyFLCourtAccess.com.
+Unfortunately, I am only able to assist you with guidance to upload your request form.
+To obtain the form, please visit the website for or call the Clerk of the Courts in the county your case is filed in.
+The E-filing Portal help desk only provides navigation and technical support instructions on how to navigate the website to submit/upload documents to create a case, or to an existing case.
+Please be advised that the E-Filing portal website MyFLCourtAccess.com is not the Clerk of the Court or the District Court of Appeals.
+**We cannot verify your court date.
+We cannot help you access Zoom, telephonically connect, or reschedule your Zoom meeting.
+We do not offer or have access to forms to send to you.","Portal Support can explain how to upload a prepared request through MyFLCourtAccess.com, but we cannot:
+
+• Provide the required form
+• Verify a hearing date
+• Connect a participant to Zoom or a telephone hearing
+• Reschedule a hearing
+• Approve a remote appearance
+
+Contact the applicable Clerk of Court or Judicial Assistant for the form and hearing procedure. After the document is prepared, Portal Support can provide filing-navigation instructions."
+Manager-source Quick Message,procedure-99,Customer,manager-provided,How to remove / change cases status from My Cases,Hide an inactive case from My Cases,"If you would like to edit the entries so that they do not appear, click on the case’s “Court Case #” in your “My Cases”.
+You will be taken to a window showing the case’s Service list, across the top of the screen, beneath the Save button, there will be 4 tabs to select from.
+Click on “My Status for this Case”, mark the bubble next to “This is not an active Case. Do not Show on MY Cases List.”, then click Save.
+Moving forward, when you go to your My Cases, the default setting will be to only search Active cases, so those that you’ve updated to “inactive” will no longer be shown. If you ever need to look at the inactive cases again, you may update the search to include or only show the Inactive cases.","To hide a case from the default Active view in My Cases:
+
+1. Open My Cases.
+2. Select the Court Case Number.
+3. Open My Status for this Case.
+4. Select This is not an active case. Do not show on My Cases list.
+5. Select Save.
+
+The case will no longer appear when the search is limited to Active cases. To view it again, change the My Cases search to include Inactive cases."
+Manager-source Quick Message,procedure-102,Customer,manager-provided,When asked about ADA Compliance:,Accessibility or accommodation request,"We can provide you with written instructions on how to file, but we are unable to tell you what forms are needed and where to find them as the e-filing portal does not get into the procedural side of filing.
+1. By law, MyFLCourtAccess.com employees are not allowed to file on behalf of the filer.
+We are happy to provide documentation on how to file documentation.
+2. You, the filer, should contact the clerk's office where your case is filed as we cannot demand the clerk provide you direct access.
+3. As a SRL (self-represented litigant) you are currently not required to use the Portal to submit to the county and can do so in person.
+4. You can contact your local Legal Aid office which, based upon your disability and financial situation, they may be able take you on as a pro bono case.
+If this is a Civil case, another option is the Florida’s Relay Service 941-741-4022","Portal Support can provide accessible written instructions and technical assistance for using MyFLCourtAccess.com. Portal Support cannot file on behalf of a customer, determine which forms are required, or decide a court accommodation.
+
+For court accommodations, alternate filing methods, forms, or access to a case, contact the applicable Clerk of Court or its ADA coordinator. A self-represented filer may also ask the Clerk about permitted non-Portal filing options.
+
+Do not provide legal advice or make eligibility determinations."
+Manager-source Quick Message,procedure-104,Customer,manager-provided,Exemption from e-service:,Request for exemption from eService,"If you need an exemption, review the instructions for these forms and the relevant Florida Rule of General Practice and Judicial Administration 2.516 Section B, sub section: (D), (i), (ii) to understand the procedures for doing so. See (D), (i), (ii) starts on page 168
+https://www.flcourts.gov/content/download/217909/file/Florida-Rules-of-Judicial-Administration.pdf
+Please contact the Clerk of the Courts for the form needed to file for exemption.","Portal Support cannot determine whether a filer qualifies for an eService exemption or provide the required court form.
+
+Contact the applicable Clerk of Court for the current form and procedure. The source refers to Florida Rule of General Practice and Judicial Administration 2.516; confirm the current rule and approved reference before sending."
+Manager-source Quick Message,procedure-109,Customer,manager-provided,Status of Filing,Check the status of a filing,"Log into your account. In the upper right, click on My Submission:","Sign in to MyFLCourtAccess.com and select My Submissions in the upper-right area. Search for the filing and review its current Portal status.
+
+The Portal status does not replace the official docket or the Clerk's case status."
+Manager-source Quick Message,procedure-113,Customer,manager-provided,OCRS viewing/ VOR VOD issues,"OCRS, View on Request, or View on Demand issue","Thank you for contacting the E-Filing Portal website MyFLCourtAccess.com Help Desk.
+The OCRS website is ""powered"" by Civitek, however, Civitek is not the entity that processes the VOD requests and does not have access to documents or the ability to send them to you or advise how to access or download.
+There are a couple of things you may want to look at:
+1. The web browser you are using, you may need to set the website up to allow for popups and redirects.
+2. If the file is too large, it may take a while to pull or not pull at all.
+Unfortunately, this is not something Civitek can control or correct.
+Please contact the Clerk of the Court in the county the case is filed in for more information.
+3. If the case is a Dissolution, Probate, or confidential case, those are not accessible from the OCRS and you will need to contact the Clerk's office for instructions.","Civitek powers the OCRS website, but Portal Support does not process View on Request or View on Demand requests and cannot provide the requested documents.
+
+Before referring the issue:
+1. Allow pop-ups and redirects for the OCRS website.
+2. Allow additional time for a large document to load.
+3. Confirm whether the case type or confidentiality restriction prevents online access.
+
+If the document still cannot be viewed, contact the applicable Clerk of Court. The Clerk controls the request, document access, and alternate delivery."
+Manager-source Quick Message,procedure-118,Customer,manager-provided,VOR or VOD requests,View on Request or View on Demand request,"Unfortunately, the e-filing portal website is not the party responsible for the VOR or VOD, as the website is not the clerk of the courts.
+The e-filing portal does not have the access to send you case documentation.
+Please contact the Clerk of the Courts in the county your case is filed in for assistance.","The E-Filing Portal does not process View on Request or View on Demand requests and cannot send case documents.
+
+Please contact the Clerk of Court for the county where the case is filed to ask about the request status, document access, or an alternate delivery method."
+Manager-source Quick Message,procedure-119,Customer,manager-provided,Accessing a case from My Cases to file to the existing case,File to an existing case from My Cases,"Go to My Cases:
+Find the case and click the 1st SUBMIT button on the left to go to the case:
+Look at the info and scroll down.
+Click next.
+Choose a person from the Current Pary list, scroll down click next.
+Click ADD.
+Chose and check the box next to the document type.
+Upload your file.
+Click Save.
+Continue to review each page scroll down and keep on until you click submit at the end.","To begin an existing-case filing from My Cases:
+
+1. Open My Cases.
+2. Locate the case and select the first Submit option.
+3. Review the case information and select Next.
+4. Select the applicable current party, then select Next.
+5. Select Add in the Documents section.
+6. Choose the correct document type and select it.
+7. Upload the prepared PDF.
+8. Select Save.
+9. Review every remaining page and field, then submit the filing.
+
+Portal Support cannot select the legal document type or party for the filer."
+Manager-source Quick Message,procedure-132,Customer,manager-provided,Multiple Tickets:,Multiple requests submitted for the same issue,"Hello,
+We noticed that multiple tickets and messages have been submitted regarding the same issue across different contact channels. To help us assist you as quickly and efficiently as possible, we kindly ask that you please use one communication channel and a single ticket per issue.
+Submitting multiple tickets or contacting us through several avenues can delay our response time, both for you and for other customers, because it creates duplicate work for our support team.
+Please be assured that your request is in our queue, and we will respond on ticket #() as soon as possible. Thank you for your patience and for helping us keep support running smoothly.","We received multiple tickets or messages about the same issue through more than one contact channel.
+
+To avoid duplicate work and help us respond efficiently, please use one communication channel and one ticket for each issue. Your request remains in our queue, and we will continue the response under ticket [incident number].
+
+Thank you for your patience."
+Manager-source Quick Message,procedure-134,Customer,manager-provided,Specific case party is not available in list to choose on “Filed On Behalf-Of”,Required Filed On Behalf Of party is missing,"Please choose from either the attorney listed or any other party listed, so that you can get your submission to the clerk.
+It does not matter which person you select as the clerk does not collect that information.
+If the clerk is going to allow the party to be added to the case, they will insert the party details to the docket.","The expected case party is not available in the Filed On Behalf Of list.
+
+Confirm the case, party, and docket information before proceeding. Follow the current manager-approved procedure and contact the applicable Clerk when the party must be added or corrected. Do not select an unrelated party solely to bypass the required field unless the Clerk and current procedure explicitly authorize it."
+Manager-source Quick Message,procedure-141,Customer,review-pending,I need the receipt for filings:,Find and print a filing receipt,"Accounts have access to this information if it is within 90 days of todays date.
+Go to the My Account drop down,
+click on the Email log,
+change the dates to match the timeline you are looking for,
+Do not use the Type of Email dropdown,
+Click search
+For receipts, you will be looking for emails that say: Filing Processed.
+Pictures are used as only an example (not your case)
+You can then print out the receipt or download and save it to your computer.
+Motion for Summary Judgement charge $70
+Attorney's being charged for a Motion for Summary Judgement (Example) 251729925 Hillsborough 24-CA-008791 Is there now a $70 fee for this? Per the Clerk I spoke to ...Julie.
+If the case goes into foreclosure, they (the filer) will need to pay the $70. If the case will not go into a foreclosure, they should not have to pay the $70 If the attorney calls the Hillsborough Clerk say it is not a foreclosure, they can get the $70 refunded back to them.
+Emergency filings
+Please keep in mind, it is NOT the e-filing portal that uploads your filings to the docket, it is the Clerk of the Courts office.
+If you have an emergency filing that is ""validating"", always call the clerk first to:
+1. See if there is an issue with the filing.
+2. To see if they could process it quickly if you selected the filing as an emergency option. There is nothing the e-filing website can do to push filings through to the clerk's office.
+My Cases
+To find a case that you have filed to via your e-filing portal account:
+Depending on the set up of your portal look. (There are about 5 versions)
+The steps should be very similar:
+Go to My Cases: You can access from My Account, OR the icon in the upper right corner.
+Click the magnifying glass to open the search options:
+Either search by County or by name. Not both.
+If you cannot pull it up by name, use the county and look for the court case number.
+To access the docket (only if you are the attorney of record and the case is not closed, confidential or a formal probate)
+Click on the case number to the far left to access the docket.
+Docket is accessible via the attorney portal account. Sent guidance on how to use the search options.","To locate a recent filing receipt:
+
+1. Sign in to the Portal.
+2. Open My Account > Email Log.
+3. Set the date range to include the filing date.
+4. Leave Type of Email unselected unless current guidance requires a filter.
+5. Select Search.
+6. Open the message labeled Filing Processed.
+7. Print the receipt or save a copy.
+
+The source states that Email Log information is available for 90 days. Confirm the current retention period before sending this message."
+Curated Troubleshooting,clean-slate-full,Customer/Analyst,Verify before use,Complete clean-slate troubleshooting reply,Complete clean-session troubleshooting,"Hello, and thank you for contacting the E-Filing Portal website MyFLCourtAccess.com Help Desk.
+When an issue like this is reported, please see the below to assist in troubleshooting.
+Do not use the Safari web browser if you are using an Apple/MAC computer.
+Do not try to file from a phone or tablet.
+You can also use the following steps below to reset information to file from a ""clean slate"".
+As insignificant as the Sign Out instructions may seem, if you do not use them, you may experience issues with:
+Information in your corrections filing disappearing.
+Uploading: will upload a different PDF file than what you chose
+Inability to make payments
+Inability to submit the filing
+May check the box for emergency filing
+Slowness on the website
+Sign Out using the Sign Out hyperlink, and sign back in.
+Signing Out should be done:
+a. Every time you leave the website.
+b. After 15-20 minutes of being idle.
+If not, it can cause issues with functions on the website.
+Have you checked the formatting of your electronic file: No color, has to be unlocked/unsecured, no zipped / compressed files.
+Instead of using a saved link, hand key the website into the URL address bar on the web browser.
+1. Clear your web browser cache / cookies and update the browser at least every 2 weeks.
+2. Make sure in your web browser settings, you list our website the allowance for pop ups and redirects.
+3. Verify with your IT Department that the following websites are allowed access through your firewall as 1 or 2 of the sites needed are coming out of the Netherlands:
+https://checkoutshopper-live.adyen.com and *.myflcourtaccess.com, *.vimeocdn.com, *.vimeo.com, *.jsdelivr.net, and *.typekit.net.
+If you are trying to file to a case:  Start your filing over from the beginning.
+Do NOT pull and resume any submission from the workbench.
+If the above does not work, try a different web browser or from a different computer to see if your results are any different.
+Restart your machine after the troubleshooting steps have been used.
+I cannot guarantee this will fix the issue, but they are the steps that we ask you to apply first.","Please complete the following steps in order to start from a clean Portal session:
+
+1. Use a desktop or laptop computer. Do not file from a phone or tablet.
+2. On an Apple/Mac computer, use the currently approved browser instead of Safari.
+3. Select Sign Out in the upper-right area of the Portal. Close the browser, reopen it, and sign in again.
+4. Type https://www.myflcourtaccess.com directly into the browser address bar instead of using a saved favorite or bookmark.
+5. Clear the browser cache and cookies, install available browser updates, and allow pop-ups and redirects for the Portal.
+6. Ask your IT department to confirm the current Portal and payment-domain allowlist.
+7. Verify that each upload is an unlocked, unsecured PDF or PDF/A file, contains no compressed/ZIP content, and meets the current document-format requirements.
+8. Start a new filing from the beginning. Do not resume the failed submission from Workbench.
+9. If the issue continues, try a different approved browser or a different computer.
+10. Restart the computer after completing the steps.
+
+These are the standard first-line troubleshooting steps. They do not guarantee that the issue will be resolved. Record the result of each step."
+Curated Troubleshooting,safari,Customer/Analyst,Verify before use,Safari on Apple/Mac,Use an approved browser on Apple/Mac,Do not use the Safari web browser if you are using an Apple/MAC computer.,"On an Apple/Mac computer, use the currently approved browser instead of Safari. Confirm the supported-browser guidance before sending."
+Curated Troubleshooting,mobile,Customer/Analyst,Verify before use,Phone or tablet filing,Use a desktop or laptop computer,Do not try to file from a phone or tablet.,Complete the filing from a desktop or laptop computer. Do not use a phone or tablet for the filing process.
+Curated Troubleshooting,stale-symptoms,Customer/Analyst,Verify before use,Symptoms associated with an improper sign-out,Symptoms that may indicate a stale Portal session,"As insignificant as the Sign Out instructions may seem, if you do not use them, you may experience issues with:
+Information in your corrections filing disappearing.
+Uploading: will upload a different PDF file than what you chose
+Inability to make payments
+Inability to submit the filing
+May check the box for emergency filing
+Slowness on the website","A stale or improperly closed Portal session may contribute to symptoms such as:
+
+• Information disappearing from a Correction Queue filing
+• A different PDF appearing from the file selected
+• Payment or submission failures
+• Unexpected emergency-filing selection
+• General slowness or inconsistent page behavior
+
+Treat these as possible session symptoms, not proof of the cause."
+Curated Troubleshooting,signout,Customer/Analyst,Verify before use,Sign out and sign back in,Sign out correctly and start a new session,"Sign Out using the Sign Out hyperlink, and sign back in.
+Signing Out should be done:
+a. Every time you leave the website.
+b. After 15-20 minutes of being idle.
+If not, it can cause issues with functions on the website.","Select the Sign Out link in the upper-right area of the Portal, close the browser, reopen it, and sign in again.
+
+Use Sign Out whenever you leave the Portal and after an idle timeout. Closing the browser window without signing out may leave an incomplete session."
+Curated Troubleshooting,file-check,Customer/Analyst,Verify before use,Basic electronic-file check,Verify the electronic file before upload,"Have you checked the formatting of your electronic file: No color, has to be unlocked/unsecured, no zipped / compressed files.","Confirm that the file meets the current Portal requirements:
+
+• PDF or PDF/A format, as applicable
+• Unlocked, unsecured, and not password protected
+• Not compressed or contained in a ZIP file
+• Required page size and file-size limits
+• No prohibited color content
+• Compatible filename and characters"
+Curated Troubleshooting,handkey,Customer/Analyst,Standard,Hand-key the Portal address,Type the Portal address directly,"Instead of using a saved link, hand key the website into the URL address bar on the web browser.","Open a new browser tab and type https://www.myflcourtaccess.com directly into the address bar instead of opening a saved favorite, bookmark, or old link."
+Curated Troubleshooting,browser-network-checks,Customer/Analyst,Verify before use,"Browser, pop-up, and firewall checks","Browser, pop-up, and firewall checks","1. Clear your web browser cache / cookies and update the browser at least every 2 weeks.
+
+2. Make sure in your web browser settings, you list our website the allowance for pop ups and redirects.
+
+3. Verify with your IT Department that the following websites are allowed access through your firewall as 1 or 2 of the sites needed are coming out of the Netherlands:
+https://checkoutshopper-live.adyen.com and *.myflcourtaccess.com, *.vimeocdn.com, *.vimeo.com, *.jsdelivr.net, and *.typekit.net.","Complete these browser and network checks:
+
+1. Clear the browser cache and cookies, then install available browser updates.
+2. Allow pop-ups and redirects for MyFLCourtAccess.com.
+3. Ask the customer's IT department to confirm the current allowlist for the Portal and payment services. The manager source lists:
+   • checkoutshopper-live.adyen.com
+   • *.myflcourtaccess.com
+   • *.vimeocdn.com
+   • *.vimeo.com
+   • *.jsdelivr.net
+   • *.typekit.net
+
+Record which checks were completed and the result."
+Curated Troubleshooting,restart-filing,Customer/Analyst,Standard,Start the filing over,Start the filing again from the beginning,If you are trying to file to a case:  Start your filing over from the beginning.,Create a new filing and complete it from the beginning. Do not reuse the failed filing session or assume that the saved draft is intact.
+Curated Troubleshooting,no-resume,Customer/Analyst,Verify before use,Do not resume the failed Workbench submission,Do not resume the failed Workbench submission,Do NOT pull and resume any submission from the workbench.,Do not reopen or resume the failed submission from Workbench. Start a new filing after completing the applicable session and browser troubleshooting.
+Curated Troubleshooting,alternate,Customer/Analyst,Standard,Try another browser or computer,Test a different browser or computer,"If the above does not work, try a different web browser or from a different computer to see if your results are any different.","After completing the standard steps, test the same action in another currently approved browser or on a different computer. Record whether the result changes."
+Curated Troubleshooting,restart-machine,Customer/Analyst,Standard,Restart the computer,Restart the computer,"Restart your machine after the troubleshooting steps have been used.
+I cannot guarantee this will fix the issue, but they are the steps that we ask you to apply first.","Restart the computer after completing the browser and Portal-session steps, then test the action again. Record the result."
+Curated Troubleshooting,upload-full,Customer/Analyst,Verify before use,Complete upload and filing-environment reply,Complete document-upload checklist,"We also provide the following steps to provide you with a better filing environment.
+I am going to list the below information, highlighting on some points I feel are important.
+I know you may have tried of the items on here, but because I have only had 2 people report something similar to this issue, and it's not widespread,
+I am limited on what assistance I can offer.
+On uploading, the formatting and the names of the files are crucial:
+Please adhere to the information below when filing.
+You cannot use the Safari web browser that is on most Apple/Mac devices.
+Your file must be in PDF or PDF/a format.
+If you are scanning pages into a PDF, make sure they are at 300DPI
+*Will NOT accept compressed or zipped files.
+*Will NOT accept PDF files if the file name has special or odd characters
+In naming your PDF file:
+Do NOT use hyphens, underscores, or odd characters (%^&*( )=+) or web dings
+*Will NOT accept PDF files if the file name exceeds 36 characters in length.
+*Will not accept “locked” or “Secured” PDF files.
+***NO VIDEOS*** Please call the clerk of the court in the county your case is filed in and ask how to get that submitted to them
+**NO COLOR PICTURES** If they must be in color, call the clerk to ask how to submit them outside of the portal.
+No document in color other than black, including the signatures will be accepted.
+The page size cannot exceed 8.5 x 11
+DO NOT SAVE TO THE WORKBENCH TO GO BACK LATER TO RESUME.
+IT WILL NOT WORK.
+When uploading documents: make sure the 100% bar changes to a decimal number. If it does not, you cannot upload other documents.","Before uploading, verify each item below:
+
+1. Use a desktop or laptop and a currently approved browser.
+2. Save the document as PDF or PDF/A, as required for the document type.
+3. For scanned documents, use 300 DPI unless current guidance specifies otherwise.
+4. Do not upload compressed or ZIP files.
+5. Remove incompatible filename characters. The manager source specifically identifies punctuation and special characters as possible causes.
+6. Keep the filename within the current approved character limit. The supplied manager source states 36 characters, including spaces; confirm before sending.
+7. Remove document security, encryption, password protection, and locked settings.
+8. Confirm that the page size is Letter: 8.5 × 11 inches.
+9. Confirm the current requirements for color content, photographs, audio, and video. The supplied manager guidance does not permit video or audio uploads and directs color-submission questions to the Clerk.
+10. Wait for each upload to finish processing before adding another document.
+11. Do not save a failed filing to Workbench and return later. Start over after completing the applicable troubleshooting.
+
+If a document must be submitted in a format the Portal does not accept, contact the applicable Clerk of Court for an approved alternate method."
+Curated Troubleshooting,pdf-format,Customer/Analyst,Verify before use,PDF or PDF/A requirement,Confirm PDF or PDF/A format,"You cannot use the Safari web browser that is on most Apple/Mac devices.
+Your file must be in PDF or PDF/a format.","Confirm that the document is saved as PDF or PDF/A, according to the current requirement for that document type. Renaming a non-PDF file with a .pdf extension does not convert it."
+Curated Troubleshooting,dpi,Customer/Analyst,Verify before use,Scanned pages at 300 DPI,Use the approved scan resolution,"If you are scanning pages into a PDF, make sure they are at 300DPI","When scanning pages into a PDF, use 300 DPI unless the current manager-approved document guidance specifies a different resolution."
+Curated Troubleshooting,no-zip,Customer/Analyst,Standard,No compressed or ZIP files,Remove compressed or ZIP packaging,*Will NOT accept compressed or zipped files.,"Upload the individual PDF file. Do not upload a compressed archive, ZIP file, or a PDF contained inside a ZIP file."
+Curated Troubleshooting,filename-chars,Customer/Analyst,Verify before use,Filename characters,Use a simple PDF filename,"*Will NOT accept PDF files if the file name has special or odd characters
+In naming your PDF file:
+Do NOT use hyphens, underscores, or odd characters (%^&*( )=+) or web dings","Rename the PDF using letters and numbers only when possible. Remove punctuation, symbols, and other unusual characters that may prevent upload.
+
+Example: rename asd_812#.pdf to asd812.pdf."
+Curated Troubleshooting,filename-length,Customer/Analyst,Verify before use,Filename length limit,Keep the filename within the approved limit,*Will NOT accept PDF files if the file name exceeds 36 characters in length.,"Shorten the PDF filename so it remains within the current approved character limit. The supplied manager source states 36 characters, including spaces."
+Curated Troubleshooting,locked,Customer/Analyst,Standard,Locked or secured PDF,Remove PDF security and password protection,*Will not accept “locked” or “Secured” PDF files.,"The PDF must be unlocked and unsecured. Remove encryption, password protection, editing restrictions, and other security settings before uploading."
+Curated Troubleshooting,videos,Customer/Analyst,Verify before use,Video submission,Video files are not accepted through the Portal,***NO VIDEOS*** Please call the clerk of the court in the county your case is filed in and ask how to get that submitted to them,The supplied manager guidance does not permit video uploads through the Portal. Contact the applicable Clerk of Court to ask about an approved alternate submission method.
+Curated Troubleshooting,color,Customer/Analyst,Verify before use,Color pictures and non-black content,Confirm the current color-content requirements,"**NO COLOR PICTURES** If they must be in color, call the clerk to ask how to submit them outside of the portal.
+No document in color other than black, including the signatures will be accepted.","The supplied manager guidance requires black-only document content, including signatures, and directs filers to contact the Clerk when color is necessary. Confirm the current requirement before sending."
+Curated Troubleshooting,page-size,Customer/Analyst,Verify before use,Page-size limit,Set every page to Letter size,The page size cannot exceed 8.5 x 11,Confirm that every page is exactly 8.5 × 11 inches. A single oversized or irregular page can cause the upload to fail.
+Curated Troubleshooting,workbench-warning,Customer/Analyst,Verify before use,Do not save and resume from Workbench,Do not return later to a failed Workbench filing,"DO NOT SAVE TO THE WORKBENCH TO GO BACK LATER TO RESUME.
+IT WILL NOT WORK.",Do not save a failed filing to Workbench with the intention of resuming it later. Complete the applicable troubleshooting and start a new filing.
+Curated Troubleshooting,upload-progress,Customer/Analyst,Verify before use,Upload progress must complete before another file,Wait for each upload to finish processing,"When uploading documents: make sure the 100% bar changes to a decimal number. If it does not, you cannot upload other documents.","After selecting a file, wait until the upload and processing indicator fully completes before adding another document. If processing does not complete, do not continue adding files."
+Curated Troubleshooting,dmarc,Customer/Analyst,Verify before use,"Yahoo, Gmail, AOL, and DMARC/DKIM reply","Email-delivery review for Yahoo, Gmail, or AOL","Yahoo, Gmail, and AOL users:
+If you run into a DMARC/DKIM issue, we are unable to correct this for you.
+The Florida Courts E-Filing Portal has performed due diligence on our end to ensure our compliance to Google, Yahoo, and AOL's new requirements via Microsoft.
+We have not experienced any issues from this.
+If you have an email address that is hosted by Yahoo, Google, or AOL; please be aware of the following changes that these companies had imposed effective February 1, 2024.
+Please visit the website below or search on their websites to see what responsibilities you may have and to make sure you are aware of any changes you may need to make.
+https://www.proofpoint.com/us/blog/email-and-cloud-threats/google-and-yahoo-set-new-email-authentication-requirements","For delivery problems involving Yahoo, Gmail, or AOL addresses:
+
+1. Confirm that the address on the Portal account and eService list is correct.
+2. Check Spam, Junk, Quarantine, and email-security filtering.
+3. Ask the customer's email or IT provider to review DMARC/DKIM handling and allow the Portal sender addresses.
+4. Confirm whether the message appears in the Portal Email Log.
+
+The source includes a 2024 Proofpoint article for background. Treat it as reference material only and confirm the current approved guidance before sending."
+Manager-source Troubleshooting,procedure-26,Customer/Analyst,manager-provided,* Formatting /Conversion Issues resulting in:,"PDF formatting, conversion, and upload review","Loss of information when filing Indexes, Exhibit markers, Bookmarks, Page Numbers, etc.
+* Portal isn’t accepting the PDF files you are trying to upload.
+If this contains the following, your file will need to be in PDF/a format (see attached document):
+Transcripts & Briefs
+Contains bookmarks or indexing
+We typically see these issues due to the way the files are being created or formatted.
+1. Using embedded fonts not recognized by the system.
+2. Not leaving the space needed in the margin area.
+3. The type of software / program being used for your conversion.
+When filing the type of files that have Headers / Footers, Page Numbering, etc., the PDF file is to be formatted / converted in a specific way.
+Margins and Print Area: It’s very important to stay within the guidelines, or the header/footers and page numbers will disappear as well as other information.
+**Transcripts with any indexing, bookmarks etc, MUST be in PDF/A 2-B format.
+PDF files shall be filed in a format capable of being electronically searched and printed.
+Unfortunately, we cannot correct or convert your files for you.
+I am listing some information below, as well as attaching the PDF FAQs to assist in helping you determine if there is a formatting issue you will need to resolve.
+1. No locked, secured or encrypted PDF files
+2. Do not scan in pages using a DPI larger than 300.
+3. The name you have given the file is incompatible.
+If your file has special characters you will need to rename the electronic file.
+Example:
+if it looks like asd_812#.pdf, rename it, removing the unacceptable characters to something else like asd812.pdf
+4. The name of your PDF file cannot exceed 36 characters including blank spaces.
+5. The file was corrupted in transition from the original format to the format you currently have. Ex: Word to pdf or jpg to .docx
+6. The file page size is too large. instead of 8.5x11 it is 8.62x11.26 or any other size other than letter. (may need to check your software to undo any automatic settings that may be converting them a specific way other than what you require)
+7. Do NOT upload compressed or zipped files.
+8. When uploading a file, make sure it is completely uploaded before trying to add another document. (the 100% green bar needs to be gone and reflect a percentage number)
+9. Information entered is either incorrect or missed
+10. Remove ALL COLOR- the portal does not accept any color documentation including signatures, hyperlinks and email addresses.
+11. The maximum upload at one time, with all files combined cannot exceed 50mb for Lower Courts or 200mb for Supreme and Appellate Courts.
+That means if you upload 4 documents and their combined size exceeds the maximum; your files will not upload.
+12. Formatting is not correct. ie: embedded fonts, margin errors, etc.
+13. ***NO VIDEOS / NO COLOR PICTURES, NO AUDIO RECORDINGS***","Use this checklist when a PDF is rejected, displays missing or stacked text, loses bookmarks or page numbers, or changes after upload:
+
+1. Confirm whether the document must be PDF/A. The source specifically identifies transcripts, briefs, bookmarks, and indexing as common PDF/A cases.
+2. Use a reputable PDF creator and standard fonts. Embedded or unsupported fonts can alter text.
+3. Confirm the page margins and printable area. Headers, footers, page numbers, and exhibit markers can disappear when they fall outside the supported area.
+4. Remove password protection, encryption, security, and locked settings.
+5. Use no more than 300 DPI for scanned pages unless current guidance specifies otherwise.
+6. Rename the file using a simple filename without special characters.
+7. Keep the filename within the current approved limit. The source states 36 characters, including spaces.
+8. Confirm that every page is exactly 8.5 × 11 inches.
+9. Do not upload compressed or ZIP files.
+10. Wait for each file to finish processing before adding another.
+11. Confirm the current color, audio, video, and combined-upload limits. The source lists 50 MB for lower courts and 200 MB for Supreme/Appellate Courts; verify current limits before sending.
+12. If the original document and the Portal result differ, preserve the original and escalate with the test result under the current procedure.
+
+Portal Support cannot repair or convert a customer's document. Provide approved guidance and document the result of each check."
+Manager-source Troubleshooting,procedure-35,Customer/Analyst,review-pending,When Payments aren’t processing at all,Payment will not process,"Are you trying to use a saved payment? Amex, Visa, MC or ACH?
+Last 4-digits of card or account:
+Have you tried to hand key in the information and check the box at the bottom to Save payment for Future Use?
+When was the last time you successfully made a payment using that exact card?
+Is this a new card? Has the Bank name or Expiration date changed?
+Have you changed the username or password to your MyFLCourtAccess.com portal account recently?
+Are you using Chrome, Edge, or Firefox as your website browser?
+Have you tried a different browser?
+Try running the browser in incognito mode.
+When was the last time you cleared the web browsers cache, cookies and updated?
+Have any new updates been done to your machine that the IT department would need to go in and reset the settings for your web browser to allow pop ups and other information from our website?
+Has your machine been restarted in the last week?
+Please make sure that the following have been added by your IT Department:","Collect and test the following before escalating a payment-processing issue:
+
+• Payment type: credit, debit, or ACH
+• Last four digits only of the card or account
+• Saved payment method or manually entered payment
+• Date the same payment method last worked
+• Whether the card, bank name, billing information, or expiration date changed
+• Whether the Portal username or password was recently changed
+• Browser name and version
+• Result in another approved browser or private/incognito window
+• Date cache and cookies were cleared and the browser was updated
+• Recent device, browser, security-software, or network changes
+• Result after restarting the computer
+• Confirmation that the current Portal and Adyen domains are allowed by the customer's IT department
+
+Do not collect full card or bank-account information. Record the exact error and the result of each step."
+Manager-source Troubleshooting,procedure-36,Customer/Analyst,manager-provided,Bounce Back Issues,Bounce-back alert or counter issue,"There are a couple of reasons for bounce back alerts.
+It does not mean that your filing was incomplete.
+Please look over the attached and follow the instructions to:
+1. Clear the alert
+2. Reset the Bounce back counter
+3. Verify the email address is correct with what is in your profile settings vs. the email the e-service was done on.","A bounce-back alert does not necessarily mean the filing is incomplete.
+
+1. Follow the approved steps to clear the alert.
+2. Reset the bounce-back counter under the current procedure.
+3. Compare the email address on the Portal profile with the address used for eService.
+4. Confirm whether the message appears in the Email Log.
+5. Record the exact bounce-back text and result."
+Manager-source Troubleshooting,procedure-39,Customer/Analyst,incident-specific,Deleting the Saved form of payment type:,Saved payment method cannot be deleted,"Because payments may still be tied to the form of payment you used previously, it is possible that is the reason you are unable to delete it at this time.
+When was the last time the card was used to pay for a submission? Are there any payments till processing from that card or in corrections?","A saved payment method may remain unavailable for deletion while a payment is still processing or associated with a filing in Correction Queue.
+
+Confirm:
+• Date the payment method was last used
+• Whether any payment is still pending or processing
+• Whether a filing using that method is in Correction Queue
+• Whether the payment method can be removed after those items complete
+
+Do not repeatedly delete or recreate payment methods without verifying the transaction status."
+Manager-source Troubleshooting,procedure-44,Customer/Analyst,manager-provided,Primary/Alternate email on Portal Account Not Receiving e-Service,Primary or alternate email is not receiving eService,"There are a few things to check.
+Check the Spam & Junk folders.
+Your email program may not have marked the email addresses the emails are coming from as an “Allowed Sender”.
+Your IT Provider may need to add the email address to the allowed list or whitelist the following IP addresses:
+e-service (eservice@myflcourtaccess.com): [IP redacted], [IP redacted], [IP redacted], [IP redacted], [IP redacted]
+no_reply (noreply@myflcourtaccess.com): [IP redacted] and [IP redacted]
+There is an issue with your email server and will need to be checked by your IT Provider
+Double check that you selected persons from the Service list to receive the e-serviced filing.","Complete the following checks:
+
+1. Confirm the email address on the Portal profile and eService list.
+2. Check Junk, Spam, Quarantine, and email-security filtering.
+3. Confirm that the intended recipient was selected on the service list for the filing.
+4. Ask the recipient's IT team to allow the current Portal sender addresses, including eservice@myflcourtaccess.com and noreply@myflcourtaccess.com.
+5. Review the Portal Email Log to determine whether the message was generated.
+6. If the primary address received the message but an alternate address did not, ask the recipient's email provider or IT team to review its delivery and filtering logs."
+Manager-source Troubleshooting,procedure-45,Customer/Analyst,manager-provided,“Stuck” and unable to complete filing,Filing is stuck and cannot be completed,"When you get ""stuck"" like that, it means you must start over.
+Make sure the Petition is the first form you upload in the documents area.
+Do not try to pull the saved submission from the workbench.
+You will need to make sure not to leave your computer until the filing has been done.
+If you leave the site open more than 15 minutes, it times out, which could cause issues.
+Make sure when you are done with the website that you are using the Sign Out hyperlink in the
+upper right corner to log out. If not, it could also cause issues with function when you go back into the site.","When the filing becomes stuck:
+
+1. Stop using the current filing session.
+2. Complete the clean-session browser troubleshooting.
+3. Start the filing again from the beginning; do not resume the failed Workbench submission.
+4. Upload the required initiating document first when the case workflow requires it.
+5. Complete the filing without leaving the Portal idle. The source identifies 15–20 minutes as a possible timeout range; confirm current behavior.
+6. Use the Sign Out link when leaving the Portal.
+
+Record the page where the filing became stuck and whether the new session changed the result."
+Manager-source Troubleshooting,procedure-48,Customer/Analyst,manager-provided,Uploaded verbiage/name does not match the document uploaded,Uploaded document title or content does not match,"When this happens, it means there was a function issue.
+Use the below to make sure the right documents with correct description are uploading:
+Normally when we see this issue, we send out the troubleshooting steps below:
+Do not ever use the back/refresh on your web browser.
+Do NOT use the back or refresh buttons
+Sign Out using the Sign Out hyperlink, and sign back in.","If the uploaded document name, description, or preview does not match the file selected:
+
+1. Do not use the browser Back or Refresh buttons.
+2. Select Sign Out, close the browser, and start a new session.
+3. Complete the cache/cookie and browser-update steps.
+4. Start a new filing instead of resuming the failed Workbench item.
+5. Re-select the document type, then upload the correct file and verify the preview before continuing.
+6. Preserve screenshots and the original file if the mismatch occurs again."
+Manager-source Troubleshooting,procedure-49,Customer/Analyst,review-pending,When trying to resubmit a filing that was in the Correction Queue- but Payment wont process,Correction Queue payment still will not process,"The payment you made previously has been refunded.
+Go back through the filing, starting with the case information area. Make sure all the drop downs are correct. Scroll to the bottom and click next.
+On your case parties, click the edit link. On the drop down next to role:
+for the Plaintiff, check mark both boxes: Primary Party & Filed on Behalf of- make sure all the information is correct, (check that zip code is there) click save.
+For Defendant, check mark the box: Primary Party make sure all the information is correct, click save.
+Scroll down click next. Do the same for each area that comes next.
+In the documents area, make sure the name of your pdf files do not exceed 32 spaces and contain:
+NO hyphens or underscores, no odd characters (%^&*( )=+) or web dings
+Hand key your payment information before scrolling down to click next.
+If this does not work, please use the following troubleshooting information to relay to you IT Department.
+(Also send them the web browser troubleshooting steps)
+If still unable to get your payment to process: please email: [internal staff email redacted] referencing ticket #","Before escalating a Correction Queue payment failure:
+
+1. Confirm the status of the original payment or refund in TPE.
+2. Reopen the filing from the beginning of the Correction Queue workflow and review every case-information field.
+3. Edit each case party and confirm the required role selections, address, and ZIP code, then save.
+4. Review every subsequent page before continuing.
+5. Verify each PDF filename using the current approved character and length rules. The source contains conflicting 32- and 36-character limits; use the current manager-approved limit.
+6. Remove the saved payment method when permitted, then manually enter the payment information.
+7. Complete the browser, session, pop-up, and firewall troubleshooting.
+8. Record the exact error and result of each step.
+9. If the issue continues, create the Analyst escalation package under the current internal routing procedure.
+
+Do not include full payment credentials or an internal staff email address in the customer message."
+Manager-source Troubleshooting,procedure-58,Customer/Analyst,manager-provided,How do I get a PDF out of XFA format?,Convert an XFA form to a standard PDF,"How do I convert an XFA to PDF? To convert XFA PDF to normal PDF, click the Print button, on the Print window that opens, tick Print as Image, and click Print. The XFA form will be converted to a PDF file that you can open with any PDF reader.","An XFA form may need to be flattened before the Portal can process it.
+
+Using an approved PDF application:
+1. Open Print.
+2. Select an approved Print to PDF destination.
+3. If available, enable Print as Image.
+4. Create the new PDF.
+5. Open the new file and verify every page, field, signature, and attachment before uploading.
+
+Do not assume that printing preserved all content. The filer is responsible for reviewing the converted document."
+Manager-source Troubleshooting,procedure-68,Customer/Analyst,manager-provided,When documents change while viewing / correcting in the documents area,Documents change while viewing or correcting a filing,"This can sometimes happen for a couple of reasons.
+1. Your web browser needs to have the cache and cookies cleared and the browser updated.
+2. You did not sign out of the website using the Sign Out hyperlink but just X out of the web page, which can cause function issues when you log back in
+over an already ""open"" session.
+3. The website was open too long causing it to time out. Usually, if you have the website open and idle for more than 15-20 minutes.
+4. Not going through the process of choosing a document type before uploading the new document to replace the one during a filing in the correction queue.
+If the above happens while fixing a filing in the correction queue to an existing case:
+Please go to the docket, open the documents to see what has been filed, then upload documents that were not uploaded in another filing to the
+existing case.
+Party Names from the Financial ID#
+You can look this up by going to My Submissions.
+Enter the EPTL number from your statement: 4229336 into the Financial ID box.
+Change the Submission date to a week before the money was removed from your account.
+You can go back 90 days from todays date.
+Click search.
+It should bring up the filing for you to click on and see the case party names.","Possible causes include a stale browser session, an idle timeout, incomplete cache/cookie maintenance, or replacing a Correction Queue document without first selecting the correct document type.
+
+1. Select Sign Out and close the browser.
+2. Clear cache and cookies, update the browser, and start a new session.
+3. Do not leave the filing idle for an extended period.
+4. In Correction Queue, select the correct document type before uploading the replacement file.
+5. Verify each preview before continuing.
+6. If a required document was omitted from an accepted filing, review the official docket and submit the missing document as a separate filing only under the applicable Clerk and Portal procedure.
+7. Preserve the original file and screenshots if the document changes again."
+Manager-source Troubleshooting,procedure-100,Customer/Analyst,manager-provided,Exceeds the 8.5x11 page size requirements (resize),PDF page size is larger than 8.5 × 11,"Depending on how you converted your pdf file, some printers and scanners used or the software program you are using to create the pdf, is not converting the document correctly.
+When physically scanning, or printing pages out and then scanning:
+Most machines have rollers (some plastic, some rubber). If they are worn down or need to be cleaned, they could be skewing the page when it pulls it through the machine. Then it throws it off the size you were scanning it to be.
+Especially when the pages have been previously stapled or creased.
+Or-
+In the software or the setting on the machine itself:
+You may need to review and or adjust the settings to the correct size.
+There are a few websites that assist with the resizing / conversion of files.
+If you would like to use it, see the attached flyer with instructions provided.
+(note to HD person-attach the instructions to the email)
+** Emailed the instructions on resizing documents for submission","A scanner, printer driver, or PDF-creation program may create pages that are slightly larger than Letter size.
+
+1. Check every page, not only the first page.
+2. Set the document or scanner output to Letter: 8.5 × 11 inches.
+3. Disable automatic scaling, overscan, or custom paper-size settings.
+4. Rescan pages that are skewed because of worn rollers, folds, staples, or creases.
+5. Use the approved resizing instructions or approved local software.
+6. Open the resized PDF and verify the content before upload.
+
+Do not upload sensitive court documents to an unapproved public conversion website."
+Manager-source Troubleshooting,procedure-105,Customer/Analyst,manager-provided,PDF Validation / Identifier,Validate PDF/A format,"I ran the document through a pdf a validator to see what it returned with. See below.
+Attached is what I converted to PDF/A but it gave me an error that certain components couldn’t convert.
+That being said I was able to run the converted doc through the validation, and it passed the PDF/A check.
+You can use the online tool to validate your file and refile the document.
+Either way that original PDF was not in PDF/A format.
+https://www.pdfen.com/pdf-a-validator","Use an organization-approved PDF/A validator when the document type requires PDF/A.
+
+1. Validate the original file.
+2. If conversion is needed, create a copy and convert it using an approved tool.
+3. Review any conversion errors or unsupported components.
+4. Validate the converted copy again.
+5. Open and visually compare every page before filing.
+
+A file can pass a validator and still contain a visual conversion problem, so validation does not replace document review."
+Manager-source Troubleshooting,procedure-106,Customer/Analyst,manager-provided,"PDF file has corrupt. deleted, missing, or stacked verbiage","Corrupted, missing, or stacked PDF text","When you come across tickets where the filer is reporting their submitted PDF document had stuff deleted from it, letters turn into wingdings, letters stacked on top of one another it most likely is they are using a font that isn't standard. To test this, you will need to have them send you the original document and run it through the TEST Portal to see if the results are the same. If they are, you can post in Teams, provide the original document and tag Rao.
+Recommendations for the filer (include the PDF/A FAQ document and the link to the video): https://www.youtube.com/watch?v=vwx288WZGaU
+Make sure you are using a reputable PDF creator
+Use one of the standard fonts: - Times Roman - Times Italic - Times Bold - Times Bold Italic - Courier Regular - Courier Oblique - Courier Bold - Courier Bold Oblique - Helvetica Regular - Helvetica Oblique - Helvetica Bold - Helvetica Bold Oblique - Symbol - ITC Zapf Dingbats","When text disappears, overlaps, or changes into symbols, unsupported or improperly embedded fonts may be the cause.
+
+Analyst steps:
+1. Obtain the original document through the approved secure process.
+2. Reproduce the upload in the approved test environment.
+3. Compare the original with the test result.
+4. If the issue reproduces, preserve the original, screenshots, and test result and escalate under the current procedure.
+
+Customer guidance:
+• Use a reputable PDF creator.
+• Use standard fonts when possible.
+• Save or convert to the required PDF/A format.
+• Review every page of the final PDF before uploading."
+Manager-source Troubleshooting,procedure-112,Customer/Analyst,manager-provided,Unable to click on and preview the file they just uploaded:,Uploaded PDF cannot be previewed,"May have had an update to their adobe or their web browser.
+How to fix:
+Go to your web browser setting- manage extensions- adobe and uncheck the (auto open)
+then can preview the uploaded file the documents section.","A recent browser or Adobe extension update may change how PDFs open.
+
+1. Confirm the browser and Adobe application are current.
+2. Open the browser extension settings.
+3. Review the Adobe PDF extension and disable automatic opening in the external application when the current browser procedure requires it.
+4. Reload the Portal, upload the file again, and test Preview.
+5. If the preview still fails, test another approved browser and record the result."
+Manager-source Troubleshooting,procedure-135,Customer/Analyst,manager-provided,100-character limit error message:,Filename or 100-character-limit error,"The error is because of the way your PDF document is named.
+Please try to keep it at a total of 36 spaces:
+The name you have given the file is incompatible.
+If your file has special characters (or exceeds more than 36 total spaces, including blanks) you will need to rename the electronic file.
+Example:
+if it looks like asd_812#.pdf, rename it, removing the unacceptable characters to something else like asd812.pdf","The error may be caused by an incompatible PDF filename.
+
+1. Shorten the filename to the current approved limit. The manager source states 36 characters, including spaces.
+2. Remove punctuation and special characters.
+3. Use a simple letters-and-numbers filename.
+
+Example: rename asd_812#.pdf to asd812.pdf.
+
+Confirm the current filename limit before sending."
