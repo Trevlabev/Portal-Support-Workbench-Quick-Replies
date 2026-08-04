@@ -1,10 +1,5 @@
 @echo off
 setlocal
-powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Start_Local_Preview.ps1"
-set "EXITCODE=%ERRORLEVEL%"
-if not "%EXITCODE%"=="0" (
-  echo.
-  echo Preview failed. Review the newest PortalSupportWorkbench_GitHubPreview log in Downloads.
-  pause
-)
-exit /b %EXITCODE%
+cd /d "%~dp0"
+start "Portal Support Workbench" http://localhost:8000
+py -3 -m http.server 8000 2>nul || python -m http.server 8000

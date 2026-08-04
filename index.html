@@ -1,142 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
-<meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench — Polished Full Efficiency GitHub Pages Edition</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div id="securityGate" class="gate-overlay" role="dialog" aria-modal="true">
-  <div class="gate-dialog">
-    <span class="eyebrow">GitHub Pages Edition · Polished Full Efficiency</span>
-    <h1>Authorized internal use only</h1>
-    <p>This static website contains operational support guidance. GitHub Pages may make a site publicly accessible. Do not publish it without supervisor, information-security, and repository-owner authorization.</p>
-    <div class="warning-box"><strong>Do not enter:</strong> passwords, Social Security numbers, full payment-card or bank-account numbers, credentials, access tokens, or unnecessary customer information.</div>
-    <p>The application has no AI, API calls, analytics, or ticket-content transmission code. Ticket facts remain in the current browser tab. Pins, recent templates, and interface preferences may be stored in the browser.</p>
-    <label class="ack"><input id="ackCheck" type="checkbox"> I understand the publication and data-handling warning.</label>
-    <button id="enterApp" class="primary" disabled>Enter Workbench</button>
-  </div>
-</div>
-<header class="topbar">
-  <div>
-    <h1>Portal Support Workbench</h1>
-    <p>GitHub Pages Edition v2.3 · Polished Full Efficiency</p>
-  </div>
-  <div class="top-actions">
-    <button id="topSearch" class="top-action">Search <kbd>Ctrl K</kbd></button>
-    <button id="topNewTicket" class="top-action">New Ticket <kbd>Alt N</kbd></button>
-    <div class="badges"><span>LOCAL LOGIC</span><span>NO AI</span><span>NO TELEMETRY</span></div>
-  </div>
-</header>
-<div class="app-shell">
-  <aside class="sidebar">
-    <div class="mode-switch" aria-label="Workbench mode">
-      <button id="workModeButton" class="mode-button active" data-mode="work">Work Mode</button>
-      <button id="trainingModeButton" class="mode-button" data-mode="training">Training</button>
-    </div>
-    <div class="nav-section work-nav">
-      <span class="nav-heading">Daily work</span>
-      <button class="nav active" data-tab="work">Work Ticket</button>
-      <button class="nav" data-tab="troubleshoot">Troubleshoot</button>
-      <button class="nav" data-tab="composer">Response Builder</button>
-      <button class="nav" data-tab="replies">Quick Replies</button>
-    </div>
-    <div class="nav-section training-nav hidden">
-      <span class="nav-heading">Training & reference</span>
-      <button class="nav" data-tab="registration">Registration Training</button>
-      <button class="nav search-nav" data-action="search">Search All Guidance</button>
-      <button class="nav" data-tab="source">Source Guidance</button>
-      <button class="nav" data-tab="visuals">Process Maps</button>
-      <button class="nav" data-tab="terms">Terminology</button>
-      <button class="nav" data-tab="systems">System Reference</button>
-      <button class="nav" data-tab="policies">Policy Guardrails</button>
-      <button class="nav" data-tab="about">About / Hosting</button>
-    </div>
-    <div class="sidebar-note">
-      <strong>Search:</strong> Ctrl+K<br>
-      <strong>New ticket:</strong> Alt+N<br>
-      <strong>Response Builder:</strong> Alt+R<br>
-      <strong>Quick Replies:</strong> Alt+Q<br>
-      <strong>Troubleshoot:</strong> Alt+T<br><br>
-      Ticket facts are not saved by this app.
-    </div>
-  </aside>
-  <main>
-    <section id="tab-work" class="tab active">
-      <div class="hero">
-        <div><span class="eyebrow">Daily Work Console</span><h2>Work one ticket from intake to closure.</h2><p>Select the ticket type. The console displays only the relevant facts, systems, grouped checklist, source warning, and outputs.</p></div>
-        <div class="hero-actions">
-          <button id="heroNewTicket" class="secondary">Start next ticket</button>
-          <button id="nextIncomplete" class="secondary">Next incomplete</button>
-          <button id="copyTicketBundle" class="primary">Copy ticket bundle</button>
-        </div>
-      </div>
-      <div class="steps"><span class="step active">1. Identify</span><span class="step">2. Investigate</span><span class="step">3. Respond</span><span class="step">4. Close / Escalate</span></div>
-      <div class="work-grid">
-        <div>
-          <div id="identifyCard" class="card"><label>Ticket type<select id="issueType"></select></label><div id="purpose" class="info"></div></div>
-          <div id="factsCard" class="card"><div class="card-head"><div><h3>Required ticket facts</h3><p>Fields change with the selected workflow.</p></div><button id="clearTicket" class="danger">Clear ticket</button></div><div id="ticketFields" class="field-grid"></div></div>
-          <div id="investigateCard" class="card">
-            <div class="card-head"><div><h3>Investigation checklist</h3><p>Mark each item Done or N/A. Core items affect the completion gate.</p></div><div class="row"><button id="copyInvestigation" class="secondary">Copy investigation</button><button id="markAll" class="secondary">Mark all done</button></div></div>
-            <h4>Systems checked</h4><div id="systems" class="chips"></div>
-            <div class="check-toolbar">
-              <input id="checkSearch" placeholder="Filter checklist steps">
-              <div class="segmented" id="checkFilter"><button class="active" data-check-filter="all">All</button><button data-check-filter="open">Open</button><button data-check-filter="core">Core</button><button data-check-filter="done">Done</button><button data-check-filter="na">N/A</button></div>
-              <label class="compact-toggle"><input id="collapseCompleted" type="checkbox"> Hide completed groups</label>
-            </div>
-            <div class="stats"><div><strong id="doneCount">0</strong><span>Done</span></div><div><strong id="naCount">0</strong><span>N/A</span></div><div><strong id="openCount">0</strong><span>Open</span></div></div><div id="checklist"></div>
-          </div>
-          <div id="outputsCard" class="card"><div class="card-head"><div><h3>Outputs</h3><p>Generate customer, Ivanti, resolution, or escalation text.</p></div><div class="row"><button id="sendToComposer" class="secondary">Open in Builder</button><button id="refreshOutputs" class="primary">Refresh</button></div></div><div class="output-tabs"><button class="output-tab active" data-output="customer">Customer</button><button class="output-tab" data-output="worknote">Work Note</button><button class="output-tab" data-output="resolution">Resolution</button><button class="output-tab" data-output="escalation">Escalation</button></div><div id="outputPanels"></div></div>
-        </div>
-        <aside class="work-side">
-          <div id="completionGate" class="gate-card"><h3>Ticket incomplete</h3><ul id="missingItems"></ul></div>
-          <div class="card"><h3>Paste and extract ticket facts</h3><p class="muted">Local regular expressions only. Review every extracted value.</p><textarea id="parserText" placeholder="Paste relevant ticket text. Do not include prohibited sensitive data."></textarea><div class="row"><button id="parseButton" class="secondary">Extract fields</button><button id="applyParsed" class="primary" disabled>Apply selected</button></div><div id="parsedResults"></div></div>
-          <div class="card"><h3>Pinned and recent</h3><div id="pinnedRecent"></div></div>
-          <div class="card"><h3>Source warning</h3><div id="sourceWarning" class="warning-box"></div></div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="tab-troubleshoot" class="tab">
-      <div class="hero compact"><div><span class="eyebrow">Technical workflow</span><h2>Troubleshooting</h2><p>Search source-based troubleshooting cards, assemble a reusable investigation kit, and document a complete clean-slate attempt.</p></div></div>
-      <div class="stacked-toolbar"><input id="troubleSearch" placeholder="Search troubleshooting"><div class="toolbar-row"><select id="troubleCategory"></select><label class="compact-toggle"><input id="troubleVerifyOnly" type="checkbox"> Show verify-first items only</label><span id="troubleCount" class="count"></span></div></div>
-      <div class="two-col"><div id="troubleCards"></div><div class="sticky-column"><div class="card"><div class="card-head"><div><h3>Selected troubleshooting kit</h3><p>Add cards in the order you want to use or document them.</p></div><button id="clearTroubleKit" class="danger">Clear</button></div><div id="troubleKit" class="selection-kit"></div><button id="copyTroubleKit" class="primary full">Copy selected troubleshooting kit</button></div><div class="card"><h3>Complete troubleshooting checklist</h3><p class="muted">Checked items become a clean Ivanti work-note list.</p><div id="masterTroubleChecklist"></div><button id="copyTroubleChecked" class="primary full">Copy checked troubleshooting as work note</button></div></div></div>
-    </section>
-
-    <section id="tab-composer" class="tab">
-      <div class="hero compact"><div><span class="eyebrow">Deterministic drafting</span><h2>Response Builder</h2><p>Assemble approved fixed language. Nothing is generated by AI.</p></div></div>
-      <div class="composer-grid">
-        <div class="card"><div class="card-head"><div><h3>Build the response</h3><p>Select one component from each section. Use only verified case-specific facts.</p></div><button id="clearComposer" class="danger">Clear</button></div><div id="composerControls" class="field-grid"></div><label class="field full">Optional verified case-specific detail<textarea id="composerDetail" placeholder="Example: Filing number 123456789 is currently Pending Review in RAC."></textarea></label><label class="compact-toggle"><input id="composerBullets" type="checkbox"> Format the next-action section as bullets</label></div>
-        <div class="card sticky"><div class="card-head"><div><h3>Composed response</h3><p>Review before sending.</p></div><button id="copyComposer" class="primary">Copy</button></div><textarea id="composedReplyOutput" class="large-output"></textarea><div class="row"><button id="composerToKit" class="secondary">Add to Reply Kit</button><button id="composerFromTicket" class="secondary">Use current ticket facts</button></div></div>
-      </div>
-    </section>
-
-    <section id="tab-replies" class="tab">
-      <div class="hero compact"><div><span class="eyebrow">Source-based templates</span><h2>Quick Replies</h2><p>Search, pin, assemble, reorder, and copy a complete response kit.</p></div></div>
-      <div class="stacked-toolbar"><input id="replySearch" placeholder="Search quick replies"><div class="toolbar-row"><select id="replyCategory"></select><select id="replyAudience"></select><label class="compact-toggle"><input id="replyVerifyOnly" type="checkbox"> Show verify-first items only</label><span id="replyCount" class="count"></span></div></div>
-      <div class="reply-workspace"><div id="replyCards" class="cards"></div><aside class="card sticky"><div class="card-head"><div><h3>Selected reply kit</h3><p>Items are copied top to bottom.</p></div><button id="clearReplyKit" class="danger">Clear</button></div><label class="compact-toggle"><input id="kitIncludeGreeting" type="checkbox" checked> Include standard greeting</label><label class="compact-toggle"><input id="kitIncludeClosing" type="checkbox"> Include standard no-reply closing</label><div id="replyKit" class="selection-kit"></div><textarea id="replyKitPreview" class="kit-preview" readonly></textarea><button id="copyReplyKit" class="primary full">Copy complete reply kit</button></aside></div>
-    </section>
-
-    <section id="tab-registration" class="tab">
-      <div class="hero compact"><div><span class="eyebrow">Training workflow</span><h2>Registration Training</h2><p>Practice the complete Ivanti-to-RAC workflow without entering a live ticket.</p></div><div class="hero-actions"><button id="resetRegistrationTraining" class="danger">Reset</button><button id="copyRegistrationTraining" class="primary">Copy completed steps</button></div></div>
-      <div class="training-grid"><div class="card"><div class="stats"><div><strong id="regDone">0</strong><span>Done</span></div><div><strong id="regOpen">0</strong><span>Open</span></div><div><strong id="regPercent">0%</strong><span>Complete</span></div></div><div id="registrationTrainingChecklist"></div></div><aside class="card sticky"><h3>Registration flow</h3><ol class="flow-list"><li>Claim and classify the Ivanti incident.</li><li>Create or update the customer record.</li><li>Open RAC Registration Applications.</li><li>Verify the current approval criteria.</li><li>Approve or reject and document the reason.</li><li>Communicate the result and close the ticket.</li></ol><div class="warning-box">Exact approval criteria, Cause Codes, and certain activation procedures must be confirmed against the current internal process.</div></aside></div>
-    </section>
-
-    <section id="tab-source" class="tab"><div class="hero compact"><div><span class="eyebrow">Sanitized source library</span><h2>Source Guidance</h2><p>Searchable registration and Verbiage text. Raw documents and internal screenshots are excluded from this hosted build.</p></div></div><div class="warning-box"><strong>Publication hygiene:</strong> staff-specific email addresses and shared-password language are redacted. This does not make the remaining operational content appropriate for public release.</div><div class="stacked-toolbar"><input id="sourceSearch" placeholder="Search source guidance"><div class="toolbar-row"><select id="sourceCategory"></select><span id="sourceCount" class="count"></span></div></div><div id="sourceCards"></div></section>
-
-    <section id="tab-visuals" class="tab"><div class="hero compact"><div><span class="eyebrow">Visual reference</span><h2>Process Maps</h2><p>Fast, screenshot-free maps for the highest-volume workflows.</p></div></div><div id="processMaps" class="process-map-grid"></div></section>
-    <section id="tab-terms" class="tab"><div class="hero compact"><div><span class="eyebrow">Reference</span><h2>Terminology</h2></div></div><input id="termSearch" class="wide-search" placeholder="Search terms"><div id="termCards" class="cards"></div></section>
-    <section id="tab-systems" class="tab"><div class="hero compact"><div><span class="eyebrow">Reference</span><h2>System Reference</h2><p>What each system can verify—and what it cannot prove by itself.</p></div></div><div id="systemCards" class="system-grid"></div></section>
-    <section id="tab-policies" class="tab"><div class="hero compact"><div><span class="eyebrow">Security and procedure</span><h2>Policy Guardrails</h2></div></div><div id="policyCards" class="policy-grid"></div></section>
-    <section id="tab-about" class="tab"><div class="hero compact"><div><span class="eyebrow">Deployment</span><h2>About this GitHub Pages build</h2><p>This is a static HTML/CSS/JavaScript edition with the desktop workflow efficiencies restored.</p></div></div><div class="card prose"><h3>Restored efficiency features</h3><ul><li>Work Mode and Training Mode separation</li><li>Five-part deterministic Response Builder</li><li>Two-column Quick Replies selection kit with reorder controls</li><li>Selected troubleshooting kit</li><li>Checklist search, state filters, next-incomplete navigation, and completed-group hiding</li><li>Copy investigation, ticket bundle, checked troubleshooting, and training progress</li><li>Registration Training, Process Maps, and System Reference</li><li>Global search, pins, recent items, local ticket parser, and keyboard shortcuts</li></ul><h3>Security boundary</h3><p>A client-side warning cannot secure a static site. Use an authorized repository and hosting configuration. Raw source documents and internal screenshots remain excluded.</p><h3>Data behavior</h3><ul><li>No AI, OpenAI API, Ollama, analytics, or telemetry</li><li>No network calls made by the application</li><li>Ticket facts remain only in the current browser tab</li><li>Pins, recent templates, mode, and display preferences may use browser local storage</li></ul></div></section>
-  </main>
-</div>
-<div id="commandOverlay" class="command-overlay hidden"><div class="command"><div class="command-head"><strong>Search all guidance</strong><button id="closeCommand" class="secondary">Close</button></div><input id="commandInput" placeholder="Search workflows, replies, troubleshooting, source guidance, and terminology"><div id="commandResults"></div></div></div>
-<div id="toast" class="toast"></div>
-<script src="data.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer"><title>Portal Support Workbench v2.4</title><link rel="stylesheet" href="styles.css"></head><body>
+<div id="securityGate" class="overlay"><div class="dialog"><span class="eyebrow">Manager-Governed · Role-Specific · Static</span><h1>Portal Support Workbench v2.4</h1><p>This GitHub Pages build contains sanitized operational guidance for authorized Portal Support work. A static website is downloadable by anyone who can access it. Publish only with organizational authorization.</p><div class="warning"><strong>Never enter:</strong> passwords, Social Security numbers, full card or bank-account numbers, credentials, access tokens, or unnecessary customer information.</div><label class="checkline"><input id="ack" type="checkbox"> I understand the publication and data-handling warning.</label><button id="enter" class="primary" disabled>Enter Workbench</button></div></div>
+<header class="topbar"><div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v2.4 · Guided Ticket Execution</p></div></div><div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Select workflow</span><span id="topStage">Intake</span></div><div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button><div class="mode"><button data-mode="work" class="active">Work</button><button data-mode="training">Training</button></div></div></header>
+<div class="shell"><aside class="sidebar"><nav id="workNav"><span class="navlabel">Daily work</span><button data-page="work" class="active">Work Ticket</button><button data-page="known">Known Issues</button><button data-page="troubleshoot">Troubleshoot</button><button data-page="composer">Response Builder</button><button data-page="replies">Quick Replies</button></nav><nav id="trainingNav" hidden><span class="navlabel">Training & reference</span><button data-page="scenarios">Scenario Training</button><button data-page="registration">Registration Training</button><button data-page="procedures">Manager Procedures</button><button data-page="terms">Terminology</button><button data-page="systems">System Reference</button><button data-page="supplemental">Supplemental References</button><button data-page="about">Hosting & Security</button></nav><div class="shortcut"><strong>Keyboard</strong><span>Ctrl K · Search</span><span>Alt N · New ticket</span><span>Alt 1–5 · Stages</span><span>Ctrl Enter · Continue</span></div></aside>
+<main>
+<section id="page-work" class="page active"><div class="work-head"><div><span class="eyebrow">Active ticket</span><h2 id="ticketTitle">New Portal Support ticket</h2><div class="workflow-picker"><label for="workflowSelect">Ticket workflow</label><select id="workflowSelect"></select></div><div id="ticketMeta" class="meta-line"></div></div><div class="head-actions"><button id="copyIdentifiers" class="secondary">Copy identifiers</button><button id="clearTicket" class="danger">Clear</button></div></div><div class="stagebar" id="stagebar"></div><div class="layout"><div class="workspace"><div id="nextAction" class="next-action"></div><div id="stageContent"></div></div><aside class="rail"><div id="readiness" class="rail-card"></div><div id="ownership" class="rail-card"></div><div id="authority" class="rail-card"></div></aside></div><div class="actionbar"><button id="backStage" class="secondary">Back</button><div class="actionbar-center"><button id="copyWorkNote" class="secondary">Copy work note</button><button id="exportBundle" class="secondary">Copy ticket bundle</button></div><button id="continueStage" class="primary">Continue</button></div></section>
+<section id="page-known" class="page"><div class="pagehead"><div><span class="eyebrow">Manager-controlled reference</span><h2>Known Issues</h2><p>Possible matches require analyst verification.</p></div></div><input id="knownSearch" class="searchwide" placeholder="Search symptom or function"><div id="knownGrid" class="cardgrid"></div></section>
+<section id="page-troubleshoot" class="page"><div class="pagehead"><div><span class="eyebrow">Manager-provided troubleshooting</span><h2>Troubleshoot</h2><p>Search focused cards or build a documented troubleshooting kit.</p></div></div><div class="toolbar"><input id="troubleSearch" placeholder="Search troubleshooting"><select id="troubleCategory"></select><label><input id="verifyOnly" type="checkbox"> Verify-first only</label><span id="troubleCount" class="count"></span></div><div class="split"><div id="troubleCards" class="cards"></div><aside class="sticky"><div class="panel"><h3>Selected troubleshooting kit</h3><div id="troubleKit"></div><button id="copyTroubleKit" class="primary full">Copy selected kit</button></div><div class="panel"><h3>Complete troubleshooting checklist</h3><div id="troubleMaster"></div><button id="copyTroubleChecked" class="primary full">Copy checked work note</button></div></aside></div></section>
+<section id="page-composer" class="page"><div class="pagehead"><div><span class="eyebrow">Evidence-aware drafting</span><h2>Response Builder</h2><p>Manager-provided blocks remain unavailable until prerequisites are met.</p></div></div><div class="split composer"><div class="panel"><div id="composerBlocks"></div><label>Verified case-specific detail<textarea id="composerDetail"></textarea></label><button id="buildComposer" class="primary">Refresh response</button></div><aside class="panel sticky"><div class="panelhead"><h3>Response preview</h3><button id="copyComposer" class="secondary">Copy</button></div><textarea id="composerOutput" class="large"></textarea><div id="composerWarnings"></div></aside></div></section>
+<section id="page-replies" class="page"><div class="pagehead"><div><span class="eyebrow">Intent-first manager templates</span><h2>Quick Replies</h2><p>Customer, internal, incident-specific, and sensitive content are visibly separated.</p></div></div><div class="toolbar stacked"><input id="replySearch" placeholder="Search replies"><div><select id="replyIntent"></select><select id="replyAudience"></select><select id="replyStatus"></select><span id="replyCount" class="count"></span></div></div><div class="split"><div id="replyCards" class="cards"></div><aside class="panel sticky"><h3>Selected reply kit</h3><label class="checkline"><input id="includeGreeting" type="checkbox" checked> Include standard greeting when not already selected</label><label class="checkline"><input id="includeClosing" type="checkbox"> Include standard closing when not already selected</label><div id="replyKit"></div><textarea id="replyPreview" class="large"></textarea><button id="copyReplyKit" class="primary full">Copy complete reply</button></aside></div></section>
+<section id="page-scenarios" class="page"><div class="pagehead"><div><span class="eyebrow">Role-specific practice</span><h2>Scenario Training</h2><p>Practice selecting manager-approved actions for realistic Portal Support tickets.</p></div></div><div id="scenarioGrid" class="cardgrid"></div></section>
+<section id="page-registration" class="page"><div class="pagehead"><div><span class="eyebrow">Manager procedure</span><h2>Registration Training</h2></div></div><div id="registrationTraining" class="panel"></div></section>
+<section id="page-procedures" class="page"><div class="pagehead"><div><span class="eyebrow">Primary operational source</span><h2>Manager Procedures</h2><p>Official/public sources do not override these instructions.</p></div></div><div class="toolbar"><input id="procedureSearch" placeholder="Search manager procedures"><select id="procedureCategory"></select><select id="procedureStatus"></select><span id="procedureCount" class="count"></span></div><div id="procedureCards" class="procedure-list"></div></section>
+<section id="page-terms" class="page"><div class="pagehead"><h2>Terminology</h2></div><input id="termSearch" class="searchwide" placeholder="Search terms"><div id="termGrid" class="cardgrid"></div></section>
+<section id="page-systems" class="page"><div class="pagehead"><h2>System Reference</h2><p>What each system can verify—and what it cannot prove by itself.</p></div><div id="systemGrid" class="cardgrid"></div></section>
+<section id="page-supplemental" class="page"><div class="pagehead"><h2>Supplemental References</h2></div><div class="panel prose"><h3>Source hierarchy</h3><ol><li>Manager-provided notes and procedures</li><li>Uploaded troubleshooting and Quick Replies</li><li>Other internal role-specific training</li><li>Current public documentation only as supplemental context</li></ol><div class="warning"><strong>Public documentation does not automatically change the workflow.</strong> Differences must be reviewed and approved internally before becoming operative.</div></div></section>
+<section id="page-about" class="page"><div class="pagehead"><h2>Hosting & Security</h2></div><div class="panel prose"><h3>Static-site limitations</h3><p>Anyone who can access a static GitHub Pages site can download its HTML, CSS, JavaScript, and embedded guidance. The acknowledgment screen and robots file are not access controls.</p><h3>Data behavior</h3><ul><li>No AI, OpenAI API, Ollama, analytics, or telemetry</li><li>No application network requests</li><li>Ticket facts remain in the current tab and are not persisted</li><li>Only pins, recent template IDs, and display preferences may use local storage</li></ul><h3>Hosted-build sanitation</h3><p>Raw DOCX/PDF files, embedded internal screenshots, staff-specific email addresses, payment test data, account/routing numbers, and shared temporary-password wording are excluded or redacted.</p></div></section>
+</main></div>
+<div id="searchOverlay" class="overlay hidden"><div class="search-dialog"><div class="panelhead"><h2>Search all guidance</h2><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, manager procedures, replies, troubleshooting, known issues, and terminology"><div id="globalResults"></div></div></div><div id="toast" class="toast" aria-live="polite"></div><script src="data.js"></script><script src="app.js"></script></body></html>

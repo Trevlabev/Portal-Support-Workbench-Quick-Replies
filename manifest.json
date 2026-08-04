@@ -1,36 +1,18 @@
 {
-  "product": "Portal Support Workbench - GitHub Pages Polished Full Efficiency Edition",
-  "version": "2.3",
+  "product": "Portal Support Workbench \u2014 Guided GitHub Pages Edition",
+  "version": "2.4",
   "ai_usage": "NONE",
   "network_usage": "NONE",
-  "features": [
-    "work-training modes",
-    "response builder",
-    "reply kit",
-    "troubleshooting kit",
-    "checklist filters",
-    "next incomplete",
-    "ticket bundle",
-    "registration training",
-    "process maps",
-    "system reference",
-    "global search",
-    "pins and recent",
-    "regex ticket parser"
-  ],
-  "changes": [
-    "Polished header, sidebar, hero, cards, filters, buttons, and responsive behavior",
-    "Readable sans-serif source content instead of dense monospace card text",
-    "Compact categorized completion gate with Show all control",
-    "Refined selected reply and troubleshooting kit workspaces",
-    "Duplicate standard greeting and closing prevention",
-    "All v2.2 full-efficiency workflows retained"
-  ],
+  "workflow_count": 9,
+  "manager_procedure_count": 132,
+  "quick_reply_count": 42,
+  "troubleshooting_card_count": 27,
+  "known_issue_count": 7,
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
-      "bytes": 705,
-      "sha256": "5af0750ba6e89c5f74057df6c60e8e24255586dd26d5cdab1308388164cecb00"
+      "bytes": 598,
+      "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9"
     },
     {
       "path": ".nojekyll",
@@ -39,43 +21,38 @@
     },
     {
       "path": "404.html",
-      "bytes": 16830,
-      "sha256": "9259fd95ae31eaeb3e6faff569f1982ce975c9460e635f32a1c2a78ac84d49e5"
+      "bytes": 10263,
+      "sha256": "d8324cd6c5b2d37c379ebfa03c240e7e5a71095f811915543a314a7825ac9c7f"
     },
     {
       "path": "README.md",
-      "bytes": 2272,
-      "sha256": "70854a90468c063b335cb8b7578aff9315e42f799961d3c7f8979573343e867c"
+      "bytes": 1753,
+      "sha256": "43400a70f24123f463b56d71b7212f2e779d77a755a792707906c8c7f09f3b4d"
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
-      "bytes": 572,
-      "sha256": "50832fe7750efe5588a6ac935c7ce972435f8f5cae7d07fc6653747abd23c175"
+      "bytes": 422,
+      "sha256": "4e8a2c61c20014fc1e264d5186d3a8b4a8faa6530c46984fa5a91d9d414cf4c3"
     },
     {
       "path": "START_LOCAL_PREVIEW.cmd",
-      "bytes": 312,
-      "sha256": "ff4ec15acbfe6ece801b8196d90e0f79553df7732b52c7a0bd779ef995faaaff"
-    },
-    {
-      "path": "Start_Local_Preview.ps1",
-      "bytes": 1130,
-      "sha256": "8b8f5f39006448f9d3b67d765517fd04585018afd10ee992338a7519f3be4323"
+      "bytes": 150,
+      "sha256": "c57f5a94c0869b612bde0be76d3f13036fb5b5d587bc8bf8aca9c7a447364f77"
     },
     {
       "path": "app.js",
-      "bytes": 55052,
-      "sha256": "9c9487f16ecb6f7d2aa17e8ac21a1d627c24fab40942726562c6a23869f3b1a7"
+      "bytes": 38706,
+      "sha256": "8601a0497c46b4b0a0489f4149dfa4ef44704d153e2e7901fc6dc4279ce24e2f"
     },
     {
       "path": "data.js",
-      "bytes": 211007,
-      "sha256": "6da4cf06da047a24d03d15f22d629ebad4ab1d1a6df0b7d7d9a11a0a7b5eec26"
+      "bytes": 221272,
+      "sha256": "235475ca15516eaaae70f82d158f8b066bac717edae981a8cf21017abb79d880"
     },
     {
       "path": "index.html",
-      "bytes": 16830,
-      "sha256": "9259fd95ae31eaeb3e6faff569f1982ce975c9460e635f32a1c2a78ac84d49e5"
+      "bytes": 10386,
+      "sha256": "05519dd72fdc48a73b5d6aeded96c39b6e32a885f091bb4e1569b2678b402e30"
     },
     {
       "path": "robots.txt",
@@ -84,8 +61,16 @@
     },
     {
       "path": "styles.css",
-      "bytes": 27911,
-      "sha256": "34f88ef59c084c77ac45e796cb3cdc5279246a173c9f6a3b41b6271cec118a46"
+      "bytes": 16399,
+      "sha256": "c0899ca28eb846514aa396536c5fafb3fddece0195c58de7ba2ab093adb42381"
     }
-  ]
+  ],
+  "validation": {
+    "javascript_syntax": "PASS",
+    "browser_runtime": "PASS",
+    "unique_html_ids": "PASS",
+    "no_ai_api_telemetry": "PASS",
+    "sensitive_pattern_scan": "PASS",
+    "zip_integrity": "PASS"
+  }
 }

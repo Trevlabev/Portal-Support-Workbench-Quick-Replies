@@ -1,7 +1,5 @@
 # Security and Publication Warning
 
-This package is a static operational support workbench. Do not publish it without authorization. Anyone who can access a static Pages site can download its HTML, CSS, JavaScript, and embedded guidance.
+This is a static operational support tool. A client-side warning and robots.txt are not access controls. Anyone who can access the site can download its code and embedded guidance. Publish only with organizational authorization.
 
-The application makes no network calls and stores no ticket facts, but the browser, device, hosting platform, extensions, and organization may have their own logging.
-
-Never enter passwords, Social Security numbers, full payment-card or bank-account numbers, internal credentials, access tokens, or unnecessary customer information.
+Never enter passwords, Social Security numbers, full payment-card or bank-account numbers, credentials, access tokens, or unnecessary customer information.
