@@ -1,0 +1,251 @@
+name: Build v4.7 Core System Quick Links
+
+on:
+  push:
+    paths:
+      - '.github/workflows/v4.7-core-system-links.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Add core system links and account procedure
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          js = r'''(() => {
+            "use strict";
+
+            const D = window.PSW_DATA;
+            if (!D) return;
+
+            const procedure = {
+              id: "core-system-sign-in",
+              title: "Sign in to Ivanti, RAC, and the Attorney E-Filing Portal",
+              category: "Core system access",
+              status: "Active team procedure",
+              summary: "Open the correct official system and use the account assigned for that purpose. RAC and the Attorney E-Filing Portal use the same MyFLCourtAccess.com address but different account credentials.",
+              useWhen: [
+                "Beginning daily Portal Support work",
+                "Opening or updating an Ivanti ticket",
+                "Reviewing a registration or account in RAC",
+                "Testing the filer-facing Portal with the Attorney account"
+              ],
+              systems: [
+                {name: "Ivanti / HEAT", required: true},
+                {name: "RAC — System Admin account", required: true},
+                {name: "Attorney E-Filing Portal account", required: false}
+              ],
+              before: [
+                "Use an Organization-managed device and approved browser.",
+                "Keep passwords out of the Workbench, Ivanti notes, email, and screenshots.",
+                "Confirm which account is required before signing in because RAC and the Attorney account use the same website address."
+              ],
+              steps: [
+                {text: "Open Ivanti / HEAT at https://www.myhelpsupport.com/HEAT and sign in with the approved Ivanti credentials.", core: true},
+                {text: "For RAC administrative work, open https://www.myflcourtaccess.com/ and use the RAC System Admin account.", core: true},
+                {text: "For the RAC username, use your flclerks username.", core: true},
+                {text: "For the RAC password, use the RAC-specific password that is separate from your normal login password.", core: true},
+                {text: "For filer-facing testing, open https://www.myflcourtaccess.com/ and use the Attorney E-Filing Portal website account.", core: false, when: "The task requires the attorney-facing Portal rather than RAC administration."},
+                {text: "For the Attorney account username, append Atty to your flclerks username: [flclerks username]Atty.", core: false, when: "Signing in to the Attorney E-Filing Portal account."},
+                {text: "For the Attorney account password, use the separate password assigned to that Attorney account.", core: false, when: "Signing in to the Attorney E-Filing Portal account."},
+                {text: "Verify the active account and role before changing a registration, account, filing, or ticket.", core: true},
+                {text: "Sign out of the website when finished and do not save credentials in this tool.", core: true}
+              ],
+              record: [
+                "Record the system reviewed and the job-relevant finding in Ivanti.",
+                "Do not record passwords, temporary passwords, authentication codes, or access tokens.",
+                "When testing with the Attorney account, distinguish the test result from the customer's actual account result."
+              ],
+              doneWhen: [
+                "The correct system and account type were used.",
+                "The required finding was documented in Ivanti without credentials.",
+                "The session was signed out when the work was complete."
+              ],
+              related: ["Home quick links", "Current Ticket", "System Reference", "Registration workflow", "Account Access / Password workflow"],
+              caution: "The Workbench stores no passwords. The username patterns shown here identify which account to use; enter the assigned password only on the official login page.",
+              source: "Manager-provided account-use instructions, August 4, 2026"
+            };
+
+            D.procedureGuides = Array.isArray(D.procedureGuides) ? D.procedureGuides : [];
+            const existing = D.procedureGuides.findIndex(item => item.id === procedure.id);
+            if (existing >= 0) D.procedureGuides[existing] = procedure;
+            else D.procedureGuides.unshift(procedure);
+
+            const links = [
+              {
+                code: "IV",
+                title: "Ivanti / HEAT",
+                url: "https://www.myhelpsupport.com/HEAT",
+                purpose: "Open and maintain the official support ticket.",
+                account: "Use your approved Ivanti / HEAT credentials."
+              },
+              {
+                code: "RAC",
+                title: "RAC — System Admin",
+                url: "https://www.myflcourtaccess.com/",
+                purpose: "Review registrations, Portal accounts, and administrative records.",
+                account: "Username: your flclerks username · Password: RAC-specific password, separate from your normal login."
+              },
+              {
+                code: "AT",
+                title: "Attorney E-Filing Portal",
+                url: "https://www.myflcourtaccess.com/",
+                purpose: "Use the filer-facing website account for attorney-side testing.",
+                account: "Username: [flclerks username]Atty · Password: separate Attorney-account password."
+              }
+            ];
+
+            function injectQuickLinks() {
+              const home = document.querySelector("#page-home");
+              if (!home || home.querySelector("#coreSystemQuickLinks")) return;
+              const workflow = home.querySelector('[aria-labelledby="homeWorkflowTitle"]');
+              const section = document.createElement("section");
+              section.id = "coreSystemQuickLinks";
+              section.className = "home-section core-system-links";
+              section.setAttribute("aria-labelledby", "coreSystemLinksTitle");
+              section.innerHTML = `
+                <div class="home-section-head core-system-links-head">
+                  <div>
+                    <span class="eyebrow">Quick links</span>
+                    <h3 id="coreSystemLinksTitle">Open the core systems</h3>
+                    <p>RAC and the Attorney E-Filing Portal share the same website address but use different accounts. The Workbench never stores either password.</p>
+                  </div>
+                </div>
+                <div class="core-system-link-grid">
+                  ${links.map(link => `
+                    <a class="core-system-link-card" href="${link.url}" target="_blank" rel="noopener noreferrer" aria-label="Open ${link.title} in a new tab">
+                      <span class="core-system-link-icon" aria-hidden="true">${link.code}</span>
+                      <span class="core-system-link-copy">
+                        <strong>${link.title}</strong>
+                        <small>${link.purpose}</small>
+                        <span>${link.account}</span>
+                      </span>
+                      <span class="core-system-link-open" aria-hidden="true">Open ↗</span>
+                    </a>
+                  `).join("")}
+                </div>
+                <p class="core-system-security-note"><strong>Credential rule:</strong> enter passwords only on the official login page. Do not place them in Current Ticket, Quick Messages, troubleshooting notes, screenshots, or Job Procedures.</p>
+              `;
+              if (workflow) home.insertBefore(section, workflow);
+              else home.append(section);
+            }
+
+            if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", injectQuickLinks, {once: true});
+            else injectQuickLinks();
+          })();
+          '''
+
+          css = r'''.core-system-links{margin-top:22px}.core-system-links-head p{max-width:850px;margin:6px 0 0;color:var(--muted);line-height:1.55}.core-system-link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.core-system-link-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:13px;align-items:start;min-height:154px;padding:18px;border:1px solid var(--line);border-radius:18px;background:#fff;color:var(--ink);text-decoration:none;box-shadow:0 10px 24px rgba(18,52,68,.07);transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}.core-system-link-card:hover,.core-system-link-card:focus-visible{transform:translateY(-2px);border-color:#2b7d83;box-shadow:0 14px 30px rgba(18,52,68,.12);outline:none}.core-system-link-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:#123f58;color:#fff;font-weight:800;font-size:.85rem;letter-spacing:.03em}.core-system-link-copy{display:flex;flex-direction:column;gap:7px;min-width:0}.core-system-link-copy strong{font-size:1.06rem}.core-system-link-copy small{font-size:.9rem;line-height:1.45;color:var(--muted)}.core-system-link-copy span{font-size:.82rem;line-height:1.45;color:#315365;background:#eef5f6;border-radius:10px;padding:8px 10px}.core-system-link-open{font-size:.82rem;font-weight:800;color:#155f68;white-space:nowrap}.core-system-security-note{margin:14px 0 0;padding:0 2px;color:var(--muted);font-size:.9rem;line-height:1.5}@media(max-width:1150px){.core-system-link-grid{grid-template-columns:1fr}.core-system-link-card{min-height:0}}@media(max-width:640px){.core-system-link-card{grid-template-columns:auto minmax(0,1fr)}.core-system-link-open{grid-column:2}}'''
+
+          Path("core-links-v4.7.js").write_text(js, encoding="utf-8")
+          Path("core-links-v4.7.css").write_text(css + "\n", encoding="utf-8")
+
+          def patch_html(path):
+              p = Path(path)
+              text = p.read_text(encoding="utf-8")
+              text = text.replace("Portal Support Workbench v4.6", "Portal Support Workbench v4.7")
+              text = text.replace("v4.6 · Complete tab guide", "v4.7 · Core system quick links")
+              if 'core-links-v4.7.css' not in text:
+                  text = text.replace('<link rel="stylesheet" href="styles-v4.6.css">', '<link rel="stylesheet" href="styles-v4.6.css">\n<link rel="stylesheet" href="core-links-v4.7.css">')
+              if 'core-links-v4.7.js' not in text:
+                  text = re.sub(r'(<script\s+src="data-v4\.6\.js"></script>)', r'\1<script src="core-links-v4.7.js"></script>', text, count=1)
+              if 'data-page="home"' not in text:
+                  text = text.replace('<nav id="workNav">', '<nav id="workNav">\n    <button class="active" data-page="home">Home</button>', 1)
+              p.write_text(text, encoding="utf-8")
+
+          patch_html("index.html")
+          patch_html("404.html")
+
+          readme = Path("README.md")
+          existing = readme.read_text(encoding="utf-8") if readme.exists() else "# Portal Support Workbench\n"
+          if "## v4.7 core system quick links" not in existing:
+              existing += """
+
+## v4.7 core system quick links
+
+- Added Home quick links for Ivanti / HEAT, RAC System Admin, and the Attorney E-Filing Portal account.
+- Preserved Home as the first Daily Work sidebar tab.
+- Added a checkbox-based Job Procedure explaining the correct URL, username pattern, and password separation for each account.
+- RAC and the Attorney account intentionally open the same MyFLCourtAccess.com address but use different credentials.
+- No passwords, access tokens, or authentication codes are stored in the Workbench.
+"""
+          readme.write_text(existing, encoding="utf-8")
+
+          Path("V4.7_CORE_SYSTEM_LINKS.md").write_text("""# v4.7 Core System Quick Links
+
+## Home quick links
+
+- Ivanti / HEAT: https://www.myhelpsupport.com/HEAT
+- RAC — System Admin: https://www.myflcourtaccess.com/
+- Attorney E-Filing Portal: https://www.myflcourtaccess.com/
+
+## Account selection
+
+- RAC username: the analyst's flclerks username.
+- RAC password: the separate RAC-specific password, not the normal login password.
+- Attorney account username: `[flclerks username]Atty`.
+- Attorney account password: the separate password assigned to the Attorney account.
+
+The Workbench does not store actual passwords. Credentials are entered only on the official login page.
+""", encoding="utf-8")
+          PY
+
+      - name: Validate v4.7 changes
+        shell: bash
+        run: |
+          node --check core-links-v4.7.js
+          grep -q 'data-page="home"' index.html
+          grep -q 'core-links-v4.7.css' index.html
+          grep -q 'core-links-v4.7.js' index.html
+          grep -q 'https://www.myhelpsupport.com/HEAT' core-links-v4.7.js
+          grep -q 'https://www.myflcourtaccess.com/' core-links-v4.7.js
+          grep -q '\[flclerks username\]Atty' core-links-v4.7.js
+          grep -q 'core-system-sign-in' core-links-v4.7.js
+          cmp index.html 404.html
+
+      - name: Prepare downloadable package
+        shell: bash
+        run: |
+          rm -f .github/workflows/v4.7-core-system-links.yml
+          mkdir -p artifact-root
+          rsync -a --exclude '.git' --exclude 'artifact-root' --exclude 'V4.7_BUILD_INFO.json' ./ artifact-root/
+
+      - name: Upload v4.7 package
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: Portal_Support_Workbench_GitHub_Pages_v4.7_CORE_SYSTEM_LINKS
+          path: artifact-root/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Record build and commit changes
+        shell: bash
+        env:
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+        run: |
+          cat > V4.7_BUILD_INFO.json <<EOF
+          {
+            "version": "4.7",
+            "run_id": "${GITHUB_RUN_ID}",
+            "artifact_id": "${ARTIFACT_ID}",
+            "artifact_name": "Portal_Support_Workbench_GitHub_Pages_v4.7_CORE_SYSTEM_LINKS",
+            "commit_before_build": "${GITHUB_SHA}"
+          }
+          EOF
+          rm -rf artifact-root
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Release v4.7 core system quick links"
+          git push
