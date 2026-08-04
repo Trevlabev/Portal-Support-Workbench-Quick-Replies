@@ -1,7 +1,7 @@
 {
   "name": "Portal Support Workbench",
-  "version": "4.4",
-  "build": "HEADER_TICKET_SUMMARY",
+  "version": "4.6",
+  "build": "COMPLETE_TAB_GUIDE",
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
@@ -15,8 +15,8 @@
     },
     {
       "path": "404.html",
-      "sha256": "175622682b685267b5f393b2e017cd2ba859c706d9b57df5b31731f6b30d7d79",
-      "bytes": 35563
+      "sha256": "5f6a8b4c86bddd3e29c92cee6fcd42102aa61e3390f384dbdc17c21e457b6476",
+      "bytes": 55254
     },
     {
       "path": "CONTENT_AUDIT.csv",
@@ -60,8 +60,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "4b99e78af379bddc18a3920cca79e997c0b6a8cc7982846ba337408ec0ebd4c8",
-      "bytes": 3907
+      "sha256": "7350cc496acaec1ffb25da338ff4b48053b2cd21889a315848ed47f6f41247ef",
+      "bytes": 4952
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
@@ -124,19 +124,29 @@
       "bytes": 755
     },
     {
-      "path": "app-v4.4.js",
-      "sha256": "372e6657c69b7c3b09f2fb5824a5ee1d031e009a6d5782eb7d4784f167ccc9f6",
-      "bytes": 97345
+      "path": "V4.5_HOME_DASHBOARD.md",
+      "sha256": "e32b66e1b0004c255e099de3cd9b92783622600f53746343ce9e1a3ca38e80b2",
+      "bytes": 1181
     },
     {
-      "path": "data-v4.4.js",
+      "path": "V4.6_COMPLETE_TAB_GUIDE.md",
+      "sha256": "70fe895d515e8acbf2285ad45af2f3ff7c328abfc35b5fa2f3a9b51e058868bb",
+      "bytes": 739
+    },
+    {
+      "path": "app-v4.6.js",
+      "sha256": "10ce53c5d610809da4916a1a4fb9a1462a431f113d46e6c6af9b18385cd2ef52",
+      "bytes": 98884
+    },
+    {
+      "path": "data-v4.6.js",
       "sha256": "3b895e610bf94b35d53f8a30d4438ee2c7f4b9ba672d362b34ab133d927eb702",
       "bytes": 480561
     },
     {
       "path": "index.html",
-      "sha256": "175622682b685267b5f393b2e017cd2ba859c706d9b57df5b31731f6b30d7d79",
-      "bytes": 35563
+      "sha256": "5f6a8b4c86bddd3e29c92cee6fcd42102aa61e3390f384dbdc17c21e457b6476",
+      "bytes": 55254
     },
     {
       "path": "robots.txt",
@@ -144,9 +154,9 @@
       "bytes": 26
     },
     {
-      "path": "styles-v4.4.css",
-      "sha256": "3230c599f7d42372ca28e9432e4f2779f3114531476ad9e4d1719650a6c1c46f",
-      "bytes": 54727
+      "path": "styles-v4.6.css",
+      "sha256": "cbd8ca79663d50034e86a0e99450d15b7783b92e5dedf2384f6fb356528ba8b7",
+      "bytes": 62862
     }
   ]
 }

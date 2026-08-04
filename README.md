@@ -1,6 +1,6 @@
-# Portal Support Workbench v4.4 — Header Ticket Summary
+# Portal Support Workbench v4.6 — Complete Tab Guide
 
-Version 3.7 completes a full copy-edit of every active Quick Message and Troubleshooting message displayed in the Workbench while preserving the v3.6 training program and all Daily Work tools.
+Version 4.6 expands the default Home dashboard with a complete guide to every Work and Training tab, while retaining the current ticket status, recommended workflow, and direct tool access. It retains the audited knowledge base, polished messages, comprehensive training, split workspaces, No-AI notice, procedure checklists, and header ticket summary.
 
 ## Message audit
 
@@ -70,3 +70,21 @@ All yellow/amber callout treatments were removed or changed to neutral styling. 
 - Selecting the header summary opens a compact anchored panel with the ticket snapshot, Open ticket, Add note, and Copy summary actions.
 - The panel closes when the user selects Close, clicks outside it, presses Escape, opens Current Ticket, or changes to Training mode.
 - On narrow screens, the header control becomes a compact incident button and the panel fits within the viewport.
+
+
+## v4.5 home dashboard
+
+- Added a dedicated Home page as the default Daily Work destination.
+- Added a concise three-step explanation of the intended ticket workflow.
+- Added direct access to all daily tools and key training resources.
+- Added a live, session-only Current Ticket summary on the dashboard.
+- Work mode now returns to Home; New Ticket opens a cleared Current Ticket workspace.
+- Retained the No-AI startup notice, procedure checklists, split workspaces, and header ticket summary.
+
+
+## v4.6 complete tab guide
+
+- Added a full explanation of all six Work tabs and all twelve Training tabs.
+- Each tab guide states when to use it, what result it produces, and provides a direct navigation button.
+- Training tabs are grouped under Learn, Practice, Knowledge Base, and Administration to mirror the sidebar.
+- Added a clear explanation of the Work/Training workspace toggle.

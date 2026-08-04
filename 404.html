@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v4.4</title>
-<link rel="stylesheet" href="styles-v4.4.css">
+<title>Portal Support Workbench v4.6</title>
+<link rel="stylesheet" href="styles-v4.6.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true" aria-labelledby="noAiTitle">
@@ -18,7 +18,7 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v4.4 · Header ticket summary</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v4.6 · Complete tab guide</p></div></div>
   <div id="headerTicketMenu" class="header-ticket-menu">
     <button id="headerTicketToggle" class="header-ticket-toggle" type="button" aria-expanded="false" aria-controls="headerTicketPanel">
       <span class="header-ticket-label">Current ticket</span>
@@ -44,12 +44,13 @@
     <div class="mode"><button class="active" data-mode="work">Work</button><button data-mode="training">Training</button></div>
   </div>
   <nav id="workNav">
+    <button class="active" data-page="home">Home</button>
     <button data-page="replies">Messages</button>
     <button data-page="troubleshoot">Troubleshooting</button>
     <button data-page="bar">Florida Bar Search</button>
     <button data-page="known">Known Issues</button>
     <div class="nav-divider" aria-hidden="true"></div>
-    <button class="active current-ticket-nav" data-page="work">Current Ticket</button>
+    <button class="current-ticket-nav" data-page="work">Current Ticket</button>
   </nav>
   <nav id="trainingNav" hidden>
     <details class="nav-group" data-nav-group="learn" open><summary>Learn</summary><button data-page="traininghome">Training Home</button><button data-page="registration">Learning Modules</button><button data-page="instructions">Job Procedures</button></details>
@@ -61,7 +62,120 @@
   <div class="sidebar-privacy"><strong>No AI</strong><span>Ticket information stays in this browser session.</span></div>
 </aside>
 <main>
-<section id="page-work" class="page active">
+<section id="page-home" class="page active">
+  <div class="home-hero">
+    <div class="home-hero-copy">
+      <span class="eyebrow">Daily work dashboard</span>
+      <h2>Start here</h2>
+      <p>Use the Workbench as a temporary companion to Ivanti: enter one ticket, use the relevant tools, then copy the finished response and documentation back into the official ticket.</p>
+      <div class="home-hero-actions">
+        <button id="homeNewTicket" class="primary">Start a new ticket</button>
+        <button id="homeOpenTicket" class="secondary">Open current ticket</button>
+        <button id="homeOpenTraining" class="secondary">Open training</button>
+      </div>
+    </div>
+    <aside class="home-ticket-card" aria-label="Current ticket status">
+      <span class="home-card-label">Current ticket</span>
+      <strong id="homeTicketIncident">No active ticket</strong>
+      <div class="home-ticket-meta"><span id="homeTicketWorkflow">Registration</span><span id="homeTicketRemaining">Not started</span></div>
+      <p id="homeTicketDescription">Start a new ticket or open Current Ticket to enter the request details.</p>
+      <button id="homeContinueTicket" class="secondary full">Open Current Ticket</button>
+    </aside>
+  </div>
+
+  <section class="home-section" aria-labelledby="homeWorkflowTitle">
+    <div class="home-section-head"><div><span class="eyebrow">Recommended workflow</span><h3 id="homeWorkflowTitle">Handle each request in three steps</h3></div></div>
+    <div class="home-step-grid">
+      <article class="home-step-card"><span class="home-step-number">1</span><div><h4>Capture the ticket facts</h4><p>Open Current Ticket, select the issue type, and enter only the identifiers and facts needed to work the request.</p><button data-home-page="work" class="text-action">Open Current Ticket</button></div></article>
+      <article class="home-step-card"><span class="home-step-number">2</span><div><h4>Use the relevant work tool</h4><p>Find message wording, build a troubleshooting plan, verify a Florida Bar profile, or check a known issue using the current ticket context.</p><button data-home-page="replies" class="text-action">Open Messages</button></div></article>
+      <article class="home-step-card"><span class="home-step-number">3</span><div><h4>Finish the official documentation</h4><p>Review the customer response, Ivanti work note, resolution, and escalation output before copying them into Ivanti.</p><button data-home-page="work" data-home-output="true" class="text-action">Go to ticket outputs</button></div></article>
+    </div>
+  </section>
+
+  <div class="home-main-grid">
+    <section class="home-section home-tools-section" aria-labelledby="homeToolsTitle">
+      <div class="home-section-head"><div><span class="eyebrow">Daily tools</span><h3 id="homeToolsTitle">Choose what you need to do</h3></div></div>
+      <div class="home-tool-grid">
+        <button class="home-tool-card" data-home-page="replies"><span class="home-tool-icon" aria-hidden="true">M</span><span><strong>Messages</strong><small>Search reusable customer and Ivanti wording, then edit the draft.</small></span></button>
+        <button class="home-tool-card" data-home-page="troubleshoot"><span class="home-tool-icon" aria-hidden="true">T</span><span><strong>Troubleshooting</strong><small>Build a focused diagnostic plan and add completed checks to the ticket.</small></span></button>
+        <button class="home-tool-card" data-home-page="bar"><span class="home-tool-icon" aria-hidden="true">FB</span><span><strong>Florida Bar Search</strong><small>Open the official member profile and import the reviewed public details.</small></span></button>
+        <button class="home-tool-card" data-home-page="known"><span class="home-tool-icon" aria-hidden="true">KI</span><span><strong>Known Issues</strong><small>Compare symptoms and evidence before associating the request.</small></span></button>
+        <button class="home-tool-card" data-home-training-page="instructions"><span class="home-tool-icon" aria-hidden="true">JP</span><span><strong>Job Procedures</strong><small>Follow the applicable internal checklist and transfer checked steps to the ticket.</small></span></button>
+        <button class="home-tool-card" data-home-training-page="traininghome"><span class="home-tool-icon" aria-hidden="true">L</span><span><strong>Training</strong><small>Learn the role, practice synthetic tickets, and review the knowledge base.</small></span></button>
+      </div>
+    </section>
+
+    <aside class="home-section home-guide-section" aria-labelledby="homeGuideTitle">
+      <div class="home-section-head"><div><span class="eyebrow">How to use it correctly</span><h3 id="homeGuideTitle">Workbench rules</h3></div></div>
+      <div class="home-guide-list">
+        <div><strong>Ivanti remains the official record.</strong><p>The Workbench is a temporary scratchpad and drafting aid. Copy completed documentation back into Ivanti.</p></div>
+        <div><strong>Enter facts once.</strong><p>Current Ticket passes the issue type, error, and available identifiers into the connected tools.</p></div>
+        <div><strong>Review before sending.</strong><p>Templates, imported profile text, and generated outputs remain editable and require analyst verification.</p></div>
+        <div><strong>Use the source hierarchy.</strong><p>Current manager direction controls when it differs from public or supplemental reference material.</p></div>
+        <div><strong>Do not enter unnecessary sensitive data.</strong><p>Do not place passwords, full payment details, Social Security numbers, or unrelated confidential information in the tool.</p></div>
+      </div>
+    </aside>
+  </div>
+
+
+
+  <section class="home-section home-tab-guide" aria-labelledby="homeTabsTitle">
+    <div class="home-section-head tab-guide-heading">
+      <div>
+        <span class="eyebrow">Complete navigation guide</span>
+        <h3 id="homeTabsTitle">What every tab is for</h3>
+        <p>The <strong>Work</strong> side contains the tools used while handling a live request. The <strong>Training</strong> side contains learning, practice, reference, and content-governance material. Selecting an Open tab button below switches to the correct workspace automatically.</p>
+      </div>
+      <div class="tab-guide-toggle-example" aria-label="Workspace toggle explanation"><span class="active">Work</span><span>Training</span></div>
+    </div>
+
+    <section class="tab-guide-work" aria-labelledby="workTabsTitle">
+      <div class="tab-guide-group-head"><div><span class="tab-guide-kicker">Daily work</span><h4 id="workTabsTitle">Work tabs</h4></div><p>Use these while investigating, documenting, and responding to an active Ivanti request.</p></div>
+      <div class="tab-guide-grid work-tab-grid">
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">H</span><div><h5>Home</h5><p>Orientation and launch point for the Workbench.</p></div></div><dl><div><dt>Use it when</dt><dd>You are starting work, deciding which tool to open, or checking the current ticket status.</dd></div><div><dt>Main result</dt><dd>No ticket content changes; it routes you to the correct workspace.</dd></div></dl><button class="secondary full" data-home-page="home">Open Home</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">M</span><div><h5>Messages</h5><p>Reusable wording and fully editable customer or Ivanti drafts.</p></div></div><dl><div><dt>Use it when</dt><dd>You need an email, status update, Clerk referral, internal note, or custom response.</dd></div><div><dt>Main result</dt><dd>A reviewed customer message or Ivanti work note that can be applied to Current Ticket.</dd></div></dl><button class="secondary full" data-home-page="replies">Open Messages</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">T</span><div><h5>Troubleshooting</h5><p>Diagnostic guidance, a customizable plan, and completion checks.</p></div></div><dl><div><dt>Use it when</dt><dd>The user reports an error, upload failure, browser problem, access issue, or unclear technical behavior.</dd></div><div><dt>Main result</dt><dd>A focused troubleshooting plan and documented completed checks for the ticket.</dd></div></dl><button class="secondary full" data-home-page="troubleshoot">Open Troubleshooting</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">FB</span><div><h5>Florida Bar Search</h5><p>Guided verification against the official Florida Bar member profile.</p></div></div><dl><div><dt>Use it when</dt><dd>An attorney registration or account request requires public Bar-number, status, eligibility, or email verification.</dd></div><div><dt>Main result</dt><dd>An analyst-reviewed profile summary and verification note for Current Ticket.</dd></div></dl><button class="secondary full" data-home-page="bar">Open Florida Bar Search</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">KI</span><div><h5>Known Issues</h5><p>Confirmed symptoms, evidence requirements, and current workarounds.</p></div></div><dl><div><dt>Use it when</dt><dd>Several users report similar behavior or the ticket may belong to an active incident or Master Ticket.</dd></div><div><dt>Main result</dt><dd>A supported issue association, relevant evidence list, and approved incident wording.</dd></div></dl><button class="secondary full" data-home-page="known">Open Known Issues</button></article>
+        <article class="tab-guide-card current-ticket-guide"><div class="tab-guide-card-head"><span class="tab-guide-icon">CT</span><div><h5>Current Ticket</h5><p>The temporary working record for one Ivanti request.</p></div></div><dl><div><dt>Use it when</dt><dd>You need to capture facts, record findings, follow the workflow checklist, or finalize documentation.</dd></div><div><dt>Main result</dt><dd>Customer response, Ivanti work note, resolution note, or escalation package ready to copy into Ivanti.</dd></div></dl><button class="primary full" data-home-page="work">Open Current Ticket</button></article>
+      </div>
+    </section>
+
+    <section class="tab-guide-training" aria-labelledby="trainingTabsTitle">
+      <div class="tab-guide-group-head"><div><span class="tab-guide-kicker">Learning and reference</span><h4 id="trainingTabsTitle">Training tabs</h4></div><p>Use these to learn the role, practice decisions, look up terminology and boundaries, or maintain the source catalog.</p></div>
+
+      <details class="tab-guide-cluster" open><summary><span><strong>Learn</strong><small>Start with the role roadmap, structured instruction, and procedure checklists.</small></span><span class="cluster-count">3 tabs</span></summary><div class="tab-guide-grid">
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">TH</span><div><h5>Training Home</h5><p>Roadmap, progress summary, and next recommended lesson.</p></div></div><dl><div><dt>Use it when</dt><dd>You are beginning onboarding, returning for a refresher, or deciding what to study next.</dd></div><div><dt>Main result</dt><dd>A structured sequence through the available training phases.</dd></div></dl><button class="secondary full" data-home-training-page="traininghome">Open Training Home</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">LM</span><div><h5>Learning Modules</h5><p>Detailed instruction organized by major Portal Support workflow.</p></div></div><dl><div><dt>Use it when</dt><dd>You need a comprehensive explanation of registration, access, filing, eService, payments, uploads, or escalation.</dd></div><div><dt>Main result</dt><dd>Objectives, boundaries, evidence requirements, mistakes to avoid, and knowledge checks.</dd></div></dl><button class="secondary full" data-home-training-page="registration">Open Learning Modules</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">JP</span><div><h5>Job Procedures</h5><p>Interactive staff-action checklists for specific tasks.</p></div></div><dl><div><dt>Use it when</dt><dd>You need the ordered internal steps for a process such as registration, Master Tickets, or account handling.</dd></div><div><dt>Main result</dt><dd>A checked procedure outline that can be transferred into the Current Ticket work note.</dd></div></dl><button class="secondary full" data-home-training-page="instructions">Open Job Procedures</button></article>
+      </div></details>
+
+      <details class="tab-guide-cluster"><summary><span><strong>Practice</strong><small>Apply the procedures to synthetic tickets and test recall.</small></span><span class="cluster-count">2 tabs</span></summary><div class="tab-guide-grid">
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">PL</span><div><h5>Practice Lab</h5><p>Scenario-based decisions using fictional support tickets.</p></div></div><dl><div><dt>Use it when</dt><dd>You want to practice issue classification, evidence gathering, ownership boundaries, and escalation decisions.</dd></div><div><dt>Main result</dt><dd>Immediate grading, explanations, coaching points, and model work-note structures.</dd></div></dl><button class="secondary full" data-home-training-page="scenarios">Open Practice Lab</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">KC</span><div><h5>Knowledge Check</h5><p>Module-filtered or full-role assessment questions.</p></div></div><dl><div><dt>Use it when</dt><dd>You want to identify weak areas after studying or verify retention before handling live work.</dd></div><div><dt>Main result</dt><dd>A session score with explanations for each visible question.</dd></div></dl><button class="secondary full" data-home-training-page="quiz">Open Knowledge Check</button></article>
+      </div></details>
+
+      <details class="tab-guide-cluster" open><summary><span><strong>Knowledge Base</strong><small>Look up systems, vocabulary, background rules, and county-specific handling.</small></span><span class="cluster-count">4 tabs</span></summary><div class="tab-guide-grid">
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">SR</span><div><h5>System Reference</h5><p>Which system answers which question—and what it cannot prove.</p></div></div><dl><div><dt>Use it when</dt><dd>You are unsure whether to check RAC, CCIS, TPE, My Submissions, Workbench, SQL, Florida Bar, Ivanti, or the Clerk.</dd></div><div><dt>Main result</dt><dd>The correct evidence source, fields to record, and limitations to state in the ticket.</dd></div></dl><button class="secondary full" data-home-training-page="systems">Open System Reference</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">A–Z</span><div><h5>Terminology</h5><p>Plain-language definitions for Portal Support terms and acronyms.</p></div></div><dl><div><dt>Use it when</dt><dd>A ticket, manager note, system status, or procedure uses an unfamiliar term or two similar concepts are easy to confuse.</dd></div><div><dt>Main result</dt><dd>A role-specific definition, why it matters, and related concepts.</dd></div></dl><button class="secondary full" data-home-training-page="terms">Open Terminology</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">RL</span><div><h5>Reference Library</h5><p>Structured background articles, limits, and Portal-versus-Clerk boundaries.</p></div></div><dl><div><dt>Use it when</dt><dd>You need supporting context that is useful but is not itself an ordered procedure or troubleshooting step.</dd></div><div><dt>Main result</dt><dd>A concise working summary that can be copied or added to the ticket with its boundary intact.</dd></div></dl><button class="secondary full" data-home-training-page="reference">Open Reference Library</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">CN</span><div><h5>County Notes</h5><p>County-specific reports separated from statewide Portal rules.</p></div></div><dl><div><dt>Use it when</dt><dd>The issue involves a county with documented local behavior, Clerk requirements, or a known exception.</dd></div><div><dt>Main result</dt><dd>Safe Portal Support handling, prohibited assumptions, and points that still require Clerk confirmation.</dd></div></dl><button class="secondary full" data-home-training-page="county">Open County Notes</button></article>
+      </div></details>
+
+      <details class="tab-guide-cluster"><summary><span><strong>Administration</strong><small>Trace source decisions, review training provenance, and inspect hosting limits.</small></span><span class="cluster-count">3 tabs</span></summary><div class="tab-guide-grid">
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">CA</span><div><h5>Content Audit</h5><p>Item-by-item classification and source traceability.</p></div></div><dl><div><dt>Use it when</dt><dd>You need to understand why wording was moved, merged, excluded, or flagged for review.</dd></div><div><dt>Main result</dt><dd>The original source text, current classification, active/excluded status, and audit reason.</dd></div></dl><button class="secondary full" data-home-training-page="audit">Open Content Audit</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">TS</span><div><h5>Training Sources</h5><p>Source hierarchy, exclusions, and areas requiring current confirmation.</p></div></div><dl><div><dt>Use it when</dt><dd>You need to know what supports the training or whether a point was deliberately not converted into an active rule.</dd></div><div><dt>Main result</dt><dd>A transparent map of primary materials and unresolved or changeable content.</dd></div></dl><button class="secondary full" data-home-training-page="supplemental">Open Training Sources</button></article>
+        <article class="tab-guide-card"><div class="tab-guide-card-head"><span class="tab-guide-icon">HS</span><div><h5>Hosting &amp; Security</h5><p>Technical boundaries of the static GitHub Pages edition.</p></div></div><dl><div><dt>Use it when</dt><dd>You need to confirm what the site stores, what external actions it performs, or whether AI, telemetry, or APIs are involved.</dd></div><div><dt>Main result</dt><dd>A concise statement of the Workbench’s local, non-AI, session-only operating model.</dd></div></dl><button class="secondary full" data-home-training-page="about">Open Hosting &amp; Security</button></article>
+      </div></details>
+    </section>
+  </section>
+
+  <div class="home-footer-grid">
+    <section class="home-mini-panel"><span class="eyebrow">Keyboard shortcuts</span><div class="home-shortcuts"><span><kbd>Ctrl K</kbd> Search</span><span><kbd>Alt N</kbd> New ticket</span><span><kbd>Alt R</kbd> Messages builder</span><span><kbd>Alt T</kbd> Troubleshooting</span></div></section>
+    <section class="home-mini-panel"><span class="eyebrow">Privacy</span><h4>No AI is used</h4><p>Ticket information stays in the current browser session. The Workbench does not send ticket data to an AI service and does not persist ticket facts.</p></section>
+  </div>
+</section>
+<section id="page-work" class="page">
   <div class="work-head compact-head">
     <div><span class="eyebrow">Temporary workspace for one Ivanti request</span><h2 id="ticketTitle">Current ticket</h2><p id="workPurpose"></p></div>
     <div class="head-actions"><label class="workflow-selector">Issue type<select id="workflowSelect"></select></label><button id="clearTicket" class="danger">Clear current ticket</button></div>
@@ -253,5 +367,5 @@
 </div>
 <div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, quick messages, job procedures, references, county notes, known issues, and terms"><div id="globalResults"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="data-v4.4.js"></script><script src="app-v4.4.js"></script>
+<script src="data-v4.6.js"></script><script src="app-v4.6.js"></script>
 </body></html>
