@@ -1,8 +1,8 @@
 {
   "name": "Portal Support Workbench",
-  "version": "3.8",
-  "build": "KNOWLEDGE_HUB",
-  "description": "Static non-AI Portal Support work and training tool with redesigned procedures and reference guidance.",
+  "version": "3.9",
+  "build": "CLEAN_NOTICES",
+  "description": "Static non-AI Portal Support work and training tool with simplified, neutral guidance presentation.",
   "files": {
     ".github/workflows/deploy-pages.yml": {
       "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9",
@@ -13,8 +13,8 @@
       "bytes": 0
     },
     "404.html": {
-      "sha256": "7239363014a6b334bf1770880b11f09ac0277b067db16ea96465efa71ec00065",
-      "bytes": 33447
+      "sha256": "5f4bced96bb0126ec56eb0c3f3b31330bda10a122165e0a72149224d939698aa",
+      "bytes": 33018
     },
     "CONTENT_AUDIT.csv": {
       "sha256": "6261e730298a085150b0c0f013e9296d2b17a982513362033e718a9a2d6b6120",
@@ -36,6 +36,10 @@
       "sha256": "0d373b06b283ea07ac8841cbe57e83f8e7e0bbad0ba890b7bc3851967b10988a",
       "bytes": 142550
     },
+    "NOTICE_CLEANUP.md": {
+      "sha256": "68ddea149079695b27c1b150511f6a16370b8553447986ff9f64a9374232913c",
+      "bytes": 608
+    },
     "PRACTICE_WORKBOOK.html": {
       "sha256": "60f8c1b9b3faf7c717d708dfcf4f883e4c086830bf216800bf08be9cfab39209",
       "bytes": 29096
@@ -45,8 +49,8 @@
       "bytes": 18860
     },
     "README.md": {
-      "sha256": "96e0f9c3e5e800fdbbc3e9a266043ca54d87f1332e0b763c788c32f45ae493a1",
-      "bytes": 1488
+      "sha256": "f818eb91ea558ec7ca43380cd77d7fc5e6189d478e6fa3605a872686b86ac085",
+      "bytes": 1857
     },
     "SECURITY_AND_PUBLICATION_WARNING.md": {
       "sha256": "514a707eb3a9c5b9e132c71e8da15ee77eed6ad0e28633a81f66e3edc456e21b",
@@ -81,24 +85,24 @@
       "bytes": 5132
     },
     "app.js": {
-      "sha256": "e8499008be031cd9155ecf7c7f08ca5953cf195b6e009e15c37dbf030db808c9",
-      "bytes": 81373
+      "sha256": "a7a44cf5740f4cc7d9e6fa901a3d8a639c1919662c3b43fb46e15865b216eb5f",
+      "bytes": 81339
     },
     "data.js": {
-      "sha256": "a12e7e265160309ccde088fada4bf49e804f58772f539685518878fbfdecce98",
-      "bytes": 481164
+      "sha256": "b13b87852084553bd4809df84d6c368023ff774b5aa50451fcdc2b7af124be9f",
+      "bytes": 480561
     },
     "index.html": {
-      "sha256": "7239363014a6b334bf1770880b11f09ac0277b067db16ea96465efa71ec00065",
-      "bytes": 33447
+      "sha256": "5f4bced96bb0126ec56eb0c3f3b31330bda10a122165e0a72149224d939698aa",
+      "bytes": 33018
     },
     "robots.txt": {
       "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
       "bytes": 26
     },
     "styles.css": {
-      "sha256": "d28c219b9ae798d5439157a29d8ebf2f68a0f6002dadd8deec7645ec3f993c9c",
-      "bytes": 44907
+      "sha256": "37769aaa68151aa9433725da55140632c38b6629a5d8271c7780ad1d67b48f2b",
+      "bytes": 45091
     }
   }
 }
