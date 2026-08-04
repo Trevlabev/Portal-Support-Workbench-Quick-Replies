@@ -1,108 +1,137 @@
 {
   "name": "Portal Support Workbench",
-  "version": "3.9",
-  "build": "CLEAN_NOTICES",
-  "description": "Static non-AI Portal Support work and training tool with simplified, neutral guidance presentation.",
-  "files": {
-    ".github/workflows/deploy-pages.yml": {
+  "version": "4.1",
+  "build": "WORKFLOW_CONSOLIDATION",
+  "files": [
+    {
+      "path": ".github/workflows/deploy-pages.yml",
       "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9",
       "bytes": 598
     },
-    ".nojekyll": {
+    {
+      "path": ".nojekyll",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
     },
-    "404.html": {
-      "sha256": "5f4bced96bb0126ec56eb0c3f3b31330bda10a122165e0a72149224d939698aa",
-      "bytes": 33018
+    {
+      "path": "404.html",
+      "sha256": "adc825f305e9a9e225290883aedb9670133f477726128cc29bfb096466fdd258",
+      "bytes": 34759
     },
-    "CONTENT_AUDIT.csv": {
+    {
+      "path": "CONTENT_AUDIT.csv",
       "sha256": "6261e730298a085150b0c0f013e9296d2b17a982513362033e718a9a2d6b6120",
       "bytes": 28029
     },
-    "CONTENT_AUDIT.md": {
+    {
+      "path": "CONTENT_AUDIT.md",
       "sha256": "7cb532d0870004626fe053f574e7379c880a27915fe5fdacf42af502695f72d3",
       "bytes": 28945
     },
-    "KNOWLEDGE_HUB_REDESIGN_AUDIT.md": {
+    {
+      "path": "KNOWLEDGE_HUB_REDESIGN_AUDIT.md",
       "sha256": "b92018f00c8f4dcbed4992ab7af01f51b3c759c0388052f249ee202c1dd4e792",
       "bytes": 2012
     },
-    "MESSAGE_AND_TROUBLESHOOTING_AUDIT.md": {
+    {
+      "path": "MESSAGE_AND_TROUBLESHOOTING_AUDIT.md",
       "sha256": "1b91849fd760e14feff5997d87fc9f296e3fb1fe860f35322d21f0917dbe9878",
       "bytes": 2462
     },
-    "MESSAGE_CATALOG_BEFORE_AND_AFTER.csv": {
+    {
+      "path": "MESSAGE_CATALOG_BEFORE_AND_AFTER.csv",
       "sha256": "0d373b06b283ea07ac8841cbe57e83f8e7e0bbad0ba890b7bc3851967b10988a",
       "bytes": 142550
     },
-    "NOTICE_CLEANUP.md": {
-      "sha256": "68ddea149079695b27c1b150511f6a16370b8553447986ff9f64a9374232913c",
-      "bytes": 608
+    {
+      "path": "NO_YELLOW_CALLOUTS_AUDIT.md",
+      "sha256": "4c344d0886780818367d5b30c828f81d2b984a629e416ac7f98da9a852408815",
+      "bytes": 999
     },
-    "PRACTICE_WORKBOOK.html": {
+    {
+      "path": "PRACTICE_WORKBOOK.html",
       "sha256": "60f8c1b9b3faf7c717d708dfcf4f883e4c086830bf216800bf08be9cfab39209",
       "bytes": 29096
     },
-    "PRACTICE_WORKBOOK.md": {
+    {
+      "path": "PRACTICE_WORKBOOK.md",
       "sha256": "b9d4208eb5c8c435a51ab5cb82de40049159efc566fb7c289df01cc41976cb3e",
       "bytes": 18860
     },
-    "README.md": {
-      "sha256": "f818eb91ea558ec7ca43380cd77d7fc5e6189d478e6fa3605a872686b86ac085",
-      "bytes": 1857
+    {
+      "path": "README.md",
+      "sha256": "607eda6cb01654cfe662d40327860c152c4d920ed644899e822dc06fdcb21423",
+      "bytes": 2473
     },
-    "SECURITY_AND_PUBLICATION_WARNING.md": {
+    {
+      "path": "SECURITY_AND_PUBLICATION_WARNING.md",
       "sha256": "514a707eb3a9c5b9e132c71e8da15ee77eed6ad0e28633a81f66e3edc456e21b",
       "bytes": 722
     },
-    "START_LOCAL_PREVIEW.cmd": {
+    {
+      "path": "START_LOCAL_PREVIEW.cmd",
       "sha256": "c57f5a94c0869b612bde0be76d3f13036fb5b5d587bc8bf8aca9c7a447364f77",
       "bytes": 150
     },
-    "TRAINER_GUIDE.html": {
+    {
+      "path": "TRAINER_GUIDE.html",
       "sha256": "7722c9c50b308ee4bd5ed1d50ca74780b089b6e2794a8f4d5baa1b3f6ae35cd3",
       "bytes": 32586
     },
-    "TRAINER_GUIDE.md": {
+    {
+      "path": "TRAINER_GUIDE.md",
       "sha256": "da699537bf5ace3257a52b452f59e1d0c3261dcae255248910e1f886abbeb8a2",
       "bytes": 25394
     },
-    "TRAINING_GUIDE.html": {
+    {
+      "path": "TRAINING_GUIDE.html",
       "sha256": "6a79e3b67eb1a0f9b226f4d9a1605396a7996dc654a179111fe6908c6a82ae8b",
       "bytes": 67929
     },
-    "TRAINING_GUIDE.md": {
+    {
+      "path": "TRAINING_GUIDE.md",
       "sha256": "d16efe6dc55bc2f44431fb328c6d014c80a7353999bd0867c28c599a856f9be1",
       "bytes": 54530
     },
-    "TRAINING_SOURCE_MAP.html": {
+    {
+      "path": "TRAINING_SOURCE_MAP.html",
       "sha256": "3fa9050f287655add29df1a0cd29f3129ad214cb051a7d1cfe4bc7506b65ed2a",
       "bytes": 8309
     },
-    "TRAINING_SOURCE_MAP.md": {
+    {
+      "path": "TRAINING_SOURCE_MAP.md",
       "sha256": "5f9dd4aa09f2bcebf4127749135446eb9fa60d6bc7343359e15ce4ef2fa9d6e4",
       "bytes": 5132
     },
-    "app.js": {
-      "sha256": "a7a44cf5740f4cc7d9e6fa901a3d8a639c1919662c3b43fb46e15865b216eb5f",
-      "bytes": 81339
+    {
+      "path": "V4.1_WORKFLOW_CONSOLIDATION.md",
+      "sha256": "849f9ff16855868f614b749dbd4522a7a8a044ee21efb6d53226b60533d0177e",
+      "bytes": 517
     },
-    "data.js": {
-      "sha256": "b13b87852084553bd4809df84d6c368023ff774b5aa50451fcdc2b7af124be9f",
+    {
+      "path": "app-v4.1.js",
+      "sha256": "5f8ecb5966401182161ba7fc08254c797ce804d5e995f80e01e152ccb0c8185c",
+      "bytes": 94083
+    },
+    {
+      "path": "data-v4.1.js",
+      "sha256": "3b895e610bf94b35d53f8a30d4438ee2c7f4b9ba672d362b34ab133d927eb702",
       "bytes": 480561
     },
-    "index.html": {
-      "sha256": "5f4bced96bb0126ec56eb0c3f3b31330bda10a122165e0a72149224d939698aa",
-      "bytes": 33018
+    {
+      "path": "index.html",
+      "sha256": "adc825f305e9a9e225290883aedb9670133f477726128cc29bfb096466fdd258",
+      "bytes": 34759
     },
-    "robots.txt": {
+    {
+      "path": "robots.txt",
       "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
       "bytes": 26
     },
-    "styles.css": {
-      "sha256": "37769aaa68151aa9433725da55140632c38b6629a5d8271c7780ad1d67b48f2b",
-      "bytes": 45091
+    {
+      "path": "styles-v4.1.css",
+      "sha256": "44861ebe0d960f711bf2b0ad524bd4dacd7b2445666625a0a9a1fe418f5b5b34",
+      "bytes": 49653
     }
-  }
+  ]
 }

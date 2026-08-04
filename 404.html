@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v3.9</title>
-<link rel="stylesheet" href="styles.css">
+<title>Portal Support Workbench v4.1</title>
+<link rel="stylesheet" href="styles-v4.1.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true" aria-labelledby="noAiTitle">
@@ -18,7 +18,7 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v3.9 · Clean notices</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v4.1 · Workflow consolidation</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
   <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
@@ -29,30 +29,21 @@
     <div class="mode"><button class="active" data-mode="work">Work</button><button data-mode="training">Training</button></div>
   </div>
   <nav id="workNav">
-    <button data-page="replies">Quick Messages</button>
+    <button data-page="replies">Messages</button>
     <button data-page="troubleshoot">Troubleshooting</button>
-    <button data-page="composer">Response Builder</button>
     <button data-page="bar">Florida Bar Search</button>
     <button data-page="known">Known Issues</button>
     <div class="nav-divider" aria-hidden="true"></div>
     <button class="active current-ticket-nav" data-page="work">Current Ticket</button>
   </nav>
   <nav id="trainingNav" hidden>
-    <button data-page="traininghome">Training Home</button>
-    <button data-page="registration">Learning Modules</button>
-    <button data-page="scenarios">Practice Lab</button>
-    <button data-page="quiz">Knowledge Check</button>
-    <div class="nav-divider" aria-hidden="true"></div>
-    <button data-page="instructions">Job Procedures</button>
-    <button data-page="systems">System Reference</button>
-    <button data-page="terms">Terminology</button>
-    <button data-page="reference">Reference Library</button>
-    <button data-page="county">County Notes</button>
-    <button data-page="audit">Content Audit</button>
-    <button data-page="supplemental">Training Sources</button>
-    <button data-page="about">Hosting &amp; Security</button>
+    <details class="nav-group" data-nav-group="learn" open><summary>Learn</summary><button data-page="traininghome">Training Home</button><button data-page="registration">Learning Modules</button><button data-page="instructions">Job Procedures</button></details>
+    <details class="nav-group" data-nav-group="practice" open><summary>Practice</summary><button data-page="scenarios">Practice Lab</button><button data-page="quiz">Knowledge Check</button></details>
+    <details class="nav-group" data-nav-group="knowledge" open><summary>Knowledge Base</summary><button data-page="systems">System Reference</button><button data-page="terms">Terminology</button><button data-page="reference">Reference Library</button><button data-page="county">County Notes</button></details>
+    <details class="nav-group" data-nav-group="administration"><summary>Administration</summary><button data-page="audit">Content Audit</button><button data-page="supplemental">Training Sources</button><button data-page="about">Hosting &amp; Security</button></details>
   </nav>
-  <div class="shortcut"><strong>Keyboard</strong><span>Ctrl K · Search</span><span>Alt N · New ticket</span><span>Alt R · Response Builder</span><span>Alt T · Troubleshooting</span></div>
+  <div class="shortcut"><strong>Keyboard</strong><span>Ctrl K · Search</span><span>Alt N · New ticket</span><span>Alt R · Messages builder</span><span>Alt T · Troubleshooting</span></div>
+  <div class="sidebar-privacy"><strong>No AI</strong><span>Ticket information stays in this browser session.</span></div>
 </aside>
 <main>
 <section id="page-work" class="page active">
@@ -107,8 +98,7 @@
       <div class="ticket-tool-grid">
         <button id="workTrouble" class="ticket-tool"><strong>Troubleshoot this issue</strong><span>Find the applicable steps and add results to the work note.</span></button>
         <button id="workBar" class="ticket-tool"><strong>Search Florida Bar</strong><span>Open the official directory and record the verification result.</span></button>
-        <button id="workReplies" class="ticket-tool"><strong>Find a Quick Message</strong><span>Add manager-provided wording to an editable customer or Ivanti draft.</span></button>
-        <button id="workBuilder" class="ticket-tool"><strong>Build customer response</strong><span>Customize a response with editable blocks and current ticket facts.</span></button>
+        <button id="workReplies" class="ticket-tool"><strong>Open Messages</strong><span>Find reusable wording or build a customized customer response or Ivanti note.</span></button>
         <button id="workKnown" class="ticket-tool"><strong>Check known issues</strong><span>Review possible matches without automatically associating the ticket.</span></button>
       </div>
     </section>
@@ -120,8 +110,8 @@
         <div class="closeout-grid"><label>Customer contact status<select id="contactStatus"><option value="">Select</option><option>Email prepared</option><option>Email sent</option><option>Telephone contact completed</option><option>Voicemail left</option><option>Awaiting customer</option><option>Customer self-resolved</option></select></label><label>Outcome<select id="outcomeValue"></select></label><label>Cause Code<input id="causeCodeValue" placeholder="Current Ivanti Cause Code"></label><label class="checkline review-check"><input id="responseReviewed" type="checkbox"> I reviewed the customer response against the ticket facts, findings, and job instructions.</label><label class="full">Resolution / handoff summary<textarea id="resolutionSummary" placeholder="What happened and why"></textarea></label></div>
       </details>
       <div class="output-toolbar"><div class="output-tabs"><button class="active" data-output="customer">Customer response</button><button data-output="worknote">Ivanti work note</button><button data-output="resolution">Resolution note</button><button data-output="escalation">Escalation package</button></div><div><span id="outputStale" class="stale" hidden>Ticket changed—draft not regenerated</span><button id="regenerateOutputs" class="secondary">Regenerate drafts</button></div></div>
-      <div id="outputPanels"></div>
-      <div class="response-actions"><button id="openBuilderFromTicket" class="secondary">Customize response</button><button id="openRepliesFromTicket" class="secondary">Add Quick Message wording</button><button id="copyTicketBundle" class="primary">Copy complete ticket bundle</button></div>
+      <div id="outputPanels"></div><div id="ticketDraftChecks" class="draft-checks ticket-draft-checks" aria-live="polite"></div>
+      <div class="response-actions"><button id="openBuilderFromTicket" class="secondary">Open Messages builder</button><button id="openRepliesFromTicket" class="secondary">Find message wording</button><button id="copyTicketBundle" class="primary">Copy complete ticket bundle</button></div>
     </section>
   </div>
 </section>
@@ -133,22 +123,32 @@
   <div class="split"><div id="troubleCards" class="cards"></div><aside class="sticky"><div class="panel"><div class="panelhead"><div><h3>Troubleshooting plan</h3><p>Add, reorder, edit, and copy the steps you need.</p></div><button id="clearTroublePlan" class="danger">Clear</button></div><div id="troubleKit"></div><textarea id="troublePlanText" class="large" placeholder="Selected troubleshooting guidance will appear here. You can edit it freely."></textarea><div class="stack-actions"><button id="rebuildTroublePlan" class="secondary">Rebuild from selected cards</button><button id="addTroubleToTicket" class="secondary">Add plan to current work note</button><button id="copyTroubleKit" class="primary">Copy plan</button></div></div><div class="panel"><h3>Complete troubleshooting checklist</h3><div id="troubleMaster"></div><button id="addCheckedTrouble" class="secondary full">Add checked items to current ticket</button><button id="copyTroubleChecked" class="primary full">Copy checked as work note</button></div></aside></div>
 </section>
 
-<section id="page-composer" class="page">
-  <div class="pagehead"><div><span class="eyebrow">Fully customizable drafting</span><h2>Response Builder</h2><p>Build from editable blocks, team-note templates, or current ticket facts. The final draft is always freely editable.</p></div><div class="head-actions"><button id="builderStartTicket" class="secondary">Start from current ticket</button><button id="builderBlank" class="danger">Start blank</button></div></div>
-  <div class="builder-layout">
-    <div class="panel"><div class="builder-add"><label>Add block type<select id="newBlockType"><option>Greeting</option><option>Acknowledgment</option><option>Verified finding</option><option>Explanation</option><option>Instructions</option><option>Portal / Clerk boundary</option><option>Closing</option><option>Custom</option></select></label><button id="addBuilderBlock" class="primary">Add block</button></div><div class="insert-tools"><label>Insert team-note template<select id="builderTemplate"></select></label><button id="insertBuilderTemplate" class="secondary">Insert</button></div><div><span class="field-label">Insert current ticket fact</span><div id="factChips" class="fact-chips"></div></div><div id="builderBlocks"></div></div>
-    <aside class="panel sticky"><div class="panelhead"><div><h3>Final response</h3><p>This editor is independent. Rebuild only when you choose.</p></div><button id="copyBuilder" class="secondary">Copy</button></div><textarea id="builderOutput" class="huge" placeholder="Build from blocks or type a response directly."></textarea><div class="stack-actions"><button id="buildFromBlocks" class="secondary">Rebuild from blocks</button><button id="sendBuilderToTicket" class="primary">Use as current ticket response</button></div><div id="builderSourceSummary" class="source-summary"></div></aside>
-  </div>
-</section>
-
 <section id="page-replies" class="page">
-  <div class="pagehead"><div><span class="eyebrow">Simple template library</span><h2>Quick Messages</h2><p>Choose Customer Email or Ivanti Note, find the wording you need, and add it to an editable draft.</p></div></div>
+  <div class="pagehead"><div><span class="eyebrow">Reusable wording and customizable drafting</span><h2>Messages</h2><p>Search customer and Ivanti wording, assemble a quick draft, or build a response from editable blocks without leaving this workspace.</p></div><div class="head-actions"><button id="builderStartTicket" class="secondary">Start builder from current ticket</button><button id="builderBlank" class="secondary">Start builder blank</button></div></div>
   <div class="reply-mode"><button class="active" data-reply-mode="Customer">Customer Email</button><button data-reply-mode="Internal">Ivanti Note</button></div>
   <div id="replyModeHelp" class="info"></div>
-  <div class="toolbar simple"><input id="replySearch" placeholder="Search all quick messages"><div id="replyIntentChips" class="intent-chips"></div><span id="replyCount" class="count"></span></div>
-  <div class="split reply-split"><div><div id="suggestedReplies" class="suggestion-strip"></div><div id="replyCards" class="cards"></div></div><aside class="panel sticky"><div class="panelhead"><div><h3 id="replyDraftTitle">Customer email draft</h3><p>Add templates or start from the current ticket response.</p></div><button id="clearReplyDraft" class="danger">Clear</button></div><button id="startReplyFromTicket" class="secondary full">Start with current ticket response</button><div id="replyKit"></div><textarea id="replyDraft" class="huge" placeholder="Your editable draft appears here."></textarea><div class="stack-actions"><button id="rebuildReplyDraft" class="secondary">Rebuild from selected templates</button><button id="sendReplyToTicket" class="secondary">Use in current ticket</button><button id="copyReplyDraft" class="primary">Copy draft</button></div></aside></div>
+  <div class="toolbar simple"><input id="replySearch" placeholder="Search all messages"><div id="replyIntentChips" class="intent-chips"></div><label class="checkline compact"><input id="replyFavoritesOnly" type="checkbox"> Favorites only</label><span id="replyCount" class="count"></span></div>
+  <div class="message-layout">
+    <div><div id="suggestedReplies" class="suggestion-strip"></div><div id="replyCards" class="cards"></div></div>
+    <aside class="panel sticky message-workspace">
+      <div class="message-workspace-tabs" role="tablist" aria-label="Message drafting method"><button class="active" data-message-workspace="quick" role="tab">Quick draft</button><button data-message-workspace="builder" role="tab">Block builder</button></div>
+      <div id="messageQuickPanel" class="message-workspace-panel">
+        <div class="panelhead"><div><h3 id="replyDraftTitle">Customer email draft</h3><p>Add messages, reorder them, and edit the completed draft.</p></div><button id="clearReplyDraft" class="danger">Clear</button></div>
+        <button id="startReplyFromTicket" class="secondary full">Start with current ticket draft</button><div id="replyKit"></div>
+        <textarea id="replyDraft" class="huge" placeholder="Your editable draft appears here."></textarea><div id="messageDraftChecks" class="draft-checks" aria-live="polite"></div>
+        <div class="stack-actions"><button id="rebuildReplyDraft" class="secondary">Rebuild from selected messages</button><button id="sendReplyToTicket" class="secondary">Use in current ticket</button><button id="copyReplyDraft" class="primary">Copy draft</button></div>
+      </div>
+      <div id="messageBuilderPanel" class="message-workspace-panel" hidden>
+        <div class="builder-add"><label>Add block type<select id="newBlockType"><option>Greeting</option><option>Acknowledgment</option><option>Verified finding</option><option>Explanation</option><option>Instructions</option><option>Portal / Clerk boundary</option><option>Closing</option><option>Custom</option></select></label><button id="addBuilderBlock" class="primary">Add block</button></div>
+        <div class="insert-tools"><label>Insert Quick Message<select id="builderTemplate"></select></label><button id="insertBuilderTemplate" class="secondary">Insert</button></div>
+        <div><span class="field-label">Insert current ticket fact</span><div id="factChips" class="fact-chips"></div></div><div id="builderBlocks"></div>
+        <div class="panelhead builder-final-head"><div><h3>Final message</h3><p>Rebuild only when you choose; direct edits remain intact.</p></div><button id="copyBuilder" class="secondary">Copy</button></div>
+        <textarea id="builderOutput" class="huge" placeholder="Build from blocks or type a message directly."></textarea><div id="builderDraftChecks" class="draft-checks" aria-live="polite"></div>
+        <div class="stack-actions"><button id="buildFromBlocks" class="secondary">Rebuild from blocks</button><button id="sendBuilderToTicket" class="primary">Use in current ticket</button></div><div id="builderSourceSummary" class="source-summary"></div>
+      </div>
+    </aside>
+  </div>
 </section>
-
 <section id="page-bar" class="page">
   <div class="pagehead"><div><span class="eyebrow">Official public directory</span><h2>Florida Bar Verification</h2><p>Open the exact official profile, copy the visible profile text, and import it into a compact preview before applying the result to the current ticket.</p></div></div>
   <div class="bar-layout bar-preview-layout">
@@ -169,13 +169,13 @@
       </div>
     </div>
     <div class="panel bar-preview-panel">
-      <div class="panelhead"><div><h3>Official profile preview</h3><p>Local preview of the job-relevant fields copied from the official page.</p></div><span id="barPreviewStatus" class="status">No profile imported</span></div>
+      <div class="panelhead"><div><h3>Imported profile summary</h3><p>Job-relevant fields parsed locally from text copied from the official profile.</p></div><span id="barPreviewStatus" class="status">No profile imported</span></div>
       <div id="barProfilePreview" class="bar-profile-card empty-preview"><div class="bar-preview-empty"><strong>No profile imported</strong><span>Open the official profile, copy its visible text, then select “Import copied profile text.”</span></div></div>
       <details id="barEditDetails" class="bar-edit-details" hidden><summary>Review or correct imported details</summary><div class="field-grid"><label>Member name<input id="barMemberName"></label><label>Bar number<input id="barVerifiedNumber"></label><label>Member status<input id="barMemberStatus"></label><label>Eligible to practice?<select id="barEligible"><option value="">Not determined</option><option>Yes</option><option>No</option></select></label><label>Public email<input id="barPublicEmail" type="email"></label><label>County<input id="barCounty"></label><label>Admitted<input id="barAdmitted"></label><label>10-year discipline history<input id="barDiscipline"></label><label>Public email comparison<select id="barEmailCompare"><option value="">Not compared</option><option>Matches Portal/customer email</option><option>Does not match</option><option>No public email shown</option><option>Ticket email missing</option></select></label></div></details>
-      <label class="checkline bar-review-confirm"><input id="barReviewed" type="checkbox"> I reviewed this preview against the official Florida Bar profile.</label>
+      <label class="checkline bar-review-confirm"><input id="barReviewed" type="checkbox"> I reviewed this imported summary against the official Florida Bar profile.</label>
       <textarea id="barVerificationNote" class="bar-note" placeholder="The verification note is built from the reviewed preview. You may edit it before applying."></textarea>
       <div class="stack-actions"><button id="buildBarNote" class="secondary">Build verification note</button><button id="applyBarToTicket" class="primary">Apply to current ticket</button><button id="copyBarNote" class="secondary">Copy note</button></div>
-      <div class="info compact-info"><strong>Why not embed the live site?</strong> External sites can prevent framing, and a static GitHub Pages app cannot reliably read another site’s page. This local preview avoids another broken embedded window while keeping the official page as the verification source.</div>
+      <div class="info compact-info"><strong>Why this is not a live site preview:</strong> External sites can prevent framing, and a static GitHub Pages app cannot reliably read another site’s page. This imported summary avoids another broken embedded window while keeping the official page as the verification source.</div>
     </div>
   </div>
 </section>
@@ -200,13 +200,13 @@
 </section>
 <section id="page-audit" class="page"><div class="pagehead"><div><span class="eyebrow">Every manager-source entry classified</span><h2>Content Audit</h2><p>Review where each source item belongs, what was removed from active work views, and why it was flagged.</p></div><a class="button-link secondary" href="CONTENT_AUDIT.md" target="_blank" rel="noopener">Open full audit report</a></div><div id="auditStats" class="stats audit-stats"></div><div class="audit-legend"><span><i class="audit-dot active"></i>Active in the appropriate workspace</span><span><i class="audit-dot excluded"></i>Excluded or merged; retained here for traceability</span></div><div class="toolbar"><input id="auditSearch" placeholder="Search title, reason, flag, or source text"><select id="auditType"><option value="">All classifications</option><option>Job procedure</option><option>Quick message</option><option>Troubleshooting</option><option>Known issue</option><option>Reference note</option><option>County note</option></select><select id="auditState"><option value="">All audit states</option><option value="active">Active</option><option value="excluded">Excluded / merged</option><option value="flagged">Flagged for review</option></select><span id="auditCount" class="count"></span></div><div id="auditCards" class="procedure-list audit-list"></div></section>
 <section id="page-traininghome" class="page">
-  <div class="pagehead training-hero"><div><span class="eyebrow">Structured new-hire and refresher training</span><h2>Training Home</h2><p>Follow the learning path, practice with synthetic tickets, and check your understanding. Progress exists only in this browser session and is not stored. Use current manager direction for live ticket decisions.</p></div><div class="training-downloads"><a class="button-link secondary" href="TRAINING_GUIDE.html" target="_blank" rel="noopener">Printable training guide</a><a class="button-link secondary" href="PRACTICE_WORKBOOK.html" target="_blank" rel="noopener">Practice workbook</a><a class="button-link secondary" href="TRAINER_GUIDE.html" target="_blank" rel="noopener">Trainer guide</a></div></div>
+  <div class="pagehead training-hero"><div><span class="eyebrow">Structured new-hire and refresher training</span><h2>Training Home</h2><p>Follow the learning path, practice with synthetic tickets, and check your understanding. Training progress is saved locally on this device. Ticket information is never saved by the Workbench. Use current manager direction for live ticket decisions.</p></div><div class="training-downloads"><a class="button-link secondary" href="TRAINING_GUIDE.html" target="_blank" rel="noopener">Printable training guide</a><a class="button-link secondary" href="PRACTICE_WORKBOOK.html" target="_blank" rel="noopener">Practice workbook</a><a class="button-link secondary" href="TRAINER_GUIDE.html" target="_blank" rel="noopener">Trainer guide</a></div></div>
   <div class="training-summary-grid"><article class="training-summary"><strong id="trainingModuleProgress">0 of 12</strong><span>Modules marked complete</span></article><article class="training-summary"><strong id="trainingScenarioProgress">0 of 15</strong><span>Scenarios attempted</span></article><article class="training-summary"><strong id="trainingQuizProgress">Not graded</strong><span>Knowledge-check score</span></article></div>
   <div id="trainingRoadmap" class="training-roadmap"></div>
   <section class="panel training-next"><div><span class="eyebrow">Recommended next step</span><h3 id="trainingNextTitle">Begin with role boundaries</h3><p id="trainingNextText"></p></div><button id="trainingNextButton" class="primary">Open next module</button></section>
 </section>
 <section id="page-registration" class="page">
-  <div class="pagehead"><div><span class="eyebrow">Twelve source-grounded modules</span><h2>Learning Modules</h2><p>Each module includes objectives, explanations, system boundaries, the current workflow checklist, evidence requirements, common mistakes, and linked knowledge checks.</p></div><button id="resetTrainingProgress" class="secondary">Reset session progress</button></div>
+  <div class="pagehead"><div><span class="eyebrow">Twelve source-grounded modules</span><h2>Learning Modules</h2><p>Each module includes objectives, explanations, system boundaries, the current workflow checklist, evidence requirements, common mistakes, and linked knowledge checks.</p></div><button id="resetTrainingProgress" class="secondary">Reset saved progress</button></div>
   <div class="toolbar"><input id="moduleSearch" placeholder="Search modules, objectives, rules, or systems"><select id="moduleLevel"><option value="">All levels</option><option>Foundation</option><option>Core workflow</option><option>Specialized workflow</option><option>Advanced</option></select><span id="moduleCount" class="count"></span></div>
   <div id="registrationTraining" class="training-modules"></div>
 </section>
@@ -236,7 +236,8 @@
 <section id="page-about" class="page"><div class="pagehead"><h2>Hosting & Security</h2></div><div class="panel prose"><p>This static GitHub Pages edition contains no AI, OpenAI API, Ollama, analytics, or telemetry. Ticket facts are not persisted by the application.</p><p>The Florida Bar tool performs only user-initiated navigation to official Florida Bar pages.</p></div></section>
 </main>
 </div>
+<aside id="currentTicketDrawer" class="ticket-drawer" hidden aria-label="Current ticket summary"><button id="drawerToggle" class="ticket-drawer-toggle" aria-expanded="true"><span>Current Ticket</span><strong id="drawerIncident">New ticket</strong></button><div id="drawerBody" class="ticket-drawer-body"><div id="drawerSnapshot" class="drawer-snapshot"></div><div class="drawer-actions"><button id="drawerOpenTicket" class="secondary">Open ticket</button><button id="drawerAddNote" class="secondary">Add note</button><button id="drawerCopySummary" class="primary">Copy summary</button></div><div id="drawerNoteForm" class="drawer-note-form" hidden><textarea id="drawerNoteText" placeholder="Add a short internal note to the current ticket."></textarea><div class="drawer-actions"><button id="drawerSaveNote" class="primary">Add to work note</button><button id="drawerCancelNote" class="secondary">Cancel</button></div></div></div></aside>
 <div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, quick messages, job procedures, references, county notes, known issues, and terms"><div id="globalResults"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="data.js"></script><script src="app.js"></script>
+<script src="data-v4.1.js"></script><script src="app-v4.1.js"></script>
 </body></html>

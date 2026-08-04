@@ -1,4 +1,4 @@
-# Portal Support Workbench v3.9 — Clean notices
+# Portal Support Workbench v4.1 — Clean notices
 
 Version 3.7 completes a full copy-edit of every active Quick Message and Troubleshooting message displayed in the Workbench while preserving the v3.6 training program and all Daily Work tools.
 
@@ -26,6 +26,21 @@ The Workbench remains static and rule based. It does not use AI, call an AI API,
 Job Procedures, System Reference, Terminology, Reference Library, and County Notes were rebuilt into structured, searchable guidance. See `KNOWLEDGE_HUB_REDESIGN_AUDIT.md`.
 
 
-## v3.9 notice cleanup
+## v4.1 notice cleanup
 
 Removed the yellow warning boxes from Troubleshooting, Job Procedures, County Notes, Training Home, Training Sources, Known Issues, and Content Audit. Redundant card-level reminders were deleted. Essential boundary or confirmation guidance remains available as ordinary, neutral text inside the relevant guide instead of as a prominent yellow callout.
+
+
+## v4.1 interface correction
+
+All yellow/amber callout treatments were removed or changed to neutral styling. Asset filenames are versioned to prevent stale browser caching.
+
+
+## v4.1 workflow consolidation
+
+- Unified Messages workspace with quick drafting, block drafting, favorites, and rule-based draft checks.
+- Persistent Current Ticket drawer across daily work tools.
+- Grouped Training navigation.
+- Actionable Knowledge Hub cards.
+- Local persistence only for training progress and non-sensitive preferences; no ticket facts or drafts are persisted.
+- Accurate Florida Bar label: Imported Profile Summary.
