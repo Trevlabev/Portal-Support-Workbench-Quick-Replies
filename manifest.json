@@ -1,7 +1,7 @@
 {
   "product": "Portal Support Workbench - GitHub Pages Edition",
-  "version": "2.6",
-  "edition": "Simplified Work Ticket + Customizable Drafting",
+  "version": "2.7",
+  "edition": "Current Ticket + Connected Role Tools",
   "external_navigation": [
     "Official Florida Bar Find a Lawyer directory",
     "Official Florida Bar exact profile by user-entered Bar number",
@@ -22,58 +22,66 @@
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
-      "bytes": 598,
-      "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9"
+      "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9",
+      "bytes": 598
     },
     {
       "path": ".nojekyll",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
     },
     {
       "path": "404.html",
-      "bytes": 18818,
-      "sha256": "dc6926304b2b70e6ac9952a23b985310c28c3cb7e68d4132baf407a3099e529b"
+      "sha256": "25af4450ac5c6d6fe569af8e036646e50617f9c13d74ffd7b7a9e013f642456e",
+      "bytes": 21325
     },
     {
       "path": "README.md",
-      "bytes": 1653,
-      "sha256": "a27bff3960172b8359051f34c0756f3a48368e348bc56c3490e9154a01d16e83"
+      "sha256": "e3e7ef09c0d0b9000b93233b330ea0b30411a4500c403c9d31e5235a0e31b20b",
+      "bytes": 2247
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
-      "bytes": 422,
-      "sha256": "4e8a2c61c20014fc1e264d5186d3a8b4a8faa6530c46984fa5a91d9d414cf4c3"
+      "sha256": "4e8a2c61c20014fc1e264d5186d3a8b4a8faa6530c46984fa5a91d9d414cf4c3",
+      "bytes": 422
     },
     {
       "path": "START_LOCAL_PREVIEW.cmd",
-      "bytes": 150,
-      "sha256": "c57f5a94c0869b612bde0be76d3f13036fb5b5d587bc8bf8aca9c7a447364f77"
+      "sha256": "c57f5a94c0869b612bde0be76d3f13036fb5b5d587bc8bf8aca9c7a447364f77",
+      "bytes": 150
     },
     {
       "path": "app.js",
-      "bytes": 42605,
-      "sha256": "238bb840d46dd11bce4997ddebb3427ef5ba16069344565c3fa2ad8485ec8354"
+      "sha256": "1bbc88404c4d8874882586478d423e6d56144375712dd69004da66d9b1ad0c77",
+      "bytes": 47019
     },
     {
       "path": "data.js",
-      "bytes": 221272,
-      "sha256": "63152c4a6b17f552d9027fc24898df3fd67e3dd902be6faa52187380b5c15a70"
+      "sha256": "63152c4a6b17f552d9027fc24898df3fd67e3dd902be6faa52187380b5c15a70",
+      "bytes": 221272
     },
     {
       "path": "index.html",
-      "bytes": 18818,
-      "sha256": "dc6926304b2b70e6ac9952a23b985310c28c3cb7e68d4132baf407a3099e529b"
+      "sha256": "25af4450ac5c6d6fe569af8e036646e50617f9c13d74ffd7b7a9e013f642456e",
+      "bytes": 21325
     },
     {
       "path": "robots.txt",
-      "bytes": 26,
-      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+      "bytes": 26
     },
     {
       "path": "styles.css",
-      "bytes": 15826,
-      "sha256": "58dfcd9687057fb71b2501ac8216ec383c4023ee6a0472f52562932866b928b7"
+      "sha256": "87f983d4598ef6ac06ac338e3bf18113d60905b4e53c6a43e73942ac96d2618e",
+      "bytes": 21288
     }
+  ],
+  "changes": [
+    "Current Ticket scratchpad redesign",
+    "Work/Training toggle moved above sidebar navigation",
+    "Local ticket-detail extraction",
+    "Essential versus optional field split",
+    "Checklist/System Findings switch",
+    "Unsaved-work protection"
   ]
 }

@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v2.6</title>
+<title>Portal Support Workbench v2.7</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true">
   <div class="dialog">
     <span class="eyebrow">Role-specific · Team-note governed · Static</span>
-    <h1>Portal Support Workbench v2.6</h1>
+    <h1>Portal Support Workbench v2.7</h1>
     <p>This hosted build contains sanitized operational guidance for authorized Portal Support work. A static site is downloadable by anyone who can access it.</p>
     <div class="warning"><strong>Never enter:</strong> passwords, Social Security numbers, full card or bank-account numbers, credentials, access tokens, or unnecessary customer information.</div>
     <label class="checkline"><input id="ack" type="checkbox"> I understand the publication and data-handling warning.</label>
@@ -20,15 +20,19 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v2.6 · Simplified Work Ticket + Custom Drafting</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v2.7 · Current Ticket + Connected Role Tools</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
-  <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button><div class="mode"><button class="active" data-mode="work">Work</button><button data-mode="training">Training</button></div></div>
+  <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
 <div class="shell">
 <aside class="sidebar">
+  <div class="sidebar-mode" aria-label="Workspace mode">
+    <span>Workspace</span>
+    <div class="mode"><button class="active" data-mode="work">Work</button><button data-mode="training">Training</button></div>
+  </div>
   <nav id="workNav">
     <span class="navlabel">Daily work</span>
-    <button class="active" data-page="work">Work Ticket</button>
+    <button class="active" data-page="work">Current Ticket</button>
     <button data-page="troubleshoot">Troubleshooting</button>
     <button data-page="composer">Response Builder</button>
     <button data-page="replies">Quick Replies</button>
@@ -49,42 +53,73 @@
 </aside>
 <main>
 <section id="page-work" class="page active">
-  <div class="work-head">
-    <div><span class="eyebrow">Active ticket</span><h2 id="ticketTitle">New Portal Support ticket</h2><p id="workPurpose"></p></div>
-    <div class="head-actions"><label class="workflow-selector">Ticket type<select id="workflowSelect"></select></label><button id="clearTicket" class="danger">Clear</button></div>
+  <div class="work-head compact-head">
+    <div><span class="eyebrow">Temporary workspace for one Ivanti request</span><h2 id="ticketTitle">Current ticket</h2><p id="workPurpose"></p></div>
+    <div class="head-actions"><label class="workflow-selector">Issue type<select id="workflowSelect"></select></label><button id="clearTicket" class="danger">Clear current ticket</button></div>
   </div>
-  <div id="nextAction" class="next-action"></div>
-  <div class="work-layout">
-    <div class="work-main">
-      <section class="work-section" id="detailsSection">
-        <div class="section-heading"><span class="section-number">1</span><div><h3>Ticket details</h3><p>Enter the facts and answer the issue-specific questions.</p></div><span id="detailsStatus" class="section-status"></span></div>
-        <div id="ticketFields" class="field-grid"></div>
-        <div id="workflowQuestions" class="question-grid"></div>
-      </section>
-      <section class="work-section" id="systemsSection">
-        <div class="section-heading"><span class="section-number">2</span><div><h3>System findings</h3><p>Record what the relevant system actually showed—not merely that it was checked.</p></div><span id="systemsStatus" class="section-status"></span></div>
-        <div id="systemCards" class="system-evidence-grid"></div>
-      </section>
-      <section class="work-section" id="checklistSection">
-        <div class="section-heading"><span class="section-number">3</span><div><h3>Job checklist</h3><p>All applicable team-note instructions remain visible here.</p></div><span id="actionsStatus" class="section-status"></span></div>
-        <div class="check-toolbar"><input id="actionSearch" placeholder="Filter checklist"><div class="segmented" id="actionFilter"><button class="active" data-action-filter="all">All</button><button data-action-filter="open">Open</button><button data-action-filter="core">Core</button><button data-action-filter="done">Done</button><button data-action-filter="na">N/A</button></div><label class="checkline compact"><input id="showConditional" type="checkbox" checked> Show non-applicable conditional steps</label></div>
+
+  <div class="ticket-overview">
+    <div id="nextAction" class="next-action"></div>
+    <div class="overview-card"><h3>Ticket snapshot</h3><div id="ticketSnapshot"></div></div>
+    <div class="overview-card"><div class="overview-card-head"><h3>Still needed</h3><button id="goNextRequired" class="secondary">Go to next item</button></div><div id="requiredList"></div></div>
+  </div>
+
+  <div class="current-ticket-layout">
+    <section class="work-section" id="detailsSection">
+      <div class="simple-heading"><div><span class="section-kicker">Ticket facts</span><h3>Enter the information you actually need</h3><p>Required and frequently used identifiers stay visible. Less common fields are kept under More details.</p></div><span id="detailsStatus" class="section-status"></span></div>
+      <details class="paste-ticket">
+        <summary>Paste an Ivanti request and extract common details</summary>
+        <p>Extraction is local and rule-based. Review every detected value before relying on it.</p>
+        <textarea id="ticketPaste" placeholder="Paste the ticket, email, or voicemail transcription here. Do not include passwords, full payment information, Social Security numbers, or other unnecessary sensitive data."></textarea>
+        <div class="paste-actions"><button id="extractTicket" class="primary">Extract details</button><button id="clearTicketPaste" class="secondary">Clear pasted text</button><span id="extractResult" class="extract-result"></span></div>
+      </details>
+      <div id="ticketFields" class="field-grid compact-fields"></div>
+      <details id="optionalFactsFold" class="more-details">
+        <summary>More ticket details <span id="optionalFactCount"></span></summary>
+        <div id="optionalTicketFields" class="field-grid"></div>
+      </details>
+      <div class="subsection-label"><h4>Issue questions</h4><p>These answers determine which checklist items apply.</p></div>
+      <div id="workflowQuestions" class="question-grid"></div>
+    </section>
+
+    <section class="work-section" id="workListSection">
+      <div class="simple-heading"><div><span class="section-kicker">What to check</span><h3>Use the system findings and checklist for this issue</h3><p>Choose the view you need. The app keeps both connected to the same current ticket.</p></div></div>
+      <div class="work-list-switch" role="tablist" aria-label="Current ticket work list">
+        <button class="active" data-work-list="checklist" role="tab">Checklist <span id="actionsStatus" class="mini-status"></span></button>
+        <button data-work-list="systems" role="tab">System findings <span id="systemsStatus" class="mini-status"></span></button>
+      </div>
+      <div id="checklistSection" class="work-list-panel">
+        <div class="check-toolbar"><input id="actionSearch" placeholder="Filter checklist"><div class="segmented" id="actionFilter"><button class="active" data-action-filter="all">All</button><button data-action-filter="open">Open</button><button data-action-filter="core">Core</button><button data-action-filter="done">Done</button><button data-action-filter="na">N/A</button></div><label class="checkline compact"><input id="showConditional" type="checkbox" checked> Show conditional steps</label></div>
         <div class="stats"><div><strong id="doneCount">0</strong><span>Done</span></div><div><strong id="naCount">0</strong><span>N/A</span></div><div><strong id="openCount">0</strong><span>Open</span></div></div>
         <div id="actionChecklist"></div>
-      </section>
-      <section class="work-section" id="responseSection">
-        <div class="section-heading"><span class="section-number">4</span><div><h3>Response, notes, and closeout</h3><p>Every draft is editable. Regeneration never happens unless you request it.</p></div><span id="responseStatus" class="section-status"></span></div>
+      </div>
+      <div id="systemsSection" class="work-list-panel" hidden>
+        <div class="info compact-info">Record what the system showed. A checked system without a finding does not count as complete.</div>
+        <div id="systemCards" class="system-evidence-grid"></div>
+      </div>
+    </section>
+
+    <section class="work-section ticket-tools" id="toolsSection">
+      <div class="simple-heading"><div><span class="section-kicker">Tools for this ticket</span><h3>Open a role tool with the current ticket context</h3><p>These tools receive the issue type, exact error, and identifiers already entered here.</p></div></div>
+      <div class="ticket-tool-grid">
+        <button id="workTrouble" class="ticket-tool"><strong>Troubleshoot this issue</strong><span>Find the applicable steps and add results to the work note.</span></button>
+        <button id="workBar" class="ticket-tool"><strong>Search Florida Bar</strong><span>Open the official directory and record the verification result.</span></button>
+        <button id="workReplies" class="ticket-tool"><strong>Find a Quick Reply</strong><span>Add manager-provided wording to an editable customer or Ivanti draft.</span></button>
+        <button id="workBuilder" class="ticket-tool"><strong>Build customer response</strong><span>Customize a response with editable blocks and current ticket facts.</span></button>
+        <button id="workKnown" class="ticket-tool"><strong>Check known issues</strong><span>Review possible matches without automatically associating the ticket.</span></button>
+      </div>
+    </section>
+
+    <section class="work-section" id="responseSection">
+      <div class="simple-heading"><div><span class="section-kicker">Finished documentation</span><h3>Customer response, Ivanti note, resolution, or escalation</h3><p>All drafts are editable. Ticket changes never overwrite a draft unless you select Regenerate.</p></div><span id="responseStatus" class="section-status"></span></div>
+      <details class="closeout-details">
+        <summary>Contact and closeout details</summary>
         <div class="closeout-grid"><label>Customer contact status<select id="contactStatus"><option value="">Select</option><option>Email prepared</option><option>Email sent</option><option>Telephone contact completed</option><option>Voicemail left</option><option>Awaiting customer</option><option>Customer self-resolved</option></select></label><label>Outcome<select id="outcomeValue"></select></label><label>Cause Code<input id="causeCodeValue" placeholder="Current Ivanti Cause Code"></label><label class="checkline review-check"><input id="responseReviewed" type="checkbox"> I reviewed the customer response against the ticket facts, findings, and job instructions.</label><label class="full">Resolution / handoff summary<textarea id="resolutionSummary" placeholder="What happened and why"></textarea></label></div>
-        <div class="output-toolbar"><div class="output-tabs"><button class="active" data-output="customer">Customer response</button><button data-output="worknote">Ivanti work note</button><button data-output="resolution">Resolution note</button><button data-output="escalation">Escalation package</button></div><div><span id="outputStale" class="stale" hidden>Ticket changed—draft not regenerated</span><button id="regenerateOutputs" class="secondary">Regenerate drafts</button></div></div>
-        <div id="outputPanels"></div>
-        <div class="response-actions"><button id="openBuilderFromTicket" class="secondary">Customize in Response Builder</button><button id="openRepliesFromTicket" class="secondary">Add a Quick Reply</button><button id="copyTicketBundle" class="primary">Copy complete ticket bundle</button></div>
-      </section>
-    </div>
-    <aside class="work-rail">
-      <div class="rail-card"><h3>Ticket snapshot</h3><div id="ticketSnapshot"></div></div>
-      <div class="rail-card"><h3>Still required</h3><div id="requiredList"></div><button id="goNextRequired" class="primary full">Go to next required item</button></div>
-      <div class="rail-card"><h3>Role tools</h3><button id="workTrouble" class="tool-link">Open relevant troubleshooting</button><button id="workBar" class="tool-link">Search Florida Bar</button><button id="workKnown" class="tool-link">Check known issues</button><button id="workReplies" class="tool-link">Browse Quick Replies</button></div>
-      <div class="rail-card"><h3>Instruction source</h3><p>Operational steps come from the job materials your manager provided. Public sources are supplemental unless your team adopts a change.</p></div>
-    </aside>
+      </details>
+      <div class="output-toolbar"><div class="output-tabs"><button class="active" data-output="customer">Customer response</button><button data-output="worknote">Ivanti work note</button><button data-output="resolution">Resolution note</button><button data-output="escalation">Escalation package</button></div><div><span id="outputStale" class="stale" hidden>Ticket changed—draft not regenerated</span><button id="regenerateOutputs" class="secondary">Regenerate drafts</button></div></div>
+      <div id="outputPanels"></div>
+      <div class="response-actions"><button id="openBuilderFromTicket" class="secondary">Customize response</button><button id="openRepliesFromTicket" class="secondary">Add Quick Reply wording</button><button id="copyTicketBundle" class="primary">Copy complete ticket bundle</button></div>
+    </section>
   </div>
 </section>
 

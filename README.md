@@ -1,4 +1,4 @@
-# Portal Support Workbench v2.6 — Simplified + Customizable
+# Portal Support Workbench v2.7 — Simplified + Customizable
 
 This GitHub Pages package restores troubleshooting, simplifies the Work Ticket, adds a fully customizable Response Builder, renames Manager Procedures to Job Instructions, and adds a user-initiated Florida Bar verification tool.
 
@@ -38,3 +38,15 @@ The tool performs no scraping or API calls. It opens the official Florida Bar di
 ## Source terminology
 
 “Manager Procedures” is renamed **Job Instructions**. It means the searchable operational instructions extracted from the materials the manager supplied. Those job instructions remain primary; public documentation is supplemental.
+
+
+## v2.7 Current Ticket redesign
+
+- Renamed Work Ticket to Current Ticket
+- Moved Work / Training mode selector above the left navigation
+- Reduced the ticket page to facts, what to check, connected tools, and finished documentation
+- Added local rule-based extraction from pasted Ivanti/email text
+- Split essential fields from optional details
+- Added Checklist / System Findings switch
+- Added unsaved-work confirmation before clearing or changing issue type
+- Preserved Troubleshooting, Response Builder, Quick Replies, Florida Bar Search, Known Issues, and all training/reference content
