@@ -1,4 +1,4 @@
-# Portal Support Workbench v4.3 — Split workspace layout
+# Portal Support Workbench v4.4 — Header Ticket Summary
 
 Version 3.7 completes a full copy-edit of every active Quick Message and Troubleshooting message displayed in the Workbench while preserving the v3.6 training program and all Daily Work tools.
 
@@ -60,3 +60,13 @@ All yellow/amber callout treatments were removed or changed to neutral styling. 
 - Restored the No-AI notice on every page load.
 - Restored interactive checkboxes for every Job Procedure step.
 - Added per-procedure progress counts, clear controls, and checked-step transfer to the Current Ticket.
+
+
+## v4.4 header ticket summary
+
+- Removed the floating bottom-right Current Ticket drawer and its minimized thumbnail.
+- Moved the same ticket status and actions into the sticky header.
+- The header summary displays the incident, workflow, and remaining required items without covering the drafting workspace.
+- Selecting the header summary opens a compact anchored panel with the ticket snapshot, Open ticket, Add note, and Copy summary actions.
+- The panel closes when the user selects Close, clicks outside it, presses Escape, opens Current Ticket, or changes to Training mode.
+- On narrow screens, the header control becomes a compact incident button and the panel fits within the viewport.
