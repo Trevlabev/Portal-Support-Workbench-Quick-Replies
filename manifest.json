@@ -1,23 +1,36 @@
 {
   "product": "Portal Support Workbench - GitHub Pages Edition",
-  "version": "2.8",
-  "edition": "Current Ticket + Connected Role Tools",
+  "version": "3.0",
+  "edition": "Profile Preview + Clearer Navigation",
+  "name": "Portal Support Workbench v3.0 \u2014 Profile Preview + Clearer Navigation",
   "external_navigation": [
-    "Official Florida Bar Find a Lawyer directory",
     "Official Florida Bar exact profile by user-entered Bar number",
+    "Official Florida Bar Find a Lawyer directory",
     "Official Authorized House Counsel directory"
   ],
   "background_network_requests": "NONE",
   "ai_usage": "NONE",
   "features": [
-    "simplified four-section work ticket",
-    "persistent full checklist",
-    "editable outputs",
+    "Current Ticket scratchpad",
+    "complete workflow checklists",
+    "system findings",
     "custom response block editor",
-    "restored troubleshooting workspace",
-    "quick reply editable drafts",
-    "Florida Bar verification tool",
-    "Job Instructions rename"
+    "troubleshooting workspace",
+    "curated Quick Replies",
+    "additional manager source wording",
+    "Florida Bar copied-profile parser and local preview",
+    "Procedures & Reference separation",
+    "Work/Training sidebar switch"
+  ],
+  "changes": [
+    "Removed redundant Florida Bar URL text field",
+    "Replaced manual Record Verification panel with a local official-profile preview",
+    "Added clipboard/manual import and deterministic profile-text parsing",
+    "Added analyst review gate before applying Florida Bar verification",
+    "Moved Current Ticket to the bottom of Daily Work navigation",
+    "Moved Work/Training toggle into the primary sidebar slot",
+    "Renamed Job Instructions to Procedures & Reference",
+    "Moved 34 reply/note-oriented source entries from procedures into optional Quick Reply source wording"
   ],
   "files": [
     {
@@ -32,18 +45,18 @@
     },
     {
       "path": "404.html",
-      "sha256": "25af4450ac5c6d6fe569af8e036646e50617f9c13d74ffd7b7a9e013f642456e",
-      "bytes": 21325
+      "sha256": "394948ea9aa42dae066fdd71fe4db3413de5e45885e41acc91ffcaece32f5eac",
+      "bytes": 24374
     },
     {
       "path": "README.md",
-      "sha256": "e3e7ef09c0d0b9000b93233b330ea0b30411a4500c403c9d31e5235a0e31b20b",
-      "bytes": 2247
+      "sha256": "6c93d04030fca3e15ecd19e5f021faa8736b687c241ac961a6773b3825da9619",
+      "bytes": 2389
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
-      "sha256": "4e8a2c61c20014fc1e264d5186d3a8b4a8faa6530c46984fa5a91d9d414cf4c3",
-      "bytes": 422
+      "sha256": "1238ad1aff8542869b3d49cc80a9ea8f50fcb40c442d9b517bf4caa3a4c95147",
+      "bytes": 722
     },
     {
       "path": "START_LOCAL_PREVIEW.cmd",
@@ -52,18 +65,18 @@
     },
     {
       "path": "app.js",
-      "sha256": "1bbc88404c4d8874882586478d423e6d56144375712dd69004da66d9b1ad0c77",
-      "bytes": 47019
+      "sha256": "61f6173b067c99f9c0a6dec3b2ac26fec3d22a967110ae42196a8fe11731dc7a",
+      "bytes": 56951
     },
     {
       "path": "data.js",
-      "sha256": "63152c4a6b17f552d9027fc24898df3fd67e3dd902be6faa52187380b5c15a70",
+      "sha256": "8c2cbf7639d7e39c94f525ee3591b5c2baa9e7fabfe35fd6020c5bd5eb141576",
       "bytes": 221272
     },
     {
       "path": "index.html",
-      "sha256": "25af4450ac5c6d6fe569af8e036646e50617f9c13d74ffd7b7a9e013f642456e",
-      "bytes": 21325
+      "sha256": "394948ea9aa42dae066fdd71fe4db3413de5e45885e41acc91ffcaece32f5eac",
+      "bytes": 24374
     },
     {
       "path": "robots.txt",
@@ -72,19 +85,8 @@
     },
     {
       "path": "styles.css",
-      "sha256": "87f983d4598ef6ac06ac338e3bf18113d60905b4e53c6a43e73942ac96d2618e",
-      "bytes": 21288
+      "sha256": "17f04859d5f00941f53ba6d3c75a1fc3a5bf96cac6db6563a78c9b315ce50dfa",
+      "bytes": 26938
     }
-  ],
-  "changes": [
-    "Replaced popup-script Florida Bar navigation with standard links and a native exact-profile form",
-    "Added visible/copyable exact-profile fallback link",
-    "Current Ticket scratchpad redesign",
-    "Work/Training toggle moved above sidebar navigation",
-    "Local ticket-detail extraction",
-    "Essential versus optional field split",
-    "Checklist/System Findings switch",
-    "Unsaved-work protection"
-  ],
-  "name": "Portal Support Workbench v2.9 \u2014 Current Ticket + Florida Bar Search Fix"
+  ]
 }

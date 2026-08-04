@@ -1,52 +1,48 @@
-# Portal Support Workbench v2.9 — Simplified + Customizable
+# Portal Support Workbench v3.0 — Profile Preview + Clearer Navigation
 
-This GitHub Pages package restores troubleshooting, simplifies the Work Ticket, adds a fully customizable Response Builder, renames Manager Procedures to Job Instructions, and adds a user-initiated Florida Bar verification tool.
+This GitHub Pages package improves the Florida Bar workflow, reorganizes the left navigation, and separates reply wording from procedures/reference material.
 
-## Work Ticket
+## Florida Bar Verification
 
-One scrolling workflow with four numbered sections:
+The redundant URL field has been removed.
 
-1. Ticket details
-2. System findings
-3. Job checklist
-4. Response, notes, and closeout
+The workflow is now:
 
-There is no stage maze. All applicable checklist steps remain visible and filterable. Drafts are editable and are never automatically overwritten after the analyst edits them.
+1. Enter the numeric Florida Bar number.
+2. Open the exact official profile in a normal browser tab.
+3. Copy the visible profile text.
+4. Import the copied text into the Workbench.
+5. Review the local profile preview against the official page.
+6. Apply the verification note to the current ticket.
 
-## Response Builder
+The parser can identify the member name, Bar number, member status, eligibility, public email, county, admission date, and 10-year discipline history. Imported information is not accepted as verified until the analyst selects the review confirmation.
 
-- Add, edit, delete, and reorder blocks
-- Rename block labels
-- Insert current ticket facts
-- Insert team-note Quick Reply templates
-- Build from the current ticket or start blank
-- Edit the final response freely
-- Send the finished response back to the active ticket
+The application does not scrape the Florida Bar site, call a Florida Bar API, or store profile data. A live iframe was not used because an external site can prevent framing and a static page cannot reliably inspect or control a cross-origin embedded page.
 
-## Troubleshooting
+## Sidebar Navigation
 
-- 27 focused troubleshooting cards
-- 32-item complete checklist
-- Workflow suggestions
-- Editable troubleshooting plan
-- Add selected or checked troubleshooting directly to the current work note
+- The Work / Training toggle now occupies the primary position under the current sidebar section label.
+- Current Ticket has moved to the bottom of the Daily Work list.
+- The section label changes between Daily work and Training & reference.
+- Troubleshooting, Response Builder, Quick Replies, Florida Bar Search, and Known Issues remain directly accessible.
 
-## Florida Bar Search
+## Procedures and Quick Replies
 
-The tool performs no scraping or API calls. Version 2.9 uses a same-tab direct link constructed exactly as `https://www.floridabar.org/directories/find-mbr/profile/?num=` plus the numeric Bar number. It also displays and copies that exact URL, avoiding popup, new-tab, and form-submission behavior. The analyst records the relevant verification result and can apply it to the current ticket.
+The former Job Instructions page is now **Procedures & Reference**.
 
-## Source terminology
+Wording-oriented entries are no longer shown as procedures. Version 3.0 moves 34 reply/note-oriented source entries into Quick Replies as **additional manager source wording**. These are hidden by default and can be enabled deliberately for review and editing.
 
-“Manager Procedures” is renamed **Job Instructions**. It means the searchable operational instructions extracted from the materials the manager supplied. Those job instructions remain primary; public documentation is supplemental.
+Curated Quick Replies remain the default. Additional source wording is clearly labeled as requiring review before use.
 
+## Existing Features Preserved
 
-## v2.9 Current Ticket redesign
-
-- Renamed Work Ticket to Current Ticket
-- Moved Work / Training mode selector above the left navigation
-- Reduced the ticket page to facts, what to check, connected tools, and finished documentation
-- Added local rule-based extraction from pasted Ivanti/email text
-- Split essential fields from optional details
-- Added Checklist / System Findings switch
-- Added unsaved-work confirmation before clearing or changing issue type
-- Preserved Troubleshooting, Response Builder, Quick Replies, Florida Bar Search, Known Issues, and all training/reference content
+- Current Ticket scratchpad
+- Complete workflow checklists and system findings
+- Troubleshooting workspace
+- Fully editable Response Builder
+- Customer and Ivanti Quick Reply drafts
+- Known Issues
+- Registration and scenario training
+- System Reference and Terminology
+- No AI, OpenAI API, Ollama, analytics, or telemetry
+- No persistence of ticket facts

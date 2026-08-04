@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v2.9</title>
+<title>Portal Support Workbench v3.0</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="securityGate" class="overlay" role="dialog" aria-modal="true">
   <div class="dialog">
     <span class="eyebrow">Role-specific · Team-note governed · Static</span>
-    <h1>Portal Support Workbench v2.9</h1>
+    <h1>Portal Support Workbench v3.0</h1>
     <p>This hosted build contains sanitized operational guidance for authorized Portal Support work. A static site is downloadable by anyone who can access it.</p>
     <div class="warning"><strong>Never enter:</strong> passwords, Social Security numbers, full card or bank-account numbers, credentials, access tokens, or unnecessary customer information.</div>
     <label class="checkline"><input id="ack" type="checkbox"> I understand the publication and data-handling warning.</label>
@@ -20,34 +20,33 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v2.9 · Current Ticket + Exact Florida Bar URL</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v3.0 · Profile Preview + Clearer Navigation</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
   <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
 <div class="shell">
 <aside class="sidebar">
-  <div class="sidebar-mode" aria-label="Workspace mode">
-    <span>Workspace</span>
+  <div class="sidebar-workspace" aria-label="Workspace mode">
+    <span id="sidebarModeLabel" class="navlabel">Daily work</span>
     <div class="mode"><button class="active" data-mode="work">Work</button><button data-mode="training">Training</button></div>
   </div>
   <nav id="workNav">
-    <span class="navlabel">Daily work</span>
-    <button class="active" data-page="work">Current Ticket</button>
     <button data-page="troubleshoot">Troubleshooting</button>
     <button data-page="composer">Response Builder</button>
     <button data-page="replies">Quick Replies</button>
     <button data-page="bar">Florida Bar Search</button>
     <button data-page="known">Known Issues</button>
+    <div class="nav-divider" aria-hidden="true"></div>
+    <button class="active current-ticket-nav" data-page="work">Current Ticket</button>
   </nav>
   <nav id="trainingNav" hidden>
-    <span class="navlabel">Training & reference</span>
-    <button data-page="instructions">Job Instructions</button>
+    <button data-page="instructions">Procedures &amp; Reference</button>
     <button data-page="registration">Registration Training</button>
     <button data-page="scenarios">Scenario Training</button>
     <button data-page="systems">System Reference</button>
     <button data-page="terms">Terminology</button>
     <button data-page="supplemental">Supplemental References</button>
-    <button data-page="about">Hosting & Security</button>
+    <button data-page="about">Hosting &amp; Security</button>
   </nav>
   <div class="shortcut"><strong>Keyboard</strong><span>Ctrl K · Search</span><span>Alt N · New ticket</span><span>Alt R · Response Builder</span><span>Alt T · Troubleshooting</span></div>
 </aside>
@@ -142,20 +141,43 @@
   <div class="pagehead"><div><span class="eyebrow">Simple template library</span><h2>Quick Replies</h2><p>Choose Customer Email or Ivanti Note, find the wording you need, and add it to an editable draft.</p></div></div>
   <div class="reply-mode"><button class="active" data-reply-mode="Customer">Customer Email</button><button data-reply-mode="Internal">Ivanti Note</button></div>
   <div id="replyModeHelp" class="info"></div>
-  <div class="toolbar simple"><input id="replySearch" placeholder="Search templates"><div id="replyIntentChips" class="intent-chips"></div><label class="checkline"><input id="showReviewReplies" type="checkbox"> Include review-needed or incident-specific items</label><span id="replyCount" class="count"></span></div>
+  <div class="toolbar simple"><input id="replySearch" placeholder="Search templates"><div id="replyIntentChips" class="intent-chips"></div><label class="checkline"><input id="showReviewReplies" type="checkbox"> Include review-needed or incident-specific items</label><label class="checkline"><input id="showSourceWording" type="checkbox"> Include additional manager source wording</label><span id="replyCount" class="count"></span></div>
   <div class="split reply-split"><div><div id="suggestedReplies" class="suggestion-strip"></div><div id="replyCards" class="cards"></div></div><aside class="panel sticky"><div class="panelhead"><div><h3 id="replyDraftTitle">Customer email draft</h3><p>Add templates or start from the current ticket response.</p></div><button id="clearReplyDraft" class="danger">Clear</button></div><button id="startReplyFromTicket" class="secondary full">Start with current ticket response</button><div id="replyKit"></div><textarea id="replyDraft" class="huge" placeholder="Your editable draft appears here."></textarea><div class="stack-actions"><button id="rebuildReplyDraft" class="secondary">Rebuild from selected templates</button><button id="sendReplyToTicket" class="secondary">Use in current ticket</button><button id="copyReplyDraft" class="primary">Copy draft</button></div></aside></div>
 </section>
 
 <section id="page-bar" class="page">
-  <div class="pagehead"><div><span class="eyebrow">Official public directory</span><h2>Florida Bar Search</h2><p>Open the official Florida Bar directory, record only the job-relevant verification result, and apply it to the current ticket.</p></div></div>
-  <div class="bar-layout">
-    <div class="panel"><h3>Open official Florida Bar records</h3><p class="panel-help">Enter the numeric Bar number. The Workbench builds the exact official profile address by placing the number immediately after <code>?num=</code>.</p><label>Florida Bar number<input id="barSearchNumber" inputmode="numeric" pattern="[0-9]+" autocomplete="off" placeholder="Example: 1015793"></label><div class="bar-url-preview"><span>Exact profile address</span><input id="barExactUrlText" type="text" readonly value="https://www.floridabar.org/directories/find-mbr/profile/?num=" aria-label="Exact Florida Bar profile URL"></div><div class="button-grid"><a id="openExactBarProfile" class="button-link primary disabled-link" href="https://www.floridabar.org/directories/find-mbr/profile/?num=" aria-disabled="true">Open exact Bar profile in this tab</a><button id="copyBarExactLink" type="button" class="secondary" disabled>Copy exact-profile link</button><a id="openBarDirectory" class="button-link secondary" href="https://www.floridabar.org/directories/find-mbr/">Open Find a Lawyer directory</a><a id="openHouseCounselDirectory" class="button-link secondary" href="https://www.floridabar.org/directories/find-afah/">Open Authorized House Counsel directory</a></div><div class="info"><strong>Example:</strong> Bar number <code>1015793</code> becomes <code>https://www.floridabar.org/directories/find-mbr/profile/?num=1015793</code>. The site opens in the same tab to avoid popup and new-tab restrictions. Use your browser Back button to return.</div></div>
-    <div class="panel"><h3>Record verification</h3><div class="field-grid"><label>Displayed member name<input id="barMemberName"></label><label>Displayed Bar number<input id="barVerifiedNumber"></label><label>Member status<input id="barMemberStatus" placeholder="Example: Member in Good Standing"></label><label>Eligible to practice?<select id="barEligible"><option value="">Select</option><option>Yes</option><option>No</option><option>Not determined</option></select></label><label>Public email compared?<select id="barEmailCompare"><option value="">Select</option><option>Matches Portal/customer email</option><option>Does not match</option><option>No public email shown</option><option>Not compared</option></select></label><label class="full">Verification note<textarea id="barVerificationNote" placeholder="Record only what is relevant to the support task."></textarea></label></div><div class="stack-actions"><button id="buildBarNote" class="secondary">Build verification note</button><button id="applyBarToTicket" class="primary">Apply to current ticket</button><button id="copyBarNote" class="secondary">Copy note</button></div></div>
+  <div class="pagehead"><div><span class="eyebrow">Official public directory</span><h2>Florida Bar Verification</h2><p>Open the exact official profile, copy the visible profile text, and import it into a compact preview before applying the result to the current ticket.</p></div></div>
+  <div class="bar-layout bar-preview-layout">
+    <div class="panel bar-search-panel">
+      <h3>1. Open the official profile</h3>
+      <p class="panel-help">Enter the numeric Bar number. The Workbench uses the exact official profile format ending in <code>?num=BAR_NUMBER</code>.</p>
+      <label>Florida Bar number<input id="barSearchNumber" inputmode="numeric" pattern="[0-9]+" autocomplete="off" placeholder="Example: 1015793"></label>
+      <div class="button-grid compact-button-grid">
+        <a id="openExactBarProfile" class="button-link primary disabled-link" href="https://www.floridabar.org/directories/find-mbr/profile/?num=" target="_blank" rel="noopener noreferrer" aria-disabled="true">Enter a Bar number to open its profile</a>
+        <button id="copyBarExactLink" type="button" class="secondary" disabled>Copy profile link</button>
+      </div>
+      <details class="bar-other-directories"><summary>Other Florida Bar directories</summary><div class="button-grid"><a id="openBarDirectory" class="button-link secondary" href="https://www.floridabar.org/directories/find-mbr/" target="_blank" rel="noopener noreferrer">Find a Lawyer directory</a><a id="openHouseCounselDirectory" class="button-link secondary" href="https://www.floridabar.org/directories/find-afah/" target="_blank" rel="noopener noreferrer">Authorized House Counsel directory</a></div></details>
+      <div class="bar-import-box">
+        <h3>2. Import the visible profile</h3>
+        <p>On the official profile, select and copy the visible page text. Return here and import it. Nothing is uploaded or stored.</p>
+        <button id="barImportClipboard" class="primary full" type="button">Import copied profile text</button>
+        <details id="barPasteFallback"><summary>Paste profile text manually</summary><textarea id="barProfilePaste" placeholder="Paste the copied Florida Bar profile text here."></textarea><div class="stack-actions"><button id="barParseProfile" class="secondary">Parse pasted profile</button><button id="barClearProfile" class="danger">Clear imported profile</button></div></details>
+      </div>
+    </div>
+    <div class="panel bar-preview-panel">
+      <div class="panelhead"><div><h3>Official profile preview</h3><p>Local preview of the job-relevant fields copied from the official page.</p></div><span id="barPreviewStatus" class="status">No profile imported</span></div>
+      <div id="barProfilePreview" class="bar-profile-card empty-preview"><div class="bar-preview-empty"><strong>No profile imported</strong><span>Open the official profile, copy its visible text, then select “Import copied profile text.”</span></div></div>
+      <details id="barEditDetails" class="bar-edit-details" hidden><summary>Review or correct imported details</summary><div class="field-grid"><label>Member name<input id="barMemberName"></label><label>Bar number<input id="barVerifiedNumber"></label><label>Member status<input id="barMemberStatus"></label><label>Eligible to practice?<select id="barEligible"><option value="">Not determined</option><option>Yes</option><option>No</option></select></label><label>Public email<input id="barPublicEmail" type="email"></label><label>County<input id="barCounty"></label><label>Admitted<input id="barAdmitted"></label><label>10-year discipline history<input id="barDiscipline"></label><label>Public email comparison<select id="barEmailCompare"><option value="">Not compared</option><option>Matches Portal/customer email</option><option>Does not match</option><option>No public email shown</option><option>Ticket email missing</option></select></label></div></details>
+      <label class="checkline bar-review-confirm"><input id="barReviewed" type="checkbox"> I reviewed this preview against the official Florida Bar profile.</label>
+      <textarea id="barVerificationNote" class="bar-note" placeholder="The verification note is built from the reviewed preview. You may edit it before applying."></textarea>
+      <div class="stack-actions"><button id="buildBarNote" class="secondary">Build verification note</button><button id="applyBarToTicket" class="primary">Apply to current ticket</button><button id="copyBarNote" class="secondary">Copy note</button></div>
+      <div class="info compact-info"><strong>Why not embed the live site?</strong> External sites can prevent framing, and a static GitHub Pages app cannot reliably read another site’s page. This local preview avoids another broken embedded window while keeping the official page as the verification source.</div>
+    </div>
   </div>
 </section>
 
 <section id="page-known" class="page"><div class="pagehead"><div><span class="eyebrow">Possible matches require verification</span><h2>Known Issues</h2><p>Search symptoms, review evidence requirements, and associate only after analyst verification.</p></div></div><input id="knownSearch" class="searchwide" placeholder="Search symptom or function"><div id="knownGrid" class="cardgrid"></div></section>
-<section id="page-instructions" class="page"><div class="pagehead"><div><span class="eyebrow">Primary operational source</span><h2>Job Instructions</h2><p>Search the role instructions extracted from the materials your manager gave you. These are the primary instructions used by the Workbench.</p></div></div><div class="toolbar"><input id="instructionSearch" placeholder="Search job instructions"><select id="instructionCategory"></select><select id="instructionStatus"></select><span id="instructionCount" class="count"></span></div><div id="instructionCards" class="procedure-list"></div></section>
+<section id="page-instructions" class="page"><div class="pagehead"><div><span class="eyebrow">Primary operational source</span><h2>Procedures &amp; Reference</h2><p>Search role procedures, troubleshooting instructions, and reference notes. Customer-facing and internal wording has been moved out of this page and into Quick Replies.</p></div></div><div id="instructionMoveNotice" class="info compact-info"></div><div class="toolbar"><input id="instructionSearch" placeholder="Search procedures and reference notes"><select id="instructionCategory"></select><select id="instructionStatus"></select><span id="instructionCount" class="count"></span></div><div id="instructionCards" class="procedure-list"></div></section>
 <section id="page-registration" class="page"><div class="pagehead"><div><span class="eyebrow">Role training</span><h2>Registration Training</h2></div></div><div id="registrationTraining" class="panel"></div></section>
 <section id="page-scenarios" class="page"><div class="pagehead"><div><span class="eyebrow">Role-specific practice</span><h2>Scenario Training</h2></div></div><div id="scenarioGrid" class="cardgrid"></div></section>
 <section id="page-systems" class="page"><div class="pagehead"><h2>System Reference</h2></div><div id="systemGrid" class="system-grid"></div></section>
@@ -164,7 +186,7 @@
 <section id="page-about" class="page"><div class="pagehead"><h2>Hosting & Security</h2></div><div class="panel prose"><p>This static GitHub Pages edition contains no AI, OpenAI API, Ollama, analytics, or telemetry. Ticket facts are not persisted by the application.</p><p>The Florida Bar tool performs only user-initiated navigation to official Florida Bar pages.</p></div></section>
 </main>
 </div>
-<div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, replies, job instructions, known issues, and terms"><div id="globalResults"></div></div></div>
+<div id="searchOverlay" class="search-overlay hidden"><div class="search-dialog"><div class="panelhead"><h3>Search the Workbench</h3><button id="closeSearch" class="secondary">Close</button></div><input id="globalQuery" placeholder="Search workflows, troubleshooting, replies, procedures, known issues, and terms"><div id="globalResults"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js"></script><script src="app.js"></script>
 </body></html>
