@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Portal Support Workbench v3.7</title>
+<title>Portal Support Workbench v3.8</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
   </div>
 </div>
 <header class="topbar">
-  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v3.7 · Polished Messages</p></div></div>
+  <div class="brand"><div class="brandmark">PS</div><div><h1>Portal Support Workbench</h1><p>v3.8 · Knowledge Hub</p></div></div>
   <div class="ticket-strip"><span id="topIncident">New ticket</span><span id="topWorkflow">Registration</span><span id="topProgress">0% ready</span></div>
   <div class="top-actions"><button id="globalSearch">Search <kbd>Ctrl K</kbd></button><button id="newTicket">New ticket <kbd>Alt N</kbd></button></div>
 </header>
@@ -181,9 +181,24 @@
 </section>
 
 <section id="page-known" class="page"><div class="pagehead"><div><span class="eyebrow">Possible matches require verification</span><h2>Known Issues</h2><p>Search symptoms, review evidence requirements, and associate only after analyst verification.</p></div><span id="knownCount" class="count"></span></div><input id="knownSearch" class="searchwide" placeholder="Search symptom or function"><div id="knownGrid" class="cardgrid"></div></section>
-<section id="page-instructions" class="page"><div class="pagehead"><div><span class="eyebrow">Internal staff workflows only</span><h2>Job Procedures</h2><p>This page now contains only action sequences used by Portal Support staff. Customer wording, troubleshooting, Known Issues, reference notes, and county guidance have separate homes.</p></div></div><div class="toolbar"><input id="instructionSearch" placeholder="Search job procedures"><select id="instructionCategory"></select><select id="instructionStatus"></select><span id="instructionCount" class="count"></span></div><div id="instructionCards" class="procedure-list"></div></section>
-<section id="page-reference" class="page"><div class="pagehead"><div><span class="eyebrow">Explanations and working facts</span><h2>Reference Library</h2><p>Definitions, system behavior, filing limits, background information, and other material that is useful but is not a staff procedure.</p></div></div><div class="toolbar"><input id="referenceSearch" placeholder="Search reference notes"><select id="referenceCategory"></select><select id="referenceStatus"></select><span id="referenceCount" class="count"></span></div><div id="referenceCards" class="procedure-list"></div></section>
-<section id="page-county" class="page"><div class="pagehead"><div><span class="eyebrow">Local behavior requires confirmation</span><h2>County Notes</h2><p>County-specific filing and docket notes are separated from general procedures. Confirm that the local guidance is still current before sending it.</p></div></div><div class="warning"><strong>County notes are not universal Portal rules.</strong> They may change independently and should not be generalized to another county.</div><div class="toolbar"><input id="countySearch" placeholder="Search county notes"><select id="countyCategory"></select><select id="countyStatus"></select><span id="countyCount" class="count"></span></div><div id="countyCards" class="procedure-list"></div></section>
+<section id="page-instructions" class="page">
+  <div class="pagehead"><div><span class="eyebrow">Actionable internal workflows</span><h2>Job Procedures</h2><p>Use these guides to complete Portal Support work. Each procedure now shows when it applies, required systems, preparation, ordered steps, evidence to record, and a clear completion standard.</p></div><span id="instructionCount" class="count"></span></div>
+  <div id="procedureStats" class="knowledge-stats"></div>
+  <div class="info"><strong>What belongs here:</strong> staff action sequences. Customer wording belongs in Quick Messages; diagnostic steps belong in Troubleshooting; explanatory facts belong in the Reference Library.</div>
+  <div class="toolbar knowledge-toolbar"><input id="instructionSearch" placeholder="Search procedures, systems, steps, or evidence"><select id="instructionCategory"></select><select id="instructionStatus"></select></div>
+  <div id="instructionCards" class="knowledge-list"></div>
+</section>
+<section id="page-reference" class="page">
+  <div class="pagehead"><div><span class="eyebrow">Working explanations with boundaries</span><h2>Reference Library</h2><p>Use concise source-grounded articles to understand Portal behavior, identifiers, filing limits, role distinctions, and scope boundaries. Changeable or incomplete source material is labeled clearly.</p></div><span id="referenceCount" class="count"></span></div>
+  <div class="toolbar knowledge-toolbar"><input id="referenceSearch" placeholder="Search topic, fact, boundary, or related workflow"><select id="referenceCategory"></select><select id="referenceStatus"></select></div>
+  <div id="referenceCards" class="knowledge-list"></div>
+</section>
+<section id="page-county" class="page">
+  <div class="pagehead"><div><span class="eyebrow">County-specific leads, not universal rules</span><h2>County Notes</h2><p>Notes are consolidated by county and separate what the manager source reported from the safer handling approach and the questions that still require current confirmation.</p></div><span id="countyCount" class="count"></span></div>
+  <div class="warning"><strong>Confirm before use.</strong> County behavior may change independently. These notes are leads for research and referral—not statewide Portal rules or legal/procedural advice.</div>
+  <div class="toolbar knowledge-toolbar"><input id="countySearch" placeholder="Search county, case type, summons, party, or document"><select id="countyCategory"></select><select id="countyStatus"></select></div>
+  <div id="countyCards" class="county-guide-grid"></div>
+</section>
 <section id="page-audit" class="page"><div class="pagehead"><div><span class="eyebrow">Every manager-source entry classified</span><h2>Content Audit</h2><p>Review where each source item belongs, what was removed from active work views, and why it was flagged.</p></div><a class="button-link secondary" href="CONTENT_AUDIT.md" target="_blank" rel="noopener">Open full audit report</a></div><div id="auditStats" class="stats audit-stats"></div><div class="audit-legend"><span><i class="audit-dot active"></i>Active in the appropriate workspace</span><span><i class="audit-dot excluded"></i>Excluded or merged; retained here for traceability</span></div><div class="toolbar"><input id="auditSearch" placeholder="Search title, reason, flag, or source text"><select id="auditType"><option value="">All classifications</option><option>Job procedure</option><option>Quick message</option><option>Troubleshooting</option><option>Known issue</option><option>Reference note</option><option>County note</option></select><select id="auditState"><option value="">All audit states</option><option value="active">Active</option><option value="excluded">Excluded / merged</option><option value="flagged">Flagged for review</option></select><span id="auditCount" class="count"></span></div><div id="auditCards" class="procedure-list audit-list"></div></section>
 <section id="page-traininghome" class="page">
   <div class="pagehead training-hero"><div><span class="eyebrow">Structured new-hire and refresher training</span><h2>Training Home</h2><p>Follow the learning path, practice with synthetic tickets, and check your understanding. Progress exists only in this browser session and is not stored.</p></div><div class="training-downloads"><a class="button-link secondary" href="TRAINING_GUIDE.html" target="_blank" rel="noopener">Printable training guide</a><a class="button-link secondary" href="PRACTICE_WORKBOOK.html" target="_blank" rel="noopener">Practice workbook</a><a class="button-link secondary" href="TRAINER_GUIDE.html" target="_blank" rel="noopener">Trainer guide</a></div></div>
@@ -208,8 +223,17 @@
   <div class="toolbar"><select id="quizModule"><option value="">All modules</option></select><span id="quizCount" class="count"></span></div>
   <div id="trainingQuiz" class="training-quiz"></div>
 </section>
-<section id="page-systems" class="page"><div class="pagehead"><div><span class="eyebrow">Purpose and evidence boundaries</span><h2>System Reference</h2><p>Use each system for the question it can answer. Do not infer a Portal, docket, payment, or account result from the wrong system.</p></div></div><div id="systemGrid" class="system-grid"></div></section>
-<section id="page-terms" class="page"><div class="pagehead"><div><span class="eyebrow">Role terminology</span><h2>Terminology</h2><p>Search Portal, Ivanti, filing, eService, payment, document, and escalation terms.</p></div></div><input id="termSearch" class="searchwide" placeholder="Search terms"><div id="termGrid" class="cardgrid"></div></section>
+<section id="page-systems" class="page">
+  <div class="pagehead"><div><span class="eyebrow">Question → evidence source → limit</span><h2>System Reference</h2><p>Start with the question you need to answer, use the correct evidence source, and record what that source cannot prove.</p></div><span id="systemCount" class="count"></span></div>
+  <section class="panel system-matrix-panel"><div class="panelhead"><div><h3>Which source answers the question?</h3><p>Use this matrix before opening systems or drafting a conclusion.</p></div></div><div id="systemQuestionMatrix" class="system-question-matrix"></div></section>
+  <div class="toolbar knowledge-toolbar"><input id="systemSearch" placeholder="Search system, evidence, workflow, or limitation"><select id="systemCategory"></select></div>
+  <div id="systemGrid" class="system-guide-grid"></div>
+</section>
+<section id="page-terms" class="page">
+  <div class="pagehead"><div><span class="eyebrow">Plain-language role vocabulary</span><h2>Terminology</h2><p>Each entry explains the term, why it matters in Portal Support, and what it must not be confused with.</p></div><span id="termCount" class="count"></span></div>
+  <div class="toolbar knowledge-toolbar"><input id="termSearch" placeholder="Search term, acronym, definition, or related concept"><select id="termCategory"></select><select id="termLetter"><option value="">All letters</option></select></div>
+  <div id="termGrid" class="term-guide-grid"></div>
+</section>
 <section id="page-supplemental" class="page"><div class="pagehead"><div><span class="eyebrow">Training provenance and limits</span><h2>Training Sources</h2><p>What the training is based on, what was deliberately excluded, and where current confirmation is still required.</p></div><a class="button-link secondary" href="TRAINING_SOURCE_MAP.html" target="_blank" rel="noopener">Open source map</a></div><div class="panel prose"><h3>Primary source order</h3><ol><li>Manager-provided 2026 Registration Instructions and role notes</li><li>Manager-provided Verbiage for Certain Types of Email</li><li>Quick Troubleshooting</li><li>Quick replies library</li><li>Audited Current Ticket workflows and active source classifications</li><li>Official public documentation only as supplemental context</li></ol><h3>Deliberately not converted into active training rules</h3><ul><li>Conflicting password requirements</li><li>Dated outages, release expectations, and implementation schedules</li><li>Uncertain fees or statements containing “I believe”</li><li>Incomplete instructions that refer to missing documents</li><li>County-specific material presented as a statewide rule</li><li>Legal advice, Clerk procedure, or unverified public guidance</li></ul><div class="warning"><strong>Current confirmation remains required</strong> for approval criteria, Cause Codes, county behavior, technical limits, firewall allowlists, financial/refund paths, and any item visibly marked Review before use.</div></div></section>
 <section id="page-about" class="page"><div class="pagehead"><h2>Hosting & Security</h2></div><div class="panel prose"><p>This static GitHub Pages edition contains no AI, OpenAI API, Ollama, analytics, or telemetry. Ticket facts are not persisted by the application.</p><p>The Florida Bar tool performs only user-initiated navigation to official Florida Bar pages.</p></div></section>
 </main>

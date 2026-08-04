@@ -1,121 +1,104 @@
 {
   "name": "Portal Support Workbench",
-  "version": "3.7",
-  "files": [
-    {
-      "path": ".github/workflows/deploy-pages.yml",
+  "version": "3.8",
+  "build": "KNOWLEDGE_HUB",
+  "description": "Static non-AI Portal Support work and training tool with redesigned procedures and reference guidance.",
+  "files": {
+    ".github/workflows/deploy-pages.yml": {
       "sha256": "873e897c2af294b1f0711e2c94c2f1ad4c633bee903b0876e5871d2a43a979f9",
       "bytes": 598
     },
-    {
-      "path": ".nojekyll",
+    ".nojekyll": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
     },
-    {
-      "path": "404.html",
-      "sha256": "dceff76d043c6e389f8ae0524258d4823344cd2f972ba948788e256abb24b847",
-      "bytes": 32069
+    "404.html": {
+      "sha256": "7239363014a6b334bf1770880b11f09ac0277b067db16ea96465efa71ec00065",
+      "bytes": 33447
     },
-    {
-      "path": "CONTENT_AUDIT.csv",
+    "CONTENT_AUDIT.csv": {
       "sha256": "6261e730298a085150b0c0f013e9296d2b17a982513362033e718a9a2d6b6120",
       "bytes": 28029
     },
-    {
-      "path": "CONTENT_AUDIT.md",
+    "CONTENT_AUDIT.md": {
       "sha256": "7cb532d0870004626fe053f574e7379c880a27915fe5fdacf42af502695f72d3",
       "bytes": 28945
     },
-    {
-      "path": "MESSAGE_AND_TROUBLESHOOTING_AUDIT.md",
+    "KNOWLEDGE_HUB_REDESIGN_AUDIT.md": {
+      "sha256": "b92018f00c8f4dcbed4992ab7af01f51b3c759c0388052f249ee202c1dd4e792",
+      "bytes": 2012
+    },
+    "MESSAGE_AND_TROUBLESHOOTING_AUDIT.md": {
       "sha256": "1b91849fd760e14feff5997d87fc9f296e3fb1fe860f35322d21f0917dbe9878",
       "bytes": 2462
     },
-    {
-      "path": "MESSAGE_CATALOG_BEFORE_AND_AFTER.csv",
+    "MESSAGE_CATALOG_BEFORE_AND_AFTER.csv": {
       "sha256": "0d373b06b283ea07ac8841cbe57e83f8e7e0bbad0ba890b7bc3851967b10988a",
       "bytes": 142550
     },
-    {
-      "path": "PRACTICE_WORKBOOK.html",
+    "PRACTICE_WORKBOOK.html": {
       "sha256": "60f8c1b9b3faf7c717d708dfcf4f883e4c086830bf216800bf08be9cfab39209",
       "bytes": 29096
     },
-    {
-      "path": "PRACTICE_WORKBOOK.md",
+    "PRACTICE_WORKBOOK.md": {
       "sha256": "b9d4208eb5c8c435a51ab5cb82de40049159efc566fb7c289df01cc41976cb3e",
       "bytes": 18860
     },
-    {
-      "path": "README.md",
-      "sha256": "449f65c64d7717cc80ff3b8033d1ab5db46279100295e62317d8bac1062c00e3",
-      "bytes": 1285
+    "README.md": {
+      "sha256": "96e0f9c3e5e800fdbbc3e9a266043ca54d87f1332e0b763c788c32f45ae493a1",
+      "bytes": 1488
     },
-    {
-      "path": "SECURITY_AND_PUBLICATION_WARNING.md",
+    "SECURITY_AND_PUBLICATION_WARNING.md": {
       "sha256": "514a707eb3a9c5b9e132c71e8da15ee77eed6ad0e28633a81f66e3edc456e21b",
       "bytes": 722
     },
-    {
-      "path": "START_LOCAL_PREVIEW.cmd",
+    "START_LOCAL_PREVIEW.cmd": {
       "sha256": "c57f5a94c0869b612bde0be76d3f13036fb5b5d587bc8bf8aca9c7a447364f77",
       "bytes": 150
     },
-    {
-      "path": "TRAINER_GUIDE.html",
+    "TRAINER_GUIDE.html": {
       "sha256": "7722c9c50b308ee4bd5ed1d50ca74780b089b6e2794a8f4d5baa1b3f6ae35cd3",
       "bytes": 32586
     },
-    {
-      "path": "TRAINER_GUIDE.md",
+    "TRAINER_GUIDE.md": {
       "sha256": "da699537bf5ace3257a52b452f59e1d0c3261dcae255248910e1f886abbeb8a2",
       "bytes": 25394
     },
-    {
-      "path": "TRAINING_GUIDE.html",
+    "TRAINING_GUIDE.html": {
       "sha256": "6a79e3b67eb1a0f9b226f4d9a1605396a7996dc654a179111fe6908c6a82ae8b",
       "bytes": 67929
     },
-    {
-      "path": "TRAINING_GUIDE.md",
+    "TRAINING_GUIDE.md": {
       "sha256": "d16efe6dc55bc2f44431fb328c6d014c80a7353999bd0867c28c599a856f9be1",
       "bytes": 54530
     },
-    {
-      "path": "TRAINING_SOURCE_MAP.html",
+    "TRAINING_SOURCE_MAP.html": {
       "sha256": "3fa9050f287655add29df1a0cd29f3129ad214cb051a7d1cfe4bc7506b65ed2a",
       "bytes": 8309
     },
-    {
-      "path": "TRAINING_SOURCE_MAP.md",
+    "TRAINING_SOURCE_MAP.md": {
       "sha256": "5f9dd4aa09f2bcebf4127749135446eb9fa60d6bc7343359e15ce4ef2fa9d6e4",
       "bytes": 5132
     },
-    {
-      "path": "app.js",
-      "sha256": "403de7b02c4ae6762e72849a03cb35feb03d82dc1247fafbbc245e5ef48b2729",
-      "bytes": 75127
+    "app.js": {
+      "sha256": "e8499008be031cd9155ecf7c7f08ca5953cf195b6e009e15c37dbf030db808c9",
+      "bytes": 81373
     },
-    {
-      "path": "data.js",
-      "sha256": "5f8e0ef6a22c9c06631bcfcae4fa9a716a286f675171cbeff7ecba25ff8588e1",
-      "bytes": 401803
+    "data.js": {
+      "sha256": "a12e7e265160309ccde088fada4bf49e804f58772f539685518878fbfdecce98",
+      "bytes": 481164
     },
-    {
-      "path": "index.html",
-      "sha256": "dceff76d043c6e389f8ae0524258d4823344cd2f972ba948788e256abb24b847",
-      "bytes": 32069
+    "index.html": {
+      "sha256": "7239363014a6b334bf1770880b11f09ac0277b067db16ea96465efa71ec00065",
+      "bytes": 33447
     },
-    {
-      "path": "robots.txt",
+    "robots.txt": {
       "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
       "bytes": 26
     },
-    {
-      "path": "styles.css",
-      "sha256": "adf243b725e9fe1a312e839cdd22113a26d3dc38459893a0d299b8b3623e04bb",
-      "bytes": 37853
+    "styles.css": {
+      "sha256": "d28c219b9ae798d5439157a29d8ebf2f68a0f6002dadd8deec7645ec3f993c9c",
+      "bytes": 44907
     }
-  ]
+  }
 }
