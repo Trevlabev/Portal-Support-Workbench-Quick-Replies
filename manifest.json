@@ -1,7 +1,7 @@
 {
   "name": "Portal Support Workbench",
-  "version": "4.2",
-  "build": "SPLIT_SCROLL_LAYOUT",
+  "version": "4.3",
+  "build": "RESTORED_POPUP_PROCEDURE_CHECKLISTS",
   "files": [
     {
       "path": ".github/workflows/deploy-pages.yml",
@@ -15,8 +15,8 @@
     },
     {
       "path": "404.html",
-      "sha256": "f43bbe921fae003552de4da23896b5f2635780c8950993dfaf384b4abef70e9c",
-      "bytes": 35138
+      "sha256": "98d95ce4dcf21c03bef44aec25378acbb1eefaaeacd1ab1b7bbefa4d573c2a59",
+      "bytes": 35155
     },
     {
       "path": "CONTENT_AUDIT.csv",
@@ -60,8 +60,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "0f5cb887d1f5fb521770b4df12b187a0b9ad2616060df3cad905e53b34de0bec",
-      "bytes": 2973
+      "sha256": "458e4d483cd07ab5599615cc0a8fb2b48593051b2361ee86c21495f8ef8398b1",
+      "bytes": 3212
     },
     {
       "path": "SECURITY_AND_PUBLICATION_WARNING.md",
@@ -114,19 +114,24 @@
       "bytes": 581
     },
     {
-      "path": "app-v4.2.js",
-      "sha256": "3ba38211877a4a5d0acbbaa7bb3d84b3262899909fce89fe72eef49d83c6b9e9",
-      "bytes": 94704
+      "path": "V4.3_RESTORED_POPUP_PROCEDURE_CHECKLISTS.md",
+      "sha256": "30ebe83cb41945066ad248d099f8409bd0178425f49dbf514568e2b601f85e7b",
+      "bytes": 831
     },
     {
-      "path": "data-v4.2.js",
+      "path": "app-v4.3.js",
+      "sha256": "000a42ce4bf377f5d687edac7bc9c3ab73a25225e086516086082476bee85e78",
+      "bytes": 96990
+    },
+    {
+      "path": "data-v4.3.js",
       "sha256": "3b895e610bf94b35d53f8a30d4438ee2c7f4b9ba672d362b34ab133d927eb702",
       "bytes": 480561
     },
     {
       "path": "index.html",
-      "sha256": "f43bbe921fae003552de4da23896b5f2635780c8950993dfaf384b4abef70e9c",
-      "bytes": 35138
+      "sha256": "98d95ce4dcf21c03bef44aec25378acbb1eefaaeacd1ab1b7bbefa4d573c2a59",
+      "bytes": 35155
     },
     {
       "path": "robots.txt",
@@ -134,9 +139,9 @@
       "bytes": 26
     },
     {
-      "path": "styles-v4.2.css",
-      "sha256": "f9ed869c9a274ffa75f2f738d94938e05efdecb51858676f5ba0231c0fd286eb",
-      "bytes": 52490
+      "path": "styles-v4.3.css",
+      "sha256": "3fee7eef5d1146acd982986dd3463c1378c05a7e6209eb2d867e4605de2b406a",
+      "bytes": 53517
     }
   ]
 }

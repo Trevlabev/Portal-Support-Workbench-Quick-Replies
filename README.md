@@ -1,4 +1,4 @@
-# Portal Support Workbench v4.2 — Split workspace layout
+# Portal Support Workbench v4.3 — Split workspace layout
 
 Version 3.7 completes a full copy-edit of every active Quick Message and Troubleshooting message displayed in the Workbench while preserving the v3.6 training program and all Daily Work tools.
 
@@ -46,10 +46,17 @@ All yellow/amber callout treatments were removed or changed to neutral styling. 
 - Accurate Florida Bar label: Imported Profile Summary.
 
 
-## v4.2 split workspace layout
+## v4.3 split workspace layout
 
 - Messages uses a two-thirds gallery and one-third drafting workspace on desktop.
 - Troubleshooting uses the same two-thirds guidance and one-third plan pattern.
 - Both sides have independent vertical scrolling, so drafts and plans remain available while browsing cards.
 - The minimized Current Ticket drawer is now a compact bottom-right thumbnail instead of a full-width bar.
 - Responsive layouts return to a single natural page flow on narrower screens.
+
+
+## v4.3 corrections
+
+- Restored the No-AI notice on every page load.
+- Restored interactive checkboxes for every Job Procedure step.
+- Added per-procedure progress counts, clear controls, and checked-step transfer to the Current Ticket.
