@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Registration Ticket Quick Reference · v4.8</title>
+<style>
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#173142;background:#f3f7f8}
+*{box-sizing:border-box}body{margin:0;padding:24px}.sheet{max-width:1180px;margin:auto;background:white;border:1px solid #d8e3e7;border-radius:20px;padding:26px;box-shadow:0 18px 45px rgba(20,49,65,.1)}
+header{background:#173c5c;color:white;border-radius:14px;padding:24px 28px;margin-bottom:20px}header small{letter-spacing:.08em;text-transform:uppercase;font-weight:700;opacity:.8}h1{margin:6px 0 8px;font-size:2rem}header p{margin:0;opacity:.88}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.phase{border:1px solid #d7e2e6;border-radius:14px;padding:16px}.phase h2{font-size:1rem;margin:0 0 12px;color:#146b7a}.phase ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.phase li{padding-left:24px;position:relative;line-height:1.35}.phase li:before{content:"☐";position:absolute;left:0;color:#257680}
+.stop{margin:18px 0;padding:15px 18px;border-left:5px solid #9b2f36;background:#f8eded;border-radius:10px;line-height:1.45}.scope{margin:14px 0;padding:15px 18px;border-left:5px solid #bf6b18;background:#fbf3eb;border-radius:10px}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.note{background:#f1f5f6;border-radius:12px;padding:14px}.note h3{font-size:.92rem;margin:0 0 8px}.note p{font-size:.88rem;line-height:1.45;margin:0}
+footer{margin-top:18px;color:#667985;font-size:.82rem;line-height:1.5}
+@media(max-width:900px){.grid,.notes{grid-template-columns:1fr 1fr}}@media(max-width:620px){body{padding:10px}.sheet{padding:15px}.grid,.notes{grid-template-columns:1fr}h1{font-size:1.55rem}}
+@media print{body{padding:0;background:white}.sheet{box-shadow:none;border:0;border-radius:0;max-width:none}}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header>
+<small>Civitek Portal Service Desk · Internal Training Use</small>
+<h1>Registration Ticket Quick Reference</h1>
+<p>Use during live processing. Open Job Procedures for the full registration checklist and existing-account exception branch.</p>
+</header>
+<section class="grid">
+<article class="phase"><h2>1. Find &amp; claim</h2><ul>
+<li>Filter Summary for Registration</li><li>Work the oldest unassigned ticket</li><li>Open Incident #</li><li>Assign Owner to yourself</li><li>Confirm it is registration, not login or filing troubleshooting</li>
+</ul></article>
+<article class="phase"><h2>2. Verify</h2><ul>
+<li>Service = EFiling</li><li>Correct Filer Role</li><li>Florida Bar # entered</li><li>Category = Access</li><li>Verify Florida Bar identity</li><li>Review attachment / registration email</li><li>Investigate existing RAC account</li>
+</ul></article>
+<article class="phase"><h2>3. Build customer</h2><ul>
+<li>Open RAC Pending Registrations</li><li>Copy all contact and address data before approval</li><li>Create or link the correct Ivanti customer</li><li>Organizational Unit = EFilers for standard attorney flow</li><li>Customer Type / Team = EFiler</li><li>Enter filer type, Bar #, phone, and address</li><li>Verify the saved address</li>
+</ul></article>
+<article class="phase"><h2>4. Finish</h2><ul>
+<li>Replace NoReply PORTAL when applicable</li><li>Summary = Registration: [Customer Name]</li><li>Recheck all fields</li><li>Prepare Resolved / Access resolution</li><li>Approve RAC only when ready</li><li>Confirm activation workflow</li><li>Complete required communication</li><li>Confirm final Ivanti state</li>
+</ul></article>
+</section>
+<div class="stop"><strong>Critical stop:</strong> Do not approve RAC until the pending-registration data has been copied and the Ivanti customer record is complete.</div>
+<div class="scope"><strong>Not registration:</strong> Existing-account login problems and filing problems belong in Troubleshooting, not this workflow.</div>
+<section class="notes">
+<article class="note"><h3>Duplicate Ivanti customer</h3><p>Search by email → select the existing customer → Refresh / Relink / Save → Edit and complete the record.</p></article>
+<article class="note"><h3>Existing RAC account</h3><p>Investigate conversion or maintenance eligibility. Document date, initials, action, and reason in System Admin Notes.</p></article>
+<article class="note"><h3>Final sequence</h3><p>Follow the current team-approved order for required communication, Ivanti resolution, and RAC approval.</p></article>
+</section>
+<footer>Source basis: Deborah walkthrough dated 08/04/2026; corrected screenshot training deck; annotated walkthrough deck; Registration Ticket Quick Reference. Current supervisor guidance controls disputed or changed procedure.</footer>
+</main>
+</body>
+</html>
